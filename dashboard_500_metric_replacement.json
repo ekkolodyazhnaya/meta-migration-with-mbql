@@ -1,0 +1,290 @@
+{
+  "dashboard_id": 500,
+  "dashboard_name": "OOR merchants - SR",
+  "replaced_cards": [],
+  "failed_cards": [
+    {
+      "card_id": 5330,
+      "card_name": "Month OOR partners Turnover EUR",
+      "old_metric_id": 4806,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5335,
+      "card_name": "Month OOR partners GMV EUR",
+      "old_metric_id": 3034,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5336,
+      "card_name": "Month OOR country Revenue EUR",
+      "old_metric_id": 3047,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5332,
+      "card_name": "Month OOR country Turnover EUR ",
+      "old_metric_id": 3010,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5333,
+      "card_name": "Month OOR country GMV EUR",
+      "old_metric_id": 3034,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3010,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3047,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3034,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3055,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3073,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3042,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3032,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3045,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3044,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3102,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3038,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3103,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3104,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3107,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3105,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3100,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3030,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3108,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 2998,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3006,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3035,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3010,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3047,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3034,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3055,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3073,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3042,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3032,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3045,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3044,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3102,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3038,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3103,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3104,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3107,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3105,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3100,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3030,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3108,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 2998,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3006,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3035,
+      "reason": "No StarRocks metric mapping found"
+    }
+  ],
+  "total_cards": 9
+}

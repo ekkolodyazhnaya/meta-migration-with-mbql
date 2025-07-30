@@ -1,0 +1,5090 @@
+{
+  "description": null,
+  "archived": false,
+  "view_count": 1,
+  "collection_position": 1,
+  "dashcards": [
+    {
+      "size_x": 24,
+      "dashboard_tab_id": null,
+      "series": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 1,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": 45,
+        "result_metadata": [
+          {
+            "description": null,
+            "semantic_type": "type/CreationTimestamp",
+            "coercion_strategy": null,
+            "unit": "month",
+            "name": "CREATED_AT",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              20835,
+              {
+                "base-type": "type/DateTime",
+                "temporal-unit": "month"
+              }
+            ],
+            "effective_type": "type/Date",
+            "id": 20835,
+            "visibility_type": "normal",
+            "display_name": "CREATED_AT: Month",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 9958,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/DateTime": {
+                  "earliest": "2018-06-18T16:22:58Z",
+                  "latest": "2019-09-26T13:15:06Z"
+                }
+              }
+            },
+            "base_type": "type/Date"
+          },
+          {
+            "description": null,
+            "semantic_type": "type/Category",
+            "coercion_strategy": null,
+            "name": "WIDGET_PARTNER_NAME",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              20834,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            "effective_type": "type/Text",
+            "id": 20834,
+            "visibility_type": "normal",
+            "display_name": "WIDGET_PARTNER_NAME",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 16,
+                "nil%": 0.7733
+              },
+              "type": {
+                "type/Text": {
+                  "percent-json": 0.0,
+                  "percent-url": 0.0,
+                  "percent-email": 0.0,
+                  "percent-state": 0.0,
+                  "average-length": 2.5913
+                }
+              }
+            },
+            "base_type": "type/Text"
+          },
+          {
+            "display_name": "Turnover EUR",
+            "field_ref": [
+              "aggregation",
+              0
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Turnover EUR",
+            "semantic_type": null,
+            "fingerprint": {
+              "global": {
+                "distinct-count": 5039,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 4.610655599999999,
+                  "q1": 14336.786716380255,
+                  "q3": 130794.58908428389,
+                  "max": 31977824.409135744,
+                  "sd": 1757756.4376577607,
+                  "avg": 337724.7882038303
+                }
+              }
+            }
+          }
+        ],
+        "initially_published_at": null,
+        "can_write": true,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": 817,
+        "query_type": "query",
+        "name": "Month OOR partners Turnover EUR",
+        "last_used_at": "2025-07-25T14:00:27.868438Z",
+        "type": "question",
+        "query_average_duration": 3094,
+        "creator_id": 139,
+        "moderation_reviews": [],
+        "updated_at": "2025-07-25T14:00:17.739859Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "database": 2,
+          "type": "query",
+          "query": {
+            "source-table": 45,
+            "breakout": [
+              [
+                "field",
+                20835,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ],
+              [
+                "field",
+                20834,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "aggregation": [
+              [
+                "metric",
+                3010
+              ]
+            ],
+            "filter": [
+              "and",
+              [
+                ">",
+                [
+                  "field",
+                  20835,
+                  {
+                    "base-type": "type/DateTime"
+                  }
+                ],
+                "2021-01-01"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  20865,
+                  {
+                    "base-type": "type/Text"
+                  }
+                ],
+                "widget"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  20838,
+                  {
+                    "base-type": "type/Text"
+                  }
+                ],
+                "buy",
+                "sell"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  20847,
+                  {
+                    "base-type": "type/Boolean"
+                  }
+                ],
+                true
+              ]
+            ]
+          }
+        },
+        "id": 5330,
+        "parameter_mappings": [],
+        "display": "table",
+        "archived_directly": false,
+        "entity_id": "2H91YKj3RfqQTIT-Ck67Q",
+        "collection_preview": true,
+        "visualization_settings": {
+          "table.cell_column": "Turnover EUR",
+          "pivot_table.column_split": {
+            "rows": [
+              [
+                "field",
+                20834,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "columns": [
+              [
+                "field",
+                20835,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ]
+            ],
+            "values": [
+              [
+                "aggregation",
+                0
+              ]
+            ]
+          },
+          "pivot_table.column_widths": {
+            "leftHeaderWidths": [
+              132
+            ],
+            "totalLeftHeaderWidths": 132,
+            "valueHeaderWidths": {}
+          },
+          "column_settings": {
+            "[\"name\",\"Turnover EUR\"]": {
+              "number_style": "currency",
+              "decimals": 0
+            }
+          }
+        },
+        "metabase_version": "v0.52.9 (f9fbbf8)",
+        "parameters": [],
+        "created_at": "2025-07-25T14:00:17.739859Z",
+        "public_uuid": null
+      },
+      "updated_at": "2025-07-25T14:00:17.739859Z",
+      "col": 0,
+      "id": 4711,
+      "parameter_mappings": [
+        {
+          "parameter_id": "c6b568e6",
+          "card_id": 5330,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20835,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "parameter_id": "b9ac2b9b",
+          "card_id": 5330,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20834,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "parameter_id": "afda7d9a",
+          "card_id": 5330,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20838,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "card_id": 5330,
+      "entity_id": "UWKkwllq1WzKHM9uJW0eQ",
+      "visualization_settings": {},
+      "size_y": 7,
+      "dashboard_id": 500,
+      "created_at": "2025-07-25T14:00:17.739859Z",
+      "row": 0
+    },
+    {
+      "size_x": 24,
+      "dashboard_tab_id": null,
+      "series": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 1,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": 45,
+        "result_metadata": [
+          {
+            "description": null,
+            "semantic_type": null,
+            "coercion_strategy": null,
+            "name": "CREATED_AT",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "expression",
+              "pivot-grouping"
+            ],
+            "effective_type": "type/Date",
+            "id": 20835,
+            "visibility_type": "normal",
+            "display_name": "pivot-grouping",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 3.0,
+                  "q1": 3.0,
+                  "q3": 3.0,
+                  "max": 3.0,
+                  "sd": null,
+                  "avg": 3.0
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "description": null,
+            "semantic_type": null,
+            "coercion_strategy": null,
+            "name": "WIDGET_PARTNER_NAME",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "aggregation",
+              0
+            ],
+            "effective_type": "type/Text",
+            "id": 20834,
+            "visibility_type": "normal",
+            "display_name": "Revenue EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 66001794.92843053,
+                  "q1": 66001794.92843053,
+                  "q3": 66001794.92843053,
+                  "max": 66001794.92843053,
+                  "sd": null,
+                  "avg": 66001794.92843053
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          }
+        ],
+        "initially_published_at": null,
+        "can_write": true,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": 817,
+        "query_type": "query",
+        "name": "Month OOR partners Revenue EUR",
+        "last_used_at": "2025-07-25T14:00:41.930215Z",
+        "type": "question",
+        "query_average_duration": null,
+        "creator_id": 139,
+        "moderation_reviews": [],
+        "updated_at": "2025-07-25T14:00:17.739859Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "database": 2,
+          "type": "query",
+          "query": {
+            "source-table": 45,
+            "breakout": [
+              [
+                "field",
+                20835,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ],
+              [
+                "field",
+                20834,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "aggregation": [
+              [
+                "metric",
+                3047
+              ]
+            ],
+            "filter": [
+              "and",
+              [
+                ">",
+                [
+                  "field",
+                  20835,
+                  {
+                    "base-type": "type/DateTime"
+                  }
+                ],
+                "2021-01-01"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  20838,
+                  {
+                    "base-type": "type/Text"
+                  }
+                ],
+                "buy",
+                "sell"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  20865,
+                  {
+                    "base-type": "type/Text"
+                  }
+                ],
+                "widget"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  20847,
+                  {
+                    "base-type": "type/Boolean"
+                  }
+                ],
+                true
+              ]
+            ]
+          }
+        },
+        "id": 5331,
+        "parameter_mappings": [],
+        "display": "pivot",
+        "archived_directly": false,
+        "entity_id": "JNxadglJbBeNyHbbvZiHu",
+        "collection_preview": true,
+        "visualization_settings": {
+          "pivot_table.column_split": {
+            "rows": [
+              [
+                "field",
+                20834,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "columns": [
+              [
+                "field",
+                20835,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ]
+            ],
+            "values": [
+              [
+                "aggregation",
+                0
+              ]
+            ]
+          },
+          "pivot_table.column_widths": {
+            "leftHeaderWidths": [
+              132
+            ],
+            "totalLeftHeaderWidths": 132,
+            "valueHeaderWidths": {}
+          },
+          "column_settings": {
+            "[\"name\",\"Revenue EUR\"]": {
+              "number_style": "currency",
+              "decimals": 0
+            }
+          }
+        },
+        "metabase_version": "v0.52.9 (f9fbbf8)",
+        "parameters": [],
+        "created_at": "2025-07-25T14:00:17.739859Z",
+        "public_uuid": null
+      },
+      "updated_at": "2025-07-25T14:00:17.739859Z",
+      "col": 0,
+      "id": 4712,
+      "parameter_mappings": [
+        {
+          "parameter_id": "c6b568e6",
+          "card_id": 5331,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20835,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "parameter_id": "b9ac2b9b",
+          "card_id": 5331,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20834,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "parameter_id": "afda7d9a",
+          "card_id": 5331,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20838,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "card_id": 5331,
+      "entity_id": "M7RocLi6h8XZATUTXgtVY",
+      "visualization_settings": {},
+      "size_y": 9,
+      "dashboard_id": 500,
+      "created_at": "2025-07-25T14:00:17.739859Z",
+      "row": 7
+    },
+    {
+      "size_x": 24,
+      "dashboard_tab_id": null,
+      "series": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 1,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": 45,
+        "result_metadata": [
+          {
+            "description": null,
+            "semantic_type": null,
+            "coercion_strategy": null,
+            "name": "WIDGET_PARTNER_NAME",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "expression",
+              "pivot-grouping"
+            ],
+            "effective_type": "type/Text",
+            "id": 20834,
+            "visibility_type": "normal",
+            "display_name": "pivot-grouping",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 3.0,
+                  "q1": 3.0,
+                  "q3": 3.0,
+                  "max": 3.0,
+                  "sd": null,
+                  "avg": 3.0
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "description": null,
+            "semantic_type": null,
+            "coercion_strategy": null,
+            "name": "CREATED_AT",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "aggregation",
+              0
+            ],
+            "effective_type": "type/Date",
+            "id": 20835,
+            "visibility_type": "normal",
+            "display_name": "GMV EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 21284440.762108553,
+                  "q1": 21284440.762108553,
+                  "q3": 21284440.762108553,
+                  "max": 21284440.762108553,
+                  "sd": null,
+                  "avg": 21284440.762108553
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          }
+        ],
+        "initially_published_at": null,
+        "can_write": true,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": 817,
+        "query_type": "query",
+        "name": "Month OOR partners GMV EUR",
+        "last_used_at": "2025-07-25T14:00:43.502198Z",
+        "type": "question",
+        "query_average_duration": null,
+        "creator_id": 139,
+        "moderation_reviews": [],
+        "updated_at": "2025-07-25T14:00:17.739859Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "database": 2,
+          "type": "query",
+          "query": {
+            "source-table": 45,
+            "breakout": [
+              [
+                "field",
+                20834,
+                {
+                  "base-type": "type/Text"
+                }
+              ],
+              [
+                "field",
+                20835,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ]
+            ],
+            "aggregation": [
+              [
+                "metric",
+                3034
+              ]
+            ],
+            "filter": [
+              "and",
+              [
+                ">",
+                [
+                  "field",
+                  20835,
+                  {
+                    "base-type": "type/DateTime"
+                  }
+                ],
+                "2021-01-01"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  20865,
+                  {
+                    "base-type": "type/Text"
+                  }
+                ],
+                "widget"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  20838,
+                  {
+                    "base-type": "type/Text"
+                  }
+                ],
+                "buy",
+                "sell"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  20847,
+                  {
+                    "base-type": "type/Boolean"
+                  }
+                ],
+                true
+              ]
+            ]
+          }
+        },
+        "id": 5335,
+        "parameter_mappings": [],
+        "display": "pivot",
+        "archived_directly": false,
+        "entity_id": "5y5KUaizZwDgbdaaktcYX",
+        "collection_preview": true,
+        "visualization_settings": {
+          "pivot_table.column_split": {
+            "rows": [
+              [
+                "field",
+                20834,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "columns": [
+              [
+                "field",
+                20835,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ]
+            ],
+            "values": [
+              [
+                "aggregation",
+                0
+              ]
+            ]
+          },
+          "pivot_table.column_widths": {
+            "leftHeaderWidths": [
+              132
+            ],
+            "totalLeftHeaderWidths": 132,
+            "valueHeaderWidths": {}
+          },
+          "column_settings": {
+            "[\"name\",\"GMV EUR\"]": {
+              "number_style": "currency",
+              "decimals": 0
+            }
+          }
+        },
+        "metabase_version": "v0.52.9 (f9fbbf8)",
+        "parameters": [],
+        "created_at": "2025-07-25T14:00:17.739859Z",
+        "public_uuid": null
+      },
+      "updated_at": "2025-07-25T14:00:17.739859Z",
+      "col": 0,
+      "id": 4713,
+      "parameter_mappings": [
+        {
+          "parameter_id": "c6b568e6",
+          "card_id": 5335,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20835,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "parameter_id": "b9ac2b9b",
+          "card_id": 5335,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20834,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "parameter_id": "afda7d9a",
+          "card_id": 5335,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20838,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "card_id": 5335,
+      "entity_id": "fHHHzjMlPOf7cXMct3wDr",
+      "visualization_settings": {},
+      "size_y": 8,
+      "dashboard_id": 500,
+      "created_at": "2025-07-25T14:00:17.739859Z",
+      "row": 16
+    },
+    {
+      "size_x": 24,
+      "dashboard_tab_id": null,
+      "series": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 1,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": 45,
+        "result_metadata": [
+          {
+            "description": null,
+            "semantic_type": null,
+            "coercion_strategy": null,
+            "name": "CREATED_AT",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "expression",
+              "pivot-grouping"
+            ],
+            "effective_type": "type/Date",
+            "id": 20835,
+            "visibility_type": "normal",
+            "display_name": "pivot-grouping",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 3.0,
+                  "q1": 3.0,
+                  "q3": 3.0,
+                  "max": 3.0,
+                  "sd": null,
+                  "avg": 3.0
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "description": null,
+            "semantic_type": null,
+            "coercion_strategy": null,
+            "name": "CARD_ISOCOUNTRY",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "aggregation",
+              0
+            ],
+            "effective_type": "type/Text",
+            "id": 795,
+            "visibility_type": "normal",
+            "display_name": "Revenue EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 66001794.92843053,
+                  "q1": 66001794.92843053,
+                  "q3": 66001794.92843053,
+                  "max": 66001794.92843053,
+                  "sd": null,
+                  "avg": 66001794.92843053
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          }
+        ],
+        "initially_published_at": null,
+        "can_write": true,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": 817,
+        "query_type": "query",
+        "name": "Month OOR country Revenue EUR",
+        "last_used_at": "2025-07-25T14:00:44.088571Z",
+        "type": "question",
+        "query_average_duration": null,
+        "creator_id": 139,
+        "moderation_reviews": [],
+        "updated_at": "2025-07-25T14:00:17.739859Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "database": 2,
+          "type": "query",
+          "query": {
+            "source-table": 45,
+            "breakout": [
+              [
+                "field",
+                20835,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ],
+              [
+                "field",
+                795,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "aggregation": [
+              [
+                "metric",
+                3047
+              ]
+            ],
+            "filter": [
+              "and",
+              [
+                ">",
+                [
+                  "field",
+                  20835,
+                  {
+                    "base-type": "type/DateTime"
+                  }
+                ],
+                "2021-01-01"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  20838,
+                  {
+                    "base-type": "type/Text"
+                  }
+                ],
+                "buy",
+                "sell"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  20865,
+                  {
+                    "base-type": "type/Text"
+                  }
+                ],
+                "widget"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  20847,
+                  {
+                    "base-type": "type/Boolean"
+                  }
+                ],
+                true
+              ]
+            ]
+          }
+        },
+        "id": 5336,
+        "parameter_mappings": [],
+        "display": "pivot",
+        "archived_directly": false,
+        "entity_id": "NyLLNUa42OjrS41fM8h7_",
+        "collection_preview": true,
+        "visualization_settings": {
+          "pivot_table.column_split": {
+            "rows": [
+              [
+                "field",
+                795,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "columns": [
+              [
+                "field",
+                20835,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ]
+            ],
+            "values": [
+              [
+                "aggregation",
+                0
+              ]
+            ]
+          },
+          "pivot_table.column_widths": {
+            "leftHeaderWidths": [
+              132
+            ],
+            "totalLeftHeaderWidths": 132,
+            "valueHeaderWidths": {}
+          },
+          "column_settings": {
+            "[\"name\",\"Revenue EUR\"]": {
+              "number_style": "currency",
+              "decimals": 0
+            }
+          }
+        },
+        "metabase_version": "v0.52.9 (f9fbbf8)",
+        "parameters": [],
+        "created_at": "2025-07-25T14:00:17.739859Z",
+        "public_uuid": null
+      },
+      "updated_at": "2025-07-25T14:00:17.739859Z",
+      "col": 0,
+      "id": 4714,
+      "parameter_mappings": [
+        {
+          "parameter_id": "c6b568e6",
+          "card_id": 5336,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20835,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "parameter_id": "b9ac2b9b",
+          "card_id": 5336,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20834,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "parameter_id": "afda7d9a",
+          "card_id": 5336,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20838,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "card_id": 5336,
+      "entity_id": "B64rFIWPdEO1XRuM6mC4Z",
+      "visualization_settings": {},
+      "size_y": 11,
+      "dashboard_id": 500,
+      "created_at": "2025-07-25T14:00:17.739859Z",
+      "row": 33
+    },
+    {
+      "size_x": 24,
+      "dashboard_tab_id": null,
+      "series": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 1,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": 45,
+        "result_metadata": [
+          {
+            "description": null,
+            "semantic_type": null,
+            "coercion_strategy": null,
+            "name": "CREATED_AT",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "expression",
+              "pivot-grouping"
+            ],
+            "effective_type": "type/Date",
+            "id": 20835,
+            "visibility_type": "normal",
+            "display_name": "pivot-grouping",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 3.0,
+                  "q1": 3.0,
+                  "q3": 3.0,
+                  "max": 3.0,
+                  "sd": null,
+                  "avg": 3.0
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "description": null,
+            "semantic_type": null,
+            "coercion_strategy": null,
+            "name": "CARD_ISOCOUNTRY",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "aggregation",
+              0
+            ],
+            "effective_type": "type/Text",
+            "id": 795,
+            "visibility_type": "normal",
+            "display_name": "Turnover EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 1736580860.9440956,
+                  "q1": 1736580860.9440956,
+                  "q3": 1736580860.9440956,
+                  "max": 1736580860.9440956,
+                  "sd": null,
+                  "avg": 1736580860.9440956
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          }
+        ],
+        "initially_published_at": null,
+        "can_write": true,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": 817,
+        "query_type": "query",
+        "name": "Month OOR country Turnover EUR ",
+        "last_used_at": "2025-07-25T14:00:44.182529Z",
+        "type": "question",
+        "query_average_duration": null,
+        "creator_id": 139,
+        "moderation_reviews": [],
+        "updated_at": "2025-07-25T14:00:17.739859Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "database": 2,
+          "type": "query",
+          "query": {
+            "source-table": 45,
+            "breakout": [
+              [
+                "field",
+                20835,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ],
+              [
+                "field",
+                795,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "aggregation": [
+              [
+                "metric",
+                3010
+              ]
+            ],
+            "filter": [
+              "and",
+              [
+                ">",
+                [
+                  "field",
+                  20835,
+                  {
+                    "base-type": "type/DateTime"
+                  }
+                ],
+                "2021-01-01"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  20865,
+                  {
+                    "base-type": "type/Text"
+                  }
+                ],
+                "widget"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  20838,
+                  {
+                    "base-type": "type/Text"
+                  }
+                ],
+                "buy",
+                "sell"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  20847,
+                  {
+                    "base-type": "type/Boolean"
+                  }
+                ],
+                true
+              ]
+            ]
+          }
+        },
+        "id": 5332,
+        "parameter_mappings": [],
+        "display": "pivot",
+        "archived_directly": false,
+        "entity_id": "XBuwcB1bRBp_dNtyqsfuZ",
+        "collection_preview": true,
+        "visualization_settings": {
+          "table.cell_column": "Turnover EUR",
+          "pivot_table.column_split": {
+            "rows": [
+              [
+                "field",
+                795,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "columns": [
+              [
+                "field",
+                20835,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ]
+            ],
+            "values": [
+              [
+                "aggregation",
+                0
+              ]
+            ]
+          },
+          "pivot_table.column_widths": {
+            "leftHeaderWidths": [
+              193
+            ],
+            "totalLeftHeaderWidths": 193,
+            "valueHeaderWidths": {}
+          },
+          "column_settings": {
+            "[\"name\",\"Turnover EUR\"]": {
+              "number_style": "currency",
+              "decimals": 0
+            }
+          }
+        },
+        "metabase_version": "v0.52.9 (f9fbbf8)",
+        "parameters": [],
+        "created_at": "2025-07-25T14:00:17.739859Z",
+        "public_uuid": null
+      },
+      "updated_at": "2025-07-25T14:00:17.739859Z",
+      "col": 0,
+      "id": 4715,
+      "parameter_mappings": [
+        {
+          "parameter_id": "c6b568e6",
+          "card_id": 5332,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20835,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "parameter_id": "b9ac2b9b",
+          "card_id": 5332,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20834,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "parameter_id": "afda7d9a",
+          "card_id": 5332,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20838,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "card_id": 5332,
+      "entity_id": "L38IbYlqY08e8WmvQNjHy",
+      "visualization_settings": {},
+      "size_y": 9,
+      "dashboard_id": 500,
+      "created_at": "2025-07-25T14:00:17.739859Z",
+      "row": 24
+    },
+    {
+      "size_x": 24,
+      "dashboard_tab_id": null,
+      "series": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 1,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": 45,
+        "result_metadata": [
+          {
+            "description": null,
+            "semantic_type": null,
+            "coercion_strategy": null,
+            "name": "CREATED_AT",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "expression",
+              "pivot-grouping"
+            ],
+            "effective_type": "type/Date",
+            "id": 20835,
+            "visibility_type": "normal",
+            "display_name": "pivot-grouping",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 3.0,
+                  "q1": 3.0,
+                  "q3": 3.0,
+                  "max": 3.0,
+                  "sd": null,
+                  "avg": 3.0
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "description": null,
+            "semantic_type": null,
+            "coercion_strategy": null,
+            "name": "CARD_ISOCOUNTRY",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "aggregation",
+              0
+            ],
+            "effective_type": "type/Text",
+            "id": 795,
+            "visibility_type": "normal",
+            "display_name": "GMV EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 21284440.762108553,
+                  "q1": 21284440.762108553,
+                  "q3": 21284440.762108553,
+                  "max": 21284440.762108553,
+                  "sd": null,
+                  "avg": 21284440.762108553
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          }
+        ],
+        "initially_published_at": null,
+        "can_write": true,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": 817,
+        "query_type": "query",
+        "name": "Month OOR country GMV EUR",
+        "last_used_at": "2025-07-25T14:00:43.950765Z",
+        "type": "question",
+        "query_average_duration": null,
+        "creator_id": 139,
+        "moderation_reviews": [],
+        "updated_at": "2025-07-25T14:00:17.739859Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "database": 2,
+          "type": "query",
+          "query": {
+            "source-table": 45,
+            "breakout": [
+              [
+                "field",
+                20835,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ],
+              [
+                "field",
+                795,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "aggregation": [
+              [
+                "metric",
+                3034
+              ]
+            ],
+            "filter": [
+              "and",
+              [
+                ">",
+                [
+                  "field",
+                  20835,
+                  {
+                    "base-type": "type/DateTime"
+                  }
+                ],
+                "2021-01-01"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  20865,
+                  {
+                    "base-type": "type/Text"
+                  }
+                ],
+                "widget"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  20838,
+                  {
+                    "base-type": "type/Text"
+                  }
+                ],
+                "buy",
+                "sell"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  20847,
+                  {
+                    "base-type": "type/Boolean"
+                  }
+                ],
+                true
+              ]
+            ]
+          }
+        },
+        "id": 5333,
+        "parameter_mappings": [],
+        "display": "pivot",
+        "archived_directly": false,
+        "entity_id": "OHqebKr84egZrYMZWGp5T",
+        "collection_preview": true,
+        "visualization_settings": {
+          "pivot_table.column_split": {
+            "rows": [
+              [
+                "field",
+                795,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "columns": [
+              [
+                "field",
+                20835,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ]
+            ],
+            "values": [
+              [
+                "aggregation",
+                0
+              ]
+            ]
+          },
+          "pivot_table.column_widths": {
+            "leftHeaderWidths": [
+              193
+            ],
+            "totalLeftHeaderWidths": 193,
+            "valueHeaderWidths": {}
+          },
+          "column_settings": {
+            "[\"name\",\"GMV EUR\"]": {
+              "number_style": "currency",
+              "decimals": 0
+            }
+          }
+        },
+        "metabase_version": "v0.52.9 (f9fbbf8)",
+        "parameters": [],
+        "created_at": "2025-07-25T14:00:17.739859Z",
+        "public_uuid": null
+      },
+      "updated_at": "2025-07-25T14:00:17.739859Z",
+      "col": 0,
+      "id": 4716,
+      "parameter_mappings": [
+        {
+          "parameter_id": "c6b568e6",
+          "card_id": 5333,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20835,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "parameter_id": "b9ac2b9b",
+          "card_id": 5333,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20834,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "parameter_id": "afda7d9a",
+          "card_id": 5333,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20838,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "card_id": 5333,
+      "entity_id": "_vVqVJ6_L-3PfUrp4V9Ug",
+      "visualization_settings": {},
+      "size_y": 11,
+      "dashboard_id": 500,
+      "created_at": "2025-07-25T14:00:17.739859Z",
+      "row": 44
+    },
+    {
+      "size_x": 24,
+      "dashboard_tab_id": null,
+      "series": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 1,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": 45,
+        "result_metadata": [
+          {
+            "description": null,
+            "semantic_type": "type/Category",
+            "coercion_strategy": null,
+            "name": "WIDGET_PARTNER_NAME",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              20834,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            "effective_type": "type/Text",
+            "id": 20834,
+            "visibility_type": "normal",
+            "display_name": "WIDGET_PARTNER_NAME",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 16,
+                "nil%": 0.7733
+              },
+              "type": {
+                "type/Text": {
+                  "percent-json": 0.0,
+                  "percent-url": 0.0,
+                  "percent-email": 0.0,
+                  "percent-state": 0.0,
+                  "average-length": 2.5913
+                }
+              }
+            },
+            "base_type": "type/Text"
+          },
+          {
+            "display_name": "Start date OOR partner - WIDGET_PARTNER_NAME \u2192 min: Day",
+            "field_ref": [
+              "field",
+              "min",
+              {
+                "base-type": "type/Date",
+                "join-alias": "Start date OOR partner - WIDGET_PARTNER_NAME",
+                "temporal-unit": "day"
+              }
+            ],
+            "base_type": "type/Date",
+            "effective_type": "type/Date",
+            "name": "min",
+            "unit": "day",
+            "semantic_type": null,
+            "fingerprint": {
+              "global": {
+                "distinct-count": 340,
+                "nil%": 0.1041162227602906
+              },
+              "type": {
+                "type/DateTime": {
+                  "earliest": "2019-04-03",
+                  "latest": "2025-07-17"
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Turnover EUR",
+            "field_ref": [
+              "aggregation",
+              0
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Turnover EUR",
+            "semantic_type": null,
+            "fingerprint": {
+              "global": {
+                "distinct-count": 368,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 1493.504616235356,
+                  "q3": 190780.44196444162,
+                  "max": 650838648.7623923,
+                  "sd": 35113532.41083543,
+                  "avg": 4269334.715779129
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Revenue EUR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              1
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Revenue EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 369,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 251.8694133576869,
+                  "q3": 8393.149094795466,
+                  "max": 22722658.531804185,
+                  "sd": 1260336.2886653063,
+                  "avg": 162030.59959756164
+                }
+              }
+            }
+          },
+          {
+            "display_name": "GMV EUR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              2
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "GMV EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 374,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": -368659.5937258657,
+                  "q1": -108.66516199160196,
+                  "q3": 1928.0397346609684,
+                  "max": 6433032.738224479,
+                  "sd": 407417.71331708634,
+                  "avg": 50950.08924352713
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Revenue  /  Turnover rate",
+            "field_ref": [
+              "aggregation",
+              3
+            ],
+            "base_type": "type/Float",
+            "effective_type": "type/Float",
+            "name": "Revenue  /  Turnover rate",
+            "semantic_type": "type/Share",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 363,
+                "nil%": 0.1041162227602906
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 0.038087732598243926,
+                  "q3": 0.05074445821703904,
+                  "max": 0.5425304878048782,
+                  "sd": 0.03358740148099488,
+                  "avg": 0.0494035512806038
+                }
+              }
+            }
+          },
+          {
+            "display_name": "% GMV",
+            "field_ref": [
+              "aggregation",
+              4
+            ],
+            "base_type": "type/Float",
+            "effective_type": "type/Float",
+            "name": "% GMV",
+            "semantic_type": null,
+            "fingerprint": {
+              "global": {
+                "distinct-count": 371,
+                "nil%": 0.1041162227602906
+              },
+              "type": {
+                "type/Number": {
+                  "min": -0.93509418020622,
+                  "q1": 0.0034819697404195947,
+                  "q3": 0.02281477080302359,
+                  "max": 0.13367219173201952,
+                  "sd": 0.06492352124273412,
+                  "avg": 0.005297033659850316
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Commission Revenue EUR",
+            "semantic_type": "type/Quantity",
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              5
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Commission Revenue EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 370,
+                "nil%": 0.009685230024213076
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 242.13424906079925,
+                  "q3": 8324.094135125963,
+                  "max": 22164345.042616636,
+                  "sd": 1214973.5648386236,
+                  "avg": 150458.3675689067
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Mark up Revenue EUR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              6
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Mark up Revenue EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 223,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": -1100949.303816562,
+                  "q1": -9.298448732712572,
+                  "q3": 159.38922794509926,
+                  "max": 2475806.1890551676,
+                  "sd": 138827.6060113856,
+                  "avg": 6827.729765689691
+                }
+              }
+            }
+          },
+          {
+            "display_name": "FX Mark up Revenue EUR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              7
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "FX Mark up Revenue EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 159,
+                "nil%": 0.03147699757869249
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 0.9380299446630741,
+                  "q3": 35.40933801806751,
+                  "max": 844891.610639592,
+                  "sd": 43189.35816210406,
+                  "avg": 3935.9158202961694
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Acquiring Commission in EUR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              8
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Acquiring Commission in EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 369,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 90.42202313454254,
+                  "q3": 3700.2292369679853,
+                  "max": 10957279.459239438,
+                  "sd": 598811.2455124219,
+                  "avg": 78008.24952491488
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Acquiring FX cost EUR",
+            "semantic_type": "type/Cost",
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              9
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Acquiring FX cost EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 266,
+                "nil%": 0.02179176755447942
+              },
+              "type": {
+                "type/Number": {
+                  "min": -13180.55045638137,
+                  "q1": -10.683986916891229,
+                  "q3": 134.56491576323762,
+                  "max": 965710.3547032506,
+                  "sd": 53024.70613077447,
+                  "avg": 6051.384509328771
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Network Fee EUR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              10
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Network Fee EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 339,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 18.73632946806515,
+                  "q3": 938.7436269948959,
+                  "max": 2232949.4000431034,
+                  "sd": 125461.84437859907,
+                  "avg": 16847.67696820682
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Exchange fee EUR OOR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              11
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Exchange fee EUR OOR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 354,
+                "nil%": 0.009685230024213076
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 2.334999339639585,
+                  "q3": 123.45840684988136,
+                  "max": 529506.439302509,
+                  "sd": 28343.933759996547,
+                  "avg": 2936.6624267692896
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Exchange FX cost EUR OOR",
+            "semantic_type": "type/Cost",
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              12
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Exchange FX cost EUR OOR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 365,
+                "nil%": 0.009685230024213076
+              },
+              "type": {
+                "type/Number": {
+                  "min": -99415.372123,
+                  "q1": -28.245474465727067,
+                  "q3": 17.24114387423024,
+                  "max": 132603.112961,
+                  "sd": 11185.075735899534,
+                  "avg": 321.56173159168696
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Exchange FX Amount EUR OOR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              13
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Exchange FX Amount EUR OOR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 96,
+                "nil%": 0.7675544794188862
+              },
+              "type": {
+                "type/Number": {
+                  "min": -35.551646,
+                  "q1": -0.445229000486482,
+                  "q3": 0.36155400000000004,
+                  "max": 1697.734828,
+                  "sd": 202.59729424768878,
+                  "avg": 32.54930164583333
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Fee Zerohash & Mobilum fee",
+            "field_ref": [
+              "aggregation",
+              14
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Fee Zerohash & Mobilum fee",
+            "semantic_type": null,
+            "fingerprint": {
+              "global": {
+                "distinct-count": 157,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 0.2711241391704854,
+                  "q3": 18.824403127223896,
+                  "max": 596754.3444003271,
+                  "sd": 30434.843670023954,
+                  "avg": 2446.0376516862757
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Riskified Fee EUR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              15
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Riskified Fee EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 171,
+                "nil%": 0.4309927360774818
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 1.1334017953246869,
+                  "q3": 252.14281666666665,
+                  "max": 619692.825668,
+                  "sd": 42726.113825091146,
+                  "avg": 4955.072009259576
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Total transactions cost EUR OOR",
+            "semantic_type": "type/Cost",
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              16
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Total transactions cost EUR OOR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 374,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": -76.62479326234872,
+                  "q1": 89.7444714684844,
+                  "q3": 5957.50671862103,
+                  "max": 16289625.793579707,
+                  "sd": 883316.8554300735,
+                  "avg": 111080.5103540345
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Sum of FEE_WINPAY_EUR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              17
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "sum",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 73,
+                "nil%": 0.02663438256658596
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 0.0,
+                  "q3": 0.008290830673557244,
+                  "max": 14426.758769865648,
+                  "sd": 733.1110233375655,
+                  "avg": 55.07199437675619
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Count transactions",
+            "semantic_type": "type/Quantity",
+            "field_ref": [
+              "aggregation",
+              18
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Count transactions",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 283,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 1.0,
+                  "q1": 89.26343194469611,
+                  "q3": 4173.345271677127,
+                  "max": 9085989.0,
+                  "sd": 490896.21149443055,
+                  "avg": 56857.03389830508
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Count success transactions",
+            "semantic_type": "type/Quantity",
+            "field_ref": [
+              "aggregation",
+              19
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Count success transactions",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 246,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 73.38593031684218,
+                  "q3": 2073.0858410014644,
+                  "max": 6254693.0,
+                  "sd": 337659.16977026616,
+                  "avg": 38580.92978208233
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Fee Network Revenue EUR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              20
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Fee Network Revenue EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 143,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 0.1146284470970205,
+                  "q3": 6.8327657672030915,
+                  "max": 475632.4261977556,
+                  "sd": 26959.598614481605,
+                  "avg": 3177.456553902662
+                }
+              }
+            }
+          }
+        ],
+        "initially_published_at": null,
+        "can_write": true,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": 817,
+        "query_type": "query",
+        "name": "All metrics by OOR partner name",
+        "last_used_at": "2025-07-25T14:00:27.868438Z",
+        "type": "question",
+        "query_average_duration": 41818,
+        "creator_id": 139,
+        "moderation_reviews": [],
+        "updated_at": "2025-07-25T14:00:17.739859Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "database": 2,
+          "type": "query",
+          "query": {
+            "aggregation": [
+              [
+                "metric",
+                3010
+              ],
+              [
+                "metric",
+                3047
+              ],
+              [
+                "metric",
+                3034
+              ],
+              [
+                "metric",
+                3055
+              ],
+              [
+                "metric",
+                3073
+              ],
+              [
+                "metric",
+                3042
+              ],
+              [
+                "metric",
+                3032
+              ],
+              [
+                "metric",
+                3045
+              ],
+              [
+                "metric",
+                3044
+              ],
+              [
+                "metric",
+                3102
+              ],
+              [
+                "metric",
+                3038
+              ],
+              [
+                "metric",
+                3103
+              ],
+              [
+                "metric",
+                3104
+              ],
+              [
+                "metric",
+                3107
+              ],
+              [
+                "metric",
+                3105
+              ],
+              [
+                "metric",
+                3100
+              ],
+              [
+                "metric",
+                3030
+              ],
+              [
+                "metric",
+                3108
+              ],
+              [
+                "metric",
+                2998
+              ],
+              [
+                "metric",
+                3006
+              ],
+              [
+                "metric",
+                3035
+              ]
+            ],
+            "breakout": [
+              [
+                "field",
+                20834,
+                {
+                  "base-type": "type/Text"
+                }
+              ],
+              [
+                "field",
+                "min",
+                {
+                  "base-type": "type/Date",
+                  "join-alias": "Start date OOR partner - WIDGET_PARTNER_NAME",
+                  "temporal-unit": "day"
+                }
+              ]
+            ],
+            "joins": [
+              {
+                "alias": "Start date OOR partner - WIDGET_PARTNER_NAME",
+                "fields": "all",
+                "strategy": "left-join",
+                "condition": [
+                  "=",
+                  [
+                    "field",
+                    20834,
+                    {
+                      "base-type": "type/Text"
+                    }
+                  ],
+                  [
+                    "field",
+                    20834,
+                    {
+                      "base-type": "type/Text",
+                      "join-alias": "Start date OOR partner - WIDGET_PARTNER_NAME"
+                    }
+                  ]
+                ],
+                "source-table": "card__1915"
+              }
+            ],
+            "order-by": [
+              [
+                "desc",
+                [
+                  "aggregation",
+                  0
+                ]
+              ]
+            ],
+            "source-table": 45,
+            "filter": [
+              "=",
+              [
+                "field",
+                20865,
+                {
+                  "base-type": "type/Text"
+                }
+              ],
+              "widget"
+            ]
+          }
+        },
+        "id": 5329,
+        "parameter_mappings": [],
+        "display": "table",
+        "archived_directly": false,
+        "entity_id": "UzQhHd1c6XCkX2fZoJzVg",
+        "collection_preview": true,
+        "visualization_settings": {
+          "table.cell_column": "Turnover EUR",
+          "table.columns": [
+            {
+              "enabled": true,
+              "fieldRef": [
+                "field",
+                20834,
+                {
+                  "base-type": "type/Text"
+                }
+              ],
+              "name": "WIDGET_PARTNER_NAME"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "field",
+                "min",
+                {
+                  "base-type": "type/Date",
+                  "join-alias": "Start date OOR partner - WIDGET_PARTNER_NAME"
+                }
+              ],
+              "name": "min"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                0
+              ],
+              "name": "Turnover EUR"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                1
+              ],
+              "name": "Revenue EUR"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                2
+              ],
+              "name": "GMV EUR"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                3
+              ],
+              "name": "Revenue  /  Turnover rate"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                4
+              ],
+              "name": "% GMV"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                6
+              ],
+              "name": "Commission Revenue EUR"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                7
+              ],
+              "name": "Mark up Revenue EUR"
+            },
+            {
+              "name": "Fee Network Revenue EUR",
+              "fieldRef": [
+                "aggregation",
+                20
+              ],
+              "enabled": true
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                16
+              ],
+              "name": "Riskified Fee EUR"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                8
+              ],
+              "name": "FX Mark up Revenue EUR"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                9
+              ],
+              "name": "Acquiring Commission in EUR"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                10
+              ],
+              "name": "Acquiring FX cost EUR"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                11
+              ],
+              "name": "Network Fee EUR"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                12
+              ],
+              "name": "Exchange fee EUR OOR"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                15
+              ],
+              "name": "Fee Zerohash & Mobilum fee"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                13
+              ],
+              "name": "Exchange FX cost EUR OOR"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                17
+              ],
+              "name": "count_2"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                14
+              ],
+              "name": "count"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                18
+              ],
+              "name": "sum"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                18
+              ],
+              "name": "Count transactions"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                19
+              ],
+              "name": "Count success transactions"
+            }
+          ],
+          "column_settings": {
+            "[\"name\",\"Revenue EUR\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"sum\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"min\"]": {
+              "column_title": "First transaction partner"
+            },
+            "[\"name\",\"Total transactions cost EUR OOR\"]": {
+              "decimals": 0
+            },
+            "[\"name\",\"Exchange FX cost EUR OOR\"]": {
+              "decimals": 0
+            },
+            "[\"name\",\"Exchange fee EUR OOR\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"count\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"% GMV\"]": {
+              "number_style": "percent"
+            },
+            "[\"name\",\"Turnover EUR\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"Commission Revenue EUR\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"Network Fee EUR\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"count_2\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"Revenue  /  Turnover rate\"]": {
+              "number_style": "percent"
+            },
+            "[\"name\",\"GMV EUR\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"FX Mark up Revenue EUR\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"Fee Network Revenue EUR\"]": {
+              "number_style": "currency",
+              "decimals": 0
+            },
+            "[\"name\",\"Fee Zerohash & Mobilum fee\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"Acquiring FX cost EUR\"]": {
+              "decimals": 0
+            },
+            "[\"name\",\"Exchange FX Amount EUR OOR\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"Mark up Revenue EUR\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"Acquiring Commission in EUR\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"Riskified Fee EUR\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            }
+          }
+        },
+        "metabase_version": "v0.52.9 (f9fbbf8)",
+        "parameters": [],
+        "created_at": "2025-07-25T14:00:17.739859Z",
+        "public_uuid": null
+      },
+      "updated_at": "2025-07-25T14:00:17.739859Z",
+      "col": 0,
+      "id": 4717,
+      "parameter_mappings": [
+        {
+          "parameter_id": "c6b568e6",
+          "card_id": 5329,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20835,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "parameter_id": "afda7d9a",
+          "card_id": 5329,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20838,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "parameter_id": "b9ac2b9b",
+          "card_id": 5329,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20834,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "card_id": 5329,
+      "entity_id": "B-xjA7_sqaNfqaFnk5LnT",
+      "visualization_settings": {},
+      "size_y": 11,
+      "dashboard_id": 500,
+      "created_at": "2025-07-25T14:00:17.739859Z",
+      "row": 55
+    },
+    {
+      "size_x": 24,
+      "dashboard_tab_id": null,
+      "series": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 1,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": 45,
+        "result_metadata": [
+          {
+            "description": null,
+            "semantic_type": null,
+            "coercion_strategy": null,
+            "name": "CREATED_AT",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "expression",
+              "pivot-grouping"
+            ],
+            "effective_type": "type/Date",
+            "id": 20835,
+            "visibility_type": "normal",
+            "display_name": "pivot-grouping",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 3.0,
+                  "q1": 3.0,
+                  "q3": 3.0,
+                  "max": 3.0,
+                  "sd": null,
+                  "avg": 3.0
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "description": null,
+            "semantic_type": "type/Quantity",
+            "coercion_strategy": null,
+            "name": "WIDGET_PARTNER_NAME",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "aggregation",
+              0
+            ],
+            "effective_type": "type/Text",
+            "id": 20834,
+            "visibility_type": "normal",
+            "display_name": "Top Partner fee ",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 10719449.278510313,
+                  "q1": 10719449.278510313,
+                  "q3": 10719449.278510313,
+                  "max": 10719449.278510313,
+                  "sd": null,
+                  "avg": 10719449.278510313
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          }
+        ],
+        "initially_published_at": null,
+        "can_write": true,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": 817,
+        "query_type": "query",
+        "name": "Month OOR partners Top fee EUR",
+        "last_used_at": "2025-07-25T14:00:43.642312Z",
+        "type": "question",
+        "query_average_duration": null,
+        "creator_id": 139,
+        "moderation_reviews": [],
+        "updated_at": "2025-07-25T14:00:17.739859Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "database": 2,
+          "type": "query",
+          "query": {
+            "breakout": [
+              [
+                "field",
+                20835,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ],
+              [
+                "field",
+                20834,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "source-table": 45,
+            "aggregation": [
+              [
+                "aggregation-options",
+                [
+                  "sum",
+                  [
+                    "field",
+                    20886,
+                    {
+                      "base-type": "type/Decimal"
+                    }
+                  ]
+                ],
+                {
+                  "name": "Top Partner fee ",
+                  "display-name": "Top Partner fee "
+                }
+              ]
+            ],
+            "filter": [
+              "and",
+              [
+                ">",
+                [
+                  "field",
+                  20835,
+                  {
+                    "base-type": "type/DateTime"
+                  }
+                ],
+                "2021-01-01"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  20838,
+                  {
+                    "base-type": "type/Text"
+                  }
+                ],
+                "buy",
+                "sell"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  20865,
+                  {
+                    "base-type": "type/Text"
+                  }
+                ],
+                "widget"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  20847,
+                  {
+                    "base-type": "type/Boolean"
+                  }
+                ],
+                true
+              ]
+            ]
+          }
+        },
+        "id": 5334,
+        "parameter_mappings": [],
+        "display": "pivot",
+        "archived_directly": false,
+        "entity_id": "5Hdj-AWShRz9OboI-p3qG",
+        "collection_preview": true,
+        "visualization_settings": {
+          "pivot_table.column_split": {
+            "columns": [
+              [
+                "field",
+                20835,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ]
+            ],
+            "rows": [
+              [
+                "field",
+                20834,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "values": [
+              [
+                "aggregation",
+                0
+              ]
+            ]
+          },
+          "pivot_table.column_widths": {
+            "leftHeaderWidths": [
+              132
+            ],
+            "totalLeftHeaderWidths": 132,
+            "valueHeaderWidths": {}
+          },
+          "column_settings": {
+            "[\"name\",\"Revenue EUR\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            }
+          }
+        },
+        "metabase_version": "v0.52.9 (f9fbbf8)",
+        "parameters": [],
+        "created_at": "2025-07-25T14:00:17.739859Z",
+        "public_uuid": null
+      },
+      "updated_at": "2025-07-25T14:00:17.739859Z",
+      "col": 0,
+      "id": 4718,
+      "parameter_mappings": [
+        {
+          "parameter_id": "c6b568e6",
+          "card_id": 5334,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20835,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "parameter_id": "afda7d9a",
+          "card_id": 5334,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20838,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "parameter_id": "b9ac2b9b",
+          "card_id": 5334,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20834,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "card_id": 5334,
+      "entity_id": "0CNthYOQ3TqwNAJjBzn1T",
+      "visualization_settings": {},
+      "size_y": 10,
+      "dashboard_id": 500,
+      "created_at": "2025-07-25T14:00:17.739859Z",
+      "row": 66
+    },
+    {
+      "size_x": 24,
+      "dashboard_tab_id": null,
+      "series": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 1,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": 45,
+        "result_metadata": [
+          {
+            "description": null,
+            "semantic_type": "type/Category",
+            "coercion_strategy": null,
+            "name": "WIDGET_PARTNER_NAME",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              20834,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            "effective_type": "type/Text",
+            "id": 20834,
+            "visibility_type": "normal",
+            "display_name": "WIDGET_PARTNER_NAME",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 16,
+                "nil%": 0.7733
+              },
+              "type": {
+                "type/Text": {
+                  "percent-json": 0.0,
+                  "percent-url": 0.0,
+                  "percent-email": 0.0,
+                  "percent-state": 0.0,
+                  "average-length": 2.5913
+                }
+              }
+            },
+            "base_type": "type/Text"
+          },
+          {
+            "display_name": "Start date OOR partner - WIDGET_PARTNER_NAME \u2192 min: Day",
+            "field_ref": [
+              "field",
+              "min",
+              {
+                "base-type": "type/Date",
+                "join-alias": "Start date OOR partner - WIDGET_PARTNER_NAME",
+                "temporal-unit": "day"
+              }
+            ],
+            "base_type": "type/Date",
+            "effective_type": "type/Date",
+            "name": "min",
+            "unit": "day",
+            "semantic_type": null,
+            "fingerprint": {
+              "global": {
+                "distinct-count": 340,
+                "nil%": 0.009974667511082964
+              },
+              "type": {
+                "type/DateTime": {
+                  "earliest": "2019-04-03",
+                  "latest": "2025-07-17"
+                }
+              }
+            }
+          },
+          {
+            "description": null,
+            "semantic_type": "type/CreationTimestamp",
+            "coercion_strategy": null,
+            "unit": "month",
+            "name": "CREATED_AT",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              20835,
+              {
+                "base-type": "type/DateTime",
+                "temporal-unit": "month"
+              }
+            ],
+            "effective_type": "type/Date",
+            "id": 20835,
+            "visibility_type": "normal",
+            "display_name": "CREATED_AT: Month",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 9958,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/DateTime": {
+                  "earliest": "2018-06-18T16:22:58Z",
+                  "latest": "2019-09-26T13:15:06Z"
+                }
+              }
+            },
+            "base_type": "type/Date"
+          },
+          {
+            "display_name": "Turnover EUR",
+            "field_ref": [
+              "aggregation",
+              0
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Turnover EUR",
+            "semantic_type": null,
+            "fingerprint": {
+              "global": {
+                "distinct-count": 5536,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 12622.429184164204,
+                  "q3": 146628.94381713227,
+                  "max": 31977824.409135744,
+                  "sd": 1589262.66391907,
+                  "avg": 279169.6069690913
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Revenue EUR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              1
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Revenue EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 5617,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 666.8584215175405,
+                  "q3": 5802.696755126594,
+                  "max": 1051590.4732915077,
+                  "sd": 56380.27783202278,
+                  "avg": 10595.09778875759
+                }
+              }
+            }
+          },
+          {
+            "display_name": "GMV EUR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              2
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "GMV EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 5689,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": -159078.10619471731,
+                  "q1": -312.26480476991037,
+                  "q3": 2642.8856787646837,
+                  "max": 392646.7452366167,
+                  "sd": 21285.189843577213,
+                  "avg": 3394.99375557693
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Revenue  /  Turnover rate",
+            "field_ref": [
+              "aggregation",
+              3
+            ],
+            "base_type": "type/Float",
+            "effective_type": "type/Float",
+            "name": "Revenue  /  Turnover rate",
+            "semantic_type": "type/Share",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 5464,
+                "nil%": 0.1037048765041165
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 0.03782864044530706,
+                  "q3": 0.050324362277634795,
+                  "max": 0.7328784432650998,
+                  "sd": 0.030365768441589322,
+                  "avg": 0.04844734633953508
+                }
+              }
+            }
+          },
+          {
+            "display_name": "% GMV",
+            "field_ref": [
+              "aggregation",
+              4
+            ],
+            "base_type": "type/Float",
+            "effective_type": "type/Float",
+            "name": "% GMV",
+            "semantic_type": null,
+            "fingerprint": {
+              "global": {
+                "distinct-count": 5661,
+                "nil%": 0.1037048765041165
+              },
+              "type": {
+                "type/Number": {
+                  "min": -2.9498655813438734,
+                  "q1": 0.004226378155464276,
+                  "q3": 0.024503814230721923,
+                  "max": 0.5704036191049959,
+                  "sd": 0.09687180548711886,
+                  "avg": 0.006490498526349942
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Commission Revenue EUR",
+            "semantic_type": "type/Quantity",
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              5
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Commission Revenue EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 5575,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 374.958350969584,
+                  "q3": 4175.205896083785,
+                  "max": 1050299.9518741025,
+                  "sd": 54719.790074555516,
+                  "avg": 9693.676422685696
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Mark up Revenue EUR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              6
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Mark up Revenue EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 2980,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": -306635.0078261166,
+                  "q1": -566.2995072208219,
+                  "q3": 778.6428237635782,
+                  "max": 132517.31043945055,
+                  "sd": 11801.87899928207,
+                  "avg": 444.38275225298344
+                }
+              }
+            }
+          },
+          {
+            "display_name": "FX Mark up Revenue EUR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              7
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "FX Mark up Revenue EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 2093,
+                "nil%": 0.04639012032932236
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 3.709519954703512,
+                  "q3": 87.26999143168995,
+                  "max": 45150.1242902851,
+                  "sd": 2120.5459775085583,
+                  "avg": 261.3923838815321
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Acquiring Commission in EUR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              8
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Acquiring Commission in EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 5619,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 252.68687429011305,
+                  "q3": 2797.4671474424176,
+                  "max": 511881.76868145575,
+                  "sd": 26782.613641886273,
+                  "avg": 5091.968027124432
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Acquiring FX cost EUR",
+            "semantic_type": "type/Cost",
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              9
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Acquiring FX cost EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 3976,
+                "nil%": 0.01393286890436985
+              },
+              "type": {
+                "type/Number": {
+                  "min": -34907.31379018633,
+                  "q1": -72.82223485604177,
+                  "q3": 276.1797480538947,
+                  "max": 66895.23100385038,
+                  "sd": 2990.2658853380735,
+                  "avg": 392.54324691214265
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Network Fee EUR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              10
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Network Fee EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 5362,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 61.61594119492447,
+                  "q3": 629.0262015481603,
+                  "max": 189148.3170632717,
+                  "sd": 6761.485946355032,
+                  "avg": 1101.444548296458
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Exchange fee EUR OOR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              11
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Exchange fee EUR OOR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 5363,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 8.407055743254828,
+                  "q3": 88.89527662756728,
+                  "max": 24138.922651418932,
+                  "sd": 1279.0761702240277,
+                  "avg": 189.6936013644034
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Exchange FX cost EUR OOR",
+            "semantic_type": "type/Cost",
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              12
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Exchange FX cost EUR OOR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 5557,
+                "nil%": 0.0003166561114629512
+              },
+              "type": {
+                "type/Number": {
+                  "min": -24633.042811,
+                  "q1": -59.68491743146602,
+                  "q3": 67.02501021020444,
+                  "max": 37618.778175,
+                  "sd": 1384.639990713332,
+                  "avg": 20.814954124485276
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Exchange FX Amount EUR OOR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              13
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Exchange FX Amount EUR OOR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 633,
+                "nil%": 0.8993033565547816
+              },
+              "type": {
+                "type/Number": {
+                  "min": -73.24139,
+                  "q1": -0.24353105051564258,
+                  "q3": 0.310483200031339,
+                  "max": 1695.055175,
+                  "sd": 77.04625652810783,
+                  "avg": 4.91416926100629
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Fee Zerohash & Mobilum fee",
+            "field_ref": [
+              "aggregation",
+              14
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Fee Zerohash & Mobilum fee",
+            "semantic_type": null,
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1936,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 2.937530920691961,
+                  "q3": 54.83615702381638,
+                  "max": 38189.479695224785,
+                  "sd": 1633.7743832804495,
+                  "avg": 159.9451472682761
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Riskified Fee EUR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              15
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Riskified Fee EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 2055,
+                "nil%": 0.522957568081064
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 8.918223282881765,
+                  "q3": 106.09106768202108,
+                  "max": 34373.365268,
+                  "sd": 2389.1727028592563,
+                  "avg": 386.47259282309994
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Total transactions cost EUR OOR",
+            "semantic_type": "type/Cost",
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              16
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Total transactions cost EUR OOR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 5689,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": -1948.9602205335675,
+                  "q1": 58.65709118331279,
+                  "q3": 3407.123503366024,
+                  "max": 717455.98973822,
+                  "sd": 38786.4446140775,
+                  "avg": 7200.104033180659
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Sum of FEE_WINPAY_EUR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              17
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "sum",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 764,
+                "nil%": 0.0454401519949335
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 0.008959913189253287,
+                  "q3": 0.5544555520517352,
+                  "max": 1737.4955749531462,
+                  "sd": 52.959685067827984,
+                  "avg": 3.6720752594884702
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Count transactions",
+            "semantic_type": "type/Quantity",
+            "field_ref": [
+              "aggregation",
+              18
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Count transactions",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1763,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 1.0,
+                  "q1": 148.5570527344423,
+                  "q3": 1290.9993511427556,
+                  "max": 255038.0,
+                  "sd": 14476.83325659421,
+                  "avg": 2467.9694426852443
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Count success transactions",
+            "semantic_type": "type/Quantity",
+            "field_ref": [
+              "aggregation",
+              19
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Count success transactions",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1305,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 78.66252073426365,
+                  "q3": 738.9782768317808,
+                  "max": 157603.0,
+                  "sd": 8214.958197083859,
+                  "avg": 1278.5455984800506
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Fee Network Revenue EUR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              20
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Fee Network Revenue EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1362,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 1.5701063205721015,
+                  "q3": 66.385650589114,
+                  "max": 77969.465364631,
+                  "sd": 2208.1217461956644,
+                  "avg": 207.77225407881556
+                }
+              }
+            }
+          }
+        ],
+        "initially_published_at": null,
+        "can_write": true,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": 817,
+        "query_type": "query",
+        "name": "All metrics by OOR partner name by month",
+        "last_used_at": "2025-07-25T14:00:27.868438Z",
+        "type": "question",
+        "query_average_duration": 6660,
+        "creator_id": 139,
+        "moderation_reviews": [],
+        "updated_at": "2025-07-25T14:00:17.739859Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "database": 2,
+          "type": "query",
+          "query": {
+            "aggregation": [
+              [
+                "metric",
+                3010
+              ],
+              [
+                "metric",
+                3047
+              ],
+              [
+                "metric",
+                3034
+              ],
+              [
+                "metric",
+                3055
+              ],
+              [
+                "metric",
+                3073
+              ],
+              [
+                "metric",
+                3042
+              ],
+              [
+                "metric",
+                3032
+              ],
+              [
+                "metric",
+                3045
+              ],
+              [
+                "metric",
+                3044
+              ],
+              [
+                "metric",
+                3102
+              ],
+              [
+                "metric",
+                3038
+              ],
+              [
+                "metric",
+                3103
+              ],
+              [
+                "metric",
+                3104
+              ],
+              [
+                "metric",
+                3107
+              ],
+              [
+                "metric",
+                3105
+              ],
+              [
+                "metric",
+                3100
+              ],
+              [
+                "metric",
+                3030
+              ],
+              [
+                "metric",
+                3108
+              ],
+              [
+                "metric",
+                2998
+              ],
+              [
+                "metric",
+                3006
+              ],
+              [
+                "metric",
+                3035
+              ]
+            ],
+            "breakout": [
+              [
+                "field",
+                20834,
+                {
+                  "base-type": "type/Text"
+                }
+              ],
+              [
+                "field",
+                "min",
+                {
+                  "base-type": "type/Date",
+                  "join-alias": "Start date OOR partner - WIDGET_PARTNER_NAME",
+                  "temporal-unit": "day"
+                }
+              ],
+              [
+                "field",
+                20835,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ]
+            ],
+            "joins": [
+              {
+                "alias": "Start date OOR partner - WIDGET_PARTNER_NAME",
+                "fields": "all",
+                "strategy": "left-join",
+                "condition": [
+                  "=",
+                  [
+                    "field",
+                    20834,
+                    {
+                      "base-type": "type/Text"
+                    }
+                  ],
+                  [
+                    "field",
+                    20834,
+                    {
+                      "base-type": "type/Text",
+                      "join-alias": "Start date OOR partner - WIDGET_PARTNER_NAME"
+                    }
+                  ]
+                ],
+                "source-table": "card__1915"
+              }
+            ],
+            "order-by": [
+              [
+                "desc",
+                [
+                  "aggregation",
+                  0
+                ]
+              ]
+            ],
+            "source-table": 45,
+            "filter": [
+              "and",
+              [
+                "=",
+                [
+                  "field",
+                  20865,
+                  {
+                    "base-type": "type/Text"
+                  }
+                ],
+                "widget"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  20838,
+                  {
+                    "base-type": "type/Text"
+                  }
+                ],
+                "buy",
+                "sell"
+              ]
+            ]
+          }
+        },
+        "id": 5337,
+        "parameter_mappings": [],
+        "display": "table",
+        "archived_directly": false,
+        "entity_id": "z098IINaKeNpgdegRN5yv",
+        "collection_preview": true,
+        "visualization_settings": {
+          "table.cell_column": "Turnover EUR",
+          "table.columns": [
+            {
+              "enabled": true,
+              "fieldRef": [
+                "field",
+                20834,
+                {
+                  "base-type": "type/Text"
+                }
+              ],
+              "name": "WIDGET_PARTNER_NAME",
+              "key": "[\"ref\",[\"field\",20834,{\"base-type\":\"type/Text\"}]]"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "field",
+                "min",
+                {
+                  "base-type": "type/Date",
+                  "join-alias": "Start date OOR partner - WIDGET_PARTNER_NAME"
+                }
+              ],
+              "name": "min",
+              "key": "[\"name\",\"min\"]"
+            },
+            {
+              "name": "CREATED_AT",
+              "key": "[\"ref\",[\"field\",20835,{\"base-type\":\"type/DateTime\"}]]",
+              "fieldRef": [
+                "field",
+                20835,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ],
+              "enabled": true
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                0
+              ],
+              "name": "Turnover EUR",
+              "key": "[\"name\",\"Turnover EUR\"]"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                1
+              ],
+              "name": "Revenue EUR",
+              "key": "[\"name\",\"Revenue EUR\"]"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                2
+              ],
+              "name": "GMV EUR",
+              "key": "[\"name\",\"GMV EUR\"]"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                3
+              ],
+              "name": "Revenue  /  Turnover rate",
+              "key": "[\"name\",\"Revenue  /  Turnover rate\"]"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                4
+              ],
+              "name": "% GMV",
+              "key": "[\"name\",\"% GMV\"]"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                6
+              ],
+              "name": "Commission Revenue EUR",
+              "key": "[\"name\",\"Commission Revenue EUR\"]"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                7
+              ],
+              "name": "Mark up Revenue EUR",
+              "key": "[\"name\",\"Mark up Revenue EUR\"]"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                20
+              ],
+              "name": "Fee Network Revenue EUR",
+              "key": "[\"name\",\"Fee Network Revenue EUR\"]"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                16
+              ],
+              "name": "Riskified Fee EUR",
+              "key": "[\"name\",\"Riskified Fee EUR\"]"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                8
+              ],
+              "name": "FX Mark up Revenue EUR",
+              "key": "[\"name\",\"FX Mark up Revenue EUR\"]"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                9
+              ],
+              "name": "Acquiring Commission in EUR",
+              "key": "[\"name\",\"Acquiring Commission in EUR\"]"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                10
+              ],
+              "name": "Acquiring FX cost EUR",
+              "key": "[\"name\",\"Acquiring FX cost EUR\"]"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                11
+              ],
+              "name": "Network Fee EUR",
+              "key": "[\"name\",\"Network Fee EUR\"]"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                12
+              ],
+              "name": "Exchange fee EUR OOR",
+              "key": "[\"name\",\"Exchange fee EUR OOR\"]"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                15
+              ],
+              "name": "Fee Zerohash & Mobilum fee",
+              "key": "[\"name\",\"Fee Zerohash & Mobilum fee\"]"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                13
+              ],
+              "name": "Exchange FX cost EUR OOR",
+              "key": "[\"name\",\"Exchange FX cost EUR OOR\"]"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                18
+              ],
+              "name": "sum",
+              "key": "[\"name\",\"sum\"]"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                18
+              ],
+              "name": "Count transactions",
+              "key": "[\"name\",\"Count transactions\"]"
+            },
+            {
+              "enabled": true,
+              "fieldRef": [
+                "aggregation",
+                19
+              ],
+              "name": "Count success transactions",
+              "key": "[\"name\",\"Count success transactions\"]"
+            },
+            {
+              "name": "Exchange FX Amount EUR OOR",
+              "key": "[\"name\",\"Exchange FX Amount EUR OOR\"]",
+              "fieldRef": [
+                "aggregation",
+                13
+              ],
+              "enabled": true
+            },
+            {
+              "name": "Total transactions cost EUR OOR",
+              "key": "[\"name\",\"Total transactions cost EUR OOR\"]",
+              "fieldRef": [
+                "aggregation",
+                16
+              ],
+              "enabled": true
+            }
+          ],
+          "column_settings": {
+            "[\"name\",\"Revenue EUR\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"sum\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"min\"]": {
+              "column_title": "First transaction partner"
+            },
+            "[\"name\",\"Total transactions cost EUR OOR\"]": {
+              "decimals": 0
+            },
+            "[\"name\",\"Exchange FX cost EUR OOR\"]": {
+              "decimals": 0
+            },
+            "[\"name\",\"Exchange fee EUR OOR\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"count\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"% GMV\"]": {
+              "number_style": "percent"
+            },
+            "[\"name\",\"Turnover EUR\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"Commission Revenue EUR\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"Network Fee EUR\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"count_2\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"Revenue  /  Turnover rate\"]": {
+              "number_style": "percent"
+            },
+            "[\"name\",\"GMV EUR\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"FX Mark up Revenue EUR\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"Fee Network Revenue EUR\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"Fee Zerohash & Mobilum fee\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"Acquiring FX cost EUR\"]": {
+              "decimals": 0
+            },
+            "[\"name\",\"Exchange FX Amount EUR OOR\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"Mark up Revenue EUR\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"Acquiring Commission in EUR\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            },
+            "[\"name\",\"Riskified Fee EUR\"]": {
+              "decimals": 0,
+              "number_style": "currency"
+            }
+          }
+        },
+        "metabase_version": "v0.52.9 (f9fbbf8)",
+        "parameters": [],
+        "created_at": "2025-07-25T14:00:17.739859Z",
+        "public_uuid": null
+      },
+      "updated_at": "2025-07-25T14:00:17.739859Z",
+      "col": 0,
+      "id": 4719,
+      "parameter_mappings": [
+        {
+          "parameter_id": "c6b568e6",
+          "card_id": 5337,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20835,
+              {
+                "base-type": "type/DateTime"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "parameter_id": "afda7d9a",
+          "card_id": 5337,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20838,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "parameter_id": "b9ac2b9b",
+          "card_id": 5337,
+          "target": [
+            "dimension",
+            [
+              "field",
+              20834,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "card_id": 5337,
+      "entity_id": "tmE1JLtaumw-4tZQ7nK6i",
+      "visualization_settings": {},
+      "size_y": 10,
+      "dashboard_id": 500,
+      "created_at": "2025-07-25T14:00:17.739859Z",
+      "row": 76
+    }
+  ],
+  "param_values": {
+    "20834": {
+      "field_id": 20834,
+      "human_readable_values": [],
+      "values": [
+        "1inch",
+        "2btc.io",
+        "3commas.io",
+        "5bit.me",
+        "AAX",
+        "ADV cash",
+        "AMLSafe",
+        "AMarkets",
+        "AWEX",
+        "AXOM",
+        "Abra",
+        "Accumulus",
+        "Actoz",
+        "AfricaMoney",
+        "Aifory LLC",
+        "AlfaCash",
+        "Alpha Exchange",
+        "Amarkets",
+        "Amber",
+        "AmirCapital",
+        "Api.Hamsterspay.com",
+        "Aqru finance",
+        "ArcticWallet",
+        "Artozo",
+        "Atlas Wallet",
+        "B2B exchanger",
+        "BKEX",
+        "BTC-Alpha",
+        "BTCC (task 8417)",
+        "BYDFi",
+        "Bancor",
+        "Barclay Stone",
+        "Best Change",
+        "BetBoom",
+        "Bibox",
+        "Billance",
+        "Binance.mercuryo.io",
+        "BingX",
+        "Biswap",
+        "BitMEX",
+        "Bitay",
+        "Bitcoin TitanX",
+        "Bitcoinbtc.club",
+        "Bitfinex Widget",
+        "Bitforex",
+        "Bitget",
+        "Bithumb",
+        "Bitmax(Ascendex)",
+        "Bitquidity",
+        "Bitzing",
+        "Blue Wallet",
+        "Bonuz App",
+        "BoxExchanger",
+        "Bro Fintech LTD",
+        "Btcshark",
+        "Bybit",
+        "CAEX",
+        "Cabbagino",
+        "Capitalist",
+        "Cardex Exchange",
+        "ChainApp",
+        "ChangeNOW",
+        "Changelly",
+        "Citihexltd",
+        "ClickToBuyBitcoin",
+        "Coin to pay",
+        "Coin98",
+        "CoinCash",
+        "CoinDisco",
+        "CoinDiscoFee1",
+        "CoinEx",
+        "CoinPayments",
+        "CoinStats",
+        "CoinTiger",
+        "CoinW",
+        "Coinandcoin",
+        "Coincola",
+        "Coinlocally",
+        "Coinplay",
+        "Coinsbit",
+        "Coinstore",
+        "Coinzix",
+        "CompanyDao",
+        "Credefi",
+        "Credits.com",
+        "Cricle",
+        "Cryptadium",
+        "Cryptero_x_Mercuryo test partner",
+        "Cryptix",
+        "Cryptix Prod",
+        "Crypto-news",
+        "CryptoCash",
+        "CryptoCash API",
+        "CryptoFundsToday",
+        "CryptoPal",
+        "Cryptolines",
+        "Cryptomus",
+        "Custonomy",
+        "Cuverse",
+        "DA 5",
+        "DA5 Mobile",
+        "Darius Tech inc.",
+        "DeCenter",
+        "DefiBet",
+        "Defirex",
+        "DhanuX",
+        "Digifinex",
+        "Dok Wallet",
+        "Doshi",
+        "DreamSteam",
+        "EMCD",
+        "EasiHK.com",
+        "EasyPortal2",
+        "EasyPortal3",
+        "Easyportal",
+        "Ebankx",
+        "Ecos",
+        "Electrocoin",
+        "Ellipal",
+        "Eternl",
+        "Everstake",
+        "Exchange Demo",
+        "Exchangers Monitor",
+        "Exchangesumo",
+        "Exmo",
+        "Exness",
+        "ExpressMinds",
+        "Exworth",
+        "FMFW(bitcoin.com)",
+        "Fairdesk",
+        "FastToken",
+        "Fastex",
+        "Fizen",
+        "Flooz",
+        "Fozeus",
+        "Fundwallet",
+        "Fuse",
+        "GIE",
+        "GKFX",
+        "GMT",
+        "Galaktika N.V.",
+        "GamblingMercuryo",
+        "Garantex",
+        "Gem4Me",
+        "Globiance",
+        "Gokumarket",
+        "Golden Way Payments LTD",
+        "Grand Time",
+        "Grapherex",
+        "HOO",
+        "Hackathon",
+        "HamstersPay.com",
+        "Haru",
+        "Haven",
+        "Hawex",
+        "HereWallet",
+        "Hitbtc",
+        "Hiveon",
+        "Hotcoin",
+        "Hoyabit",
+        "Huacool",
+        "Huobi",
+        "INJ Bridge",
+        "IPerCash",
+        "IXFI",
+        "Indodax.com",
+        "Infinito Solutions",
+        "Insta.money",
+        "InstaSwap",
+        "IntellaX",
+        "Irontrade",
+        "JapanTest",
+        "Jupiter",
+        "Kauri",
+        "Kauri2",
+        "Kauri3",
+        "Keystone",
+        "Kickex",
+        "Kirill_Blik_Test",
+        "KryptoGo",
+        "Kryptoknights.io",
+        "KuCoin",
+        "Kymis",
+        "LA token",
+        "LBank",
+        "LOBSTR",
+        "Ledger",
+        "Ledger Spend",
+        "Leon",
+        "LeveX",
+        "Livecoin",
+        "LocalTrade",
+        "Lucky Labs",
+        "Lumi",
+        "MEXC",
+        "Magic wallet",
+        "Magneticexchange",
+        "Magnum",
+        "Mandala",
+        "Matrixport",
+        "Mayex",
+        "Meld",
+        "Meld - MagicE",
+        "Meld - Polymarket",
+        "Meld I",
+        "Meld III",
+        "Mercuryo",
+        "Mercuryo CaaS Test",
+        "Mercuryo Mobile App1",
+        "Mercuryo.b2b.test",
+        "MercuryoWidget",
+        "Mercuryo_referral",
+        "Metamask",
+        "Metaspins",
+        "Metavault",
+        "Meteor Wallet",
+        "Mexo",
+        "Millionero",
+        "Mining-Bitcoin",
+        "Minswap",
+        "Minto",
+        "Monnay",
+        "Mostbet",
+        "Mycelium",
+        "NFTGate",
+        "NeoWallet",
+        "Nft Checkout Brand",
+        "Ninji wallet",
+        "Nominex",
+        "Nova",
+        "OERO",
+        "OKX",
+        "Onederex",
+        "Onramper2",
+        "Onramper3",
+        "OpenC",
+        "PNGMarketing.com",
+        "PU",
+        "Pancakeswap",
+        "Parallax",
+        "Particle",
+        "Paytech Pro LTD",
+        "Phemex",
+        "Pichains",
+        "PointPay",
+        "Poloniex",
+        "PrimeFin Solutions inc.",
+        "Probit",
+        "Pyypl",
+        "Q-Send",
+        "Q-send_preprod",
+        "Qiwi",
+        "Quickex",
+        "RON",
+        "Rare",
+        "Revuto",
+        "Riv",
+        "Roobee",
+        "SDK Blik test",
+        "STEX",
+        "Santepay",
+        "Sapien",
+        "Sastanaqqam",
+        "Savl",
+        "Scrypton",
+        "SendNomad",
+        "Shido",
+        "Simex",
+        "SimpleSwap",
+        "Simpledo",
+        "SmartyAPI",
+        "SmartyPay",
+        "Smarty_PreProd",
+        "Socoin",
+        "SoftSwiss",
+        "Spatium",
+        "Speedybits",
+        "Staging",
+        "Stakecito",
+        "Star Exchangealliance",
+        "Status Wallet",
+        "StealthEx",
+        "StepApp",
+        "Stepan_test_b2b",
+        "SuperEX",
+        "Swapspace",
+        "Swapster",
+        "Sweat",
+        "Swoo",
+        "TEST101",
+        "TKEY",
+        "TON",
+        "TON Space",
+        "Tangem",
+        "Techroo",
+        "Telegram Wallet",
+        "Test",
+        "Test_Mercuryo",
+        "TheWOLF",
+        "Tiger Trade",
+        "ToTheMoon",
+        "TokenPocket",
+        "Tomo",
+        "Tonkeeper",
+        "Trade4coins (task 9345)",
+        "TransferMole",
+        "Trastera",
+        "Trastra",
+        "Trezor",
+        "TrueFlip.io",
+        "TrustWallet",
+        "TrustWallet0%",
+        "Trustee",
+        "UTEX",
+        "UUEX",
+        "UWIM (task 9405)",
+        "UllaPay",
+        "Union BTC",
+        "Uniramp",
+        "Unistex",
+        "VNSmart",
+        "Vardex",
+        "Vave",
+        "Venga",
+        "Venga preprod",
+        "VeroWay",
+        "WOO",
+        "WalletBot",
+        "Wallex",
+        "Waveland",
+        "Waves",
+        "Waves2",
+        "Waxpeer",
+        "Wbb",
+        "Web3Auth",
+        "Wemix",
+        "Weownomy Pay",
+        "Westchange",
+        "WhiteBit",
+        "WhiteMarket",
+        "Wigwam",
+        "Wild",
+        "Win.Wallet",
+        "XENA",
+        "XT.com",
+        "Xive",
+        "Xjet",
+        "Xponential crypto",
+        "Xzen",
+        "YIBI",
+        "Zerion",
+        "Zink",
+        "advantech",
+        "allcoinswapper",
+        "amber",
+        "binance.org",
+        "bitcastle",
+        "bitcoin.com",
+        "bitpapa",
+        "bitx.land/merchantpay",
+        "blackmoonfg.uk",
+        "bspin",
+        "buycoinnow",
+        "c3 exchange",
+        "changehero.io",
+        "coin galaxy",
+        "cryptofully",
+        "cryptoxchangers",
+        "cubaxchange",
+        "daovc",
+        "demo-wg-301019.mercuryo.io",
+        "demo-widget-301019.mercuryo.io",
+        "dropstab.com",
+        "fastcoin",
+        "gate",
+        "goodbuycrypto",
+        "hkbitex",
+        "hubnft_blik_2",
+        "i-cex",
+        "iToken",
+        "iqex",
+        "iquick.io",
+        "kefa comm",
+        "klever",
+        "kryptonite",
+        "letsexchange.io",
+        "mercuryorabbit.com",
+        "onramper",
+        "onramper1",
+        "open_C (task 9535)",
+        "o\u0441tagonFX",
+        "parabolus",
+        "paytiz",
+        "polysports",
+        "quantfury",
+        "quickx",
+        "ready-steady.net",
+        "rokkex.com",
+        "sendcash.africa",
+        "strikeX",
+        "swallet",
+        "swapy.app",
+        "tbit",
+        "threefold.io",
+        "tokean.com",
+        "tokens.net",
+        "torus",
+        "tozex",
+        "vlafx.us",
+        "x-meta",
+        "xChange",
+        "xp-trade.com",
+        "\u0410thena Crypto Bank",
+        null
+      ]
+    },
+    "20838": {
+      "field_id": 20838,
+      "human_readable_values": [],
+      "values": [
+        "IBAN",
+        "buy",
+        "crypto",
+        "fiat_card",
+        "refund",
+        "sell",
+        "\u0421aaS"
+      ]
+    }
+  },
+  "initially_published_at": null,
+  "can_write": true,
+  "tabs": [],
+  "enable_embedding": false,
+  "collection_id": 817,
+  "show_in_getting_started": false,
+  "name": "OOR merchants - SR",
+  "width": "full",
+  "caveats": null,
+  "collection_authority_level": null,
+  "creator_id": 139,
+  "can_restore": false,
+  "moderation_reviews": [],
+  "updated_at": "2025-07-25T14:00:31.262642Z",
+  "made_public_by_id": null,
+  "embedding_params": null,
+  "cache_ttl": null,
+  "last_used_param_values": {
+    "afda7d9a": [
+      "buy",
+      "sell"
+    ]
+  },
+  "id": 500,
+  "last_viewed_at": "2025-07-25T14:00:27.091184Z",
+  "position": null,
+  "archived_directly": false,
+  "entity_id": "5R1gqPzKf6Doxip9TVt2V",
+  "param_fields": {
+    "20834": {
+      "semantic_type": "type/Category",
+      "table_id": 45,
+      "name": "WIDGET_PARTNER_NAME",
+      "has_field_values": "list",
+      "fk_target_field_id": null,
+      "dimensions": [],
+      "id": 20834,
+      "target": null,
+      "display_name": "WIDGET_PARTNER_NAME",
+      "name_field": null,
+      "base_type": "type/Text"
+    },
+    "20835": {
+      "semantic_type": "type/CreationTimestamp",
+      "table_id": 45,
+      "name": "CREATED_AT",
+      "has_field_values": "none",
+      "fk_target_field_id": null,
+      "dimensions": [],
+      "id": 20835,
+      "target": null,
+      "display_name": "CREATED_AT",
+      "name_field": null,
+      "base_type": "type/DateTime"
+    },
+    "20838": {
+      "semantic_type": "type/Category",
+      "table_id": 45,
+      "name": "TYPE_MAIN",
+      "has_field_values": "list",
+      "fk_target_field_id": null,
+      "dimensions": [],
+      "id": 20838,
+      "target": null,
+      "display_name": "TYPE_MAIN",
+      "name_field": null,
+      "base_type": "type/Text"
+    }
+  },
+  "last-edit-info": {
+    "id": 139,
+    "email": "e.kolodyazhnaya@mercuryo.io",
+    "first_name": "Ekaterina",
+    "last_name": "Kolodyazhnaya",
+    "timestamp": "2025-07-25T14:00:18.70397Z"
+  },
+  "collection": {
+    "authority_level": null,
+    "description": null,
+    "archived": false,
+    "slug": "oor_merchant_sr",
+    "archive_operation_id": null,
+    "name": "OOR Merchant SR",
+    "personal_owner_id": null,
+    "type": null,
+    "is_sample": false,
+    "id": 817,
+    "archived_directly": null,
+    "entity_id": "I4msUkxB5gCMbWxkV0lVg",
+    "location": "/34/41/342/",
+    "namespace": null,
+    "is_personal": false,
+    "created_at": "2025-07-25T14:00:06.005042Z"
+  },
+  "parameters": [
+    {
+      "name": "Transaction date",
+      "slug": "transaction_date",
+      "id": "c6b568e6",
+      "type": "date/all-options",
+      "sectionId": "date"
+    },
+    {
+      "name": "Partner name",
+      "slug": "partner_name",
+      "id": "b9ac2b9b",
+      "type": "string/=",
+      "sectionId": "string"
+    },
+    {
+      "name": "Type main",
+      "slug": "type_main",
+      "id": "afda7d9a",
+      "type": "string/=",
+      "sectionId": "string",
+      "default": [
+        "buy",
+        "sell"
+      ]
+    }
+  ],
+  "auto_apply_filters": true,
+  "created_at": "2025-07-25T14:00:17.739859Z",
+  "public_uuid": null,
+  "points_of_interest": null,
+  "can_delete": false
+}

@@ -1,0 +1,722 @@
+{
+  "created_metrics": [
+    {
+      "original_name": "Count created Tx antifraud",
+      "new_name": "Count created Tx antifraud SR",
+      "new_id": 5357,
+      "original_id": 3076,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Share need verification tx_id",
+      "new_name": "Share need verification tx_id SR",
+      "new_id": 5358,
+      "original_id": 3086,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Saldo Node BTC",
+      "new_name": "Saldo Node BTC SR",
+      "new_id": 5359,
+      "original_id": 3057,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Network Fee EUR / Turnover EUR",
+      "new_name": "Network Fee EUR / Turnover EUR SR",
+      "new_id": 5360,
+      "original_id": 3075,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Users start transactions",
+      "new_name": "Users start transactions SR",
+      "new_id": 5361,
+      "original_id": 3077,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Difference deposit",
+      "new_name": "Difference deposit SR",
+      "new_id": 5362,
+      "original_id": 3052,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Webapp SumBalance",
+      "new_name": "Webapp SumBalance SR",
+      "new_id": 5363,
+      "original_id": 3040,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Rate",
+      "new_name": "Rate SR",
+      "new_id": 5364,
+      "original_id": 3051,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "FX Mark up Revenue EUR",
+      "new_name": "FX Mark up Revenue EUR SR",
+      "new_id": 5365,
+      "original_id": 3045,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Revenue TopUp EUR",
+      "new_name": "Revenue TopUp EUR SR",
+      "new_id": 5366,
+      "original_id": 3066,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "AOV",
+      "new_name": "AOV SR",
+      "new_id": 5367,
+      "original_id": 3059,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Turnover EUR",
+      "new_name": "Turnover EUR SR",
+      "new_id": 5368,
+      "original_id": 3064,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Amount of Success Transactions EUR",
+      "new_name": "Amount of Success Transactions EUR SR",
+      "new_id": 5369,
+      "original_id": 3007,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "GMV EUR",
+      "new_name": "GMV EUR SR",
+      "new_id": 5370,
+      "original_id": 3071,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Count users complete transactions",
+      "new_name": "Count users complete transactions SR",
+      "new_id": 5371,
+      "original_id": 3078,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Difference between webapp and node",
+      "new_name": "Difference between webapp and node SR",
+      "new_id": 5372,
+      "original_id": 3046,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Fee Riskified EUR",
+      "new_name": "Fee Riskified EUR SR",
+      "new_id": 5373,
+      "original_id": 3106,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "GMV/Revenue",
+      "new_name": "GMV/Revenue SR",
+      "new_id": 5374,
+      "original_id": 3069,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Completed transactions",
+      "new_name": "Completed transactions SR",
+      "new_id": 5375,
+      "original_id": 3085,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Average network fee per transaction",
+      "new_name": "Average network fee per transaction SR",
+      "new_id": 5376,
+      "original_id": 3099,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "New sign ups",
+      "new_name": "New sign ups SR",
+      "new_id": 5377,
+      "original_id": 3060,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Difference withdraw",
+      "new_name": "Difference withdraw SR",
+      "new_id": 5378,
+      "original_id": 3049,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Winpay fee EUR OOR",
+      "new_name": "Winpay fee EUR OOR SR",
+      "new_id": 5379,
+      "original_id": 3108,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Acceptance rate without Antifraud",
+      "new_name": "Acceptance rate without Antifraud SR",
+      "new_id": 5380,
+      "original_id": 3101,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Acquiring Commission EUR",
+      "new_name": "Acquiring Commission EUR SR",
+      "new_id": 5381,
+      "original_id": 3044,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Revenue Fee EUR",
+      "new_name": "Revenue Fee EUR SR",
+      "new_id": 5382,
+      "original_id": 3072,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "GMV/Turnover",
+      "new_name": "GMV/Turnover SR",
+      "new_id": 5383,
+      "original_id": 3068,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Riskified fee / Revenue EUR",
+      "new_name": "Riskified fee / Revenue EUR SR",
+      "new_id": 5384,
+      "original_id": 3087,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Revenue EUR",
+      "new_name": "Revenue EUR SR",
+      "new_id": 5385,
+      "original_id": 3070,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Acceptance rate",
+      "new_name": "Acceptance rate SR",
+      "new_id": 5386,
+      "original_id": 3093,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Created Sum Amount EUR Webapp",
+      "new_name": "Created Sum Amount EUR Webapp SR",
+      "new_id": 5387,
+      "original_id": 3096,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Conversion rate from antifraud to confirmed transaction",
+      "new_name": "Conversion rate from antifraud to confirmed transaction SR",
+      "new_id": 5388,
+      "original_id": 3092,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Number of Failed Transactions",
+      "new_name": "Number of Failed Transactions SR",
+      "new_id": 5389,
+      "original_id": 3008,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Revenue  /  Turnover rate",
+      "new_name": "Revenue  /  Turnover rate SR",
+      "new_id": 5390,
+      "original_id": 3055,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Approved final antifraud",
+      "new_name": "Approved final antifraud SR",
+      "new_id": 5391,
+      "original_id": 3083,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Number of Successful Bindings",
+      "new_name": "Number of Successful Bindings SR",
+      "new_id": 5392,
+      "original_id": 3021,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Card Binding Success Rate",
+      "new_name": "Card Binding Success Rate SR",
+      "new_id": 5393,
+      "original_id": 3023,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Success rate",
+      "new_name": "Success rate SR",
+      "new_id": 5394,
+      "original_id": 2991,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Fee Zerohash & Mobilum fee",
+      "new_name": "Fee Zerohash & Mobilum fee SR",
+      "new_id": 5395,
+      "original_id": 3105,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Mark up Revenue EUR",
+      "new_name": "Mark up Revenue EUR SR",
+      "new_id": 5396,
+      "original_id": 3032,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Created transaction Webapp",
+      "new_name": "Created transaction Webapp SR",
+      "new_id": 5397,
+      "original_id": 3084,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Revenue EUR",
+      "new_name": "Revenue EUR SR",
+      "new_id": 5398,
+      "original_id": 3047,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Exchange FX Amount EUR OOR",
+      "new_name": "Exchange FX Amount EUR OOR SR",
+      "new_id": 5399,
+      "original_id": 3107,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Approved Riskified",
+      "new_name": "Approved Riskified SR",
+      "new_id": 5400,
+      "original_id": 3082,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Amount of Partner Fee EUR",
+      "new_name": "Amount of Partner Fee EUR SR",
+      "new_id": 5401,
+      "original_id": 3043,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Fee exchanger EUR",
+      "new_name": "Fee exchanger EUR SR",
+      "new_id": 5402,
+      "original_id": 3098,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Revenue Exchange EUR",
+      "new_name": "Revenue Exchange EUR SR",
+      "new_id": 5403,
+      "original_id": 3065,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Exchange fee EUR OOR",
+      "new_name": "Exchange fee EUR OOR SR",
+      "new_id": 5404,
+      "original_id": 3103,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Network fee EUR",
+      "new_name": "Network fee EUR SR",
+      "new_id": 5405,
+      "original_id": 3097,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Acquiring Commission  / Turnover",
+      "new_name": "Acquiring Commission  / Turnover SR",
+      "new_id": 5406,
+      "original_id": 3062,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Acceptance Rate",
+      "new_name": "Acceptance Rate SR",
+      "new_id": 5407,
+      "original_id": 3005,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Fee exchanger EUR",
+      "new_name": "Fee exchanger EUR SR",
+      "new_id": 5408,
+      "original_id": 3067,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Number of Accepted Transactions",
+      "new_name": "Number of Accepted Transactions SR",
+      "new_id": 5409,
+      "original_id": 3004,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Need verification",
+      "new_name": "Need verification SR",
+      "new_id": 5410,
+      "original_id": 3080,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Conversion rate our antifraud",
+      "new_name": "Conversion rate our antifraud SR",
+      "new_id": 5411,
+      "original_id": 3091,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Exchange FX cost EUR",
+      "new_name": "Exchange FX cost EUR SR",
+      "new_id": 5412,
+      "original_id": 3104,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "GMV / Turnover",
+      "new_name": "GMV / Turnover SR",
+      "new_id": 5413,
+      "original_id": 3027,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "GMV EUR",
+      "new_name": "GMV EUR SR",
+      "new_id": 5414,
+      "original_id": 3026,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Conversion rate antifraud",
+      "new_name": "Conversion rate antifraud SR",
+      "new_id": 5415,
+      "original_id": 3089,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Complete registrations",
+      "new_name": "Complete registrations SR",
+      "new_id": 5416,
+      "original_id": 3079,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Network Fee EUR",
+      "new_name": "Network Fee EUR SR",
+      "new_id": 5417,
+      "original_id": 3038,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Acquiring FX cost EUR",
+      "new_name": "Acquiring FX cost EUR SR",
+      "new_id": 5418,
+      "original_id": 3102,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Revenue / Turnover",
+      "new_name": "Revenue / Turnover SR",
+      "new_id": 5419,
+      "original_id": 3029,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "% GMV",
+      "new_name": "% GMV SR",
+      "new_id": 5420,
+      "original_id": 3073,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Conversion rate from antifraud to confirmed transaction by Amount EUR",
+      "new_name": "Conversion rate from antifraud to confirmed transaction by Amount EUR SR",
+      "new_id": 5421,
+      "original_id": 3094,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Acceptance rate by Amount EUR",
+      "new_name": "Acceptance rate by Amount EUR SR",
+      "new_id": 5422,
+      "original_id": 3095,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Checked by riskified",
+      "new_name": "Checked by riskified SR",
+      "new_id": 5423,
+      "original_id": 3081,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Conversion rate riskified",
+      "new_name": "Conversion rate riskified SR",
+      "new_id": 5424,
+      "original_id": 3090,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Commission Revenue EUR",
+      "new_name": "Commission Revenue EUR SR",
+      "new_id": 5425,
+      "original_id": 3042,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Mercuryo Fee Part",
+      "new_name": "Mercuryo Fee Part SR",
+      "new_id": 5426,
+      "original_id": 3039,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Network Fee EUR / Revenue EUR",
+      "new_name": "Network Fee EUR / Revenue EUR SR",
+      "new_id": 5427,
+      "original_id": 3074,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Acceptance Rate",
+      "new_name": "Acceptance Rate SR",
+      "new_id": 5428,
+      "original_id": 3063,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Riskified fee / Turnover EUR",
+      "new_name": "Riskified fee / Turnover EUR SR",
+      "new_id": 5429,
+      "original_id": 3088,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Turnover EUR fatpay metric",
+      "new_name": "Turnover EUR fatpay metric SR",
+      "new_id": 5430,
+      "original_id": 2995,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Acceptance Rate",
+      "new_name": "Acceptance Rate SR",
+      "new_id": 5431,
+      "original_id": 2997,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Number of all Transactions",
+      "new_name": "Number of all Transactions SR",
+      "new_id": 5432,
+      "original_id": 2998,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Number of Transactions",
+      "new_name": "Number of Transactions SR",
+      "new_id": 5433,
+      "original_id": 3001,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Failure Rate",
+      "new_name": "Failure Rate SR",
+      "new_id": 5434,
+      "original_id": 3003,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Number of Accepted Transactions",
+      "new_name": "Number of Accepted Transactions SR",
+      "new_id": 5435,
+      "original_id": 3006,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Turnover EUR",
+      "new_name": "Turnover EUR SR",
+      "new_id": 5436,
+      "original_id": 3010,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Fiat Amount EUR",
+      "new_name": "Fiat Amount EUR SR",
+      "new_id": 5437,
+      "original_id": 3009,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Riskified Fee EUR",
+      "new_name": "Riskified Fee EUR SR",
+      "new_id": 5438,
+      "original_id": 3100,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Number of Failed Transactions",
+      "new_name": "Number of Failed Transactions SR",
+      "new_id": 5439,
+      "original_id": 3012,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Crypto Amount",
+      "new_name": "Crypto Amount SR",
+      "new_id": 5440,
+      "original_id": 3013,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Authorization Rate",
+      "new_name": "Authorization Rate SR",
+      "new_id": 5441,
+      "original_id": 3018,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Number of Authorized Transactions",
+      "new_name": "Number of Authorized Transactions SR",
+      "new_id": 5442,
+      "original_id": 3019,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Number of Card Bindings",
+      "new_name": "Number of Card Bindings SR",
+      "new_id": 5443,
+      "original_id": 3020,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Acquiring Commission / Turnover",
+      "new_name": "Acquiring Commission / Turnover SR",
+      "new_id": 5444,
+      "original_id": 3058,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Number of Failed Bindings",
+      "new_name": "Number of Failed Bindings SR",
+      "new_id": 5445,
+      "original_id": 3022,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Fiat amount FX EUR",
+      "new_name": "Fiat amount FX EUR SR",
+      "new_id": 5446,
+      "original_id": 3048,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Potential Turnover EUR",
+      "new_name": "Potential Turnover EUR SR",
+      "new_id": 5447,
+      "original_id": 3024,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Sum of Transactions EUR",
+      "new_name": "Sum of Transactions EUR SR",
+      "new_id": 5448,
+      "original_id": 3025,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Revenue EUR",
+      "new_name": "Revenue EUR SR",
+      "new_id": 5449,
+      "original_id": 3028,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Total transactions cost EUR OOR",
+      "new_name": "Total transactions cost EUR OOR SR",
+      "new_id": 5450,
+      "original_id": 3030,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Potential Turnover EUR",
+      "new_name": "Potential Turnover EUR SR",
+      "new_id": 5451,
+      "original_id": 3031,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Calculations with transactions",
+      "new_name": "Calculations with transactions SR",
+      "new_id": 5452,
+      "original_id": 3053,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Acquiring Commission EUR fatpay metric",
+      "new_name": "Acquiring Commission EUR fatpay metric SR",
+      "new_id": 5453,
+      "original_id": 3033,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "GMV EUR",
+      "new_name": "GMV EUR SR",
+      "new_id": 5454,
+      "original_id": 3034,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Off-Ramp Turnover",
+      "new_name": "Off-Ramp Turnover SR",
+      "new_id": 5455,
+      "original_id": 3036,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Fee Network Revenue EUR",
+      "new_name": "Fee Network Revenue EUR SR",
+      "new_id": 5456,
+      "original_id": 3035,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "On-Ramp Turnover",
+      "new_name": "On-Ramp Turnover SR",
+      "new_id": 5457,
+      "original_id": 3037,
+      "collection": "Migrated Metrics v1"
+    },
+    {
+      "original_name": "Node  SumBalance",
+      "new_name": "Node  SumBalance SR",
+      "new_id": 5458,
+      "original_id": 3050,
+      "collection": "Migrated Metrics v1"
+    }
+  ],
+  "failed_metrics": [],
+  "total_browse_metrics": 102,
+  "success_count": 102,
+  "failure_count": 0
+}

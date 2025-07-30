@@ -1,0 +1,330 @@
+{
+  "dashboard_id": 485,
+  "dashboard_name": "USA  Data Project - SR",
+  "cards_checked": [
+    {
+      "card_id": 5267,
+      "card_name": "Revenue Per User",
+      "needs_fix": true
+    },
+    {
+      "card_id": 5256,
+      "card_name": "Transactions dynamic",
+      "needs_fix": true
+    },
+    {
+      "card_id": 5259,
+      "card_name": "Antifraud",
+      "needs_fix": true
+    },
+    {
+      "card_id": 5260,
+      "card_name": "Total Costs",
+      "needs_fix": false
+    },
+    {
+      "card_id": 5254,
+      "card_name": "Total Turnover",
+      "needs_fix": false
+    },
+    {
+      "card_id": 5274,
+      "card_name": "AR dynamic",
+      "needs_fix": true
+    },
+    {
+      "card_id": 5253,
+      "card_name": "Turnover",
+      "needs_fix": true
+    },
+    {
+      "card_id": 5257,
+      "card_name": "MAU OOR",
+      "needs_fix": true
+    },
+    {
+      "card_id": 5252,
+      "card_name": "DAU OOR",
+      "needs_fix": true
+    },
+    {
+      "card_id": 5258,
+      "card_name": "Costs",
+      "needs_fix": true
+    },
+    {
+      "card_id": 5273,
+      "card_name": "GMV",
+      "needs_fix": true
+    },
+    {
+      "card_id": 5270,
+      "card_name": "Revenue",
+      "needs_fix": true
+    },
+    {
+      "card_id": 5268,
+      "card_name": "Revenue Per Turnover",
+      "needs_fix": true
+    },
+    {
+      "card_id": 5271,
+      "card_name": "Total Revenue",
+      "needs_fix": true
+    },
+    {
+      "card_id": 5263,
+      "card_name": "Total GMV",
+      "needs_fix": true
+    },
+    {
+      "card_id": 5264,
+      "card_name": "Failed reasons",
+      "needs_fix": true
+    },
+    {
+      "card_id": 5266,
+      "card_name": "Total Transactions ",
+      "needs_fix": true
+    },
+    {
+      "card_id": 5272,
+      "card_name": "Total AR",
+      "needs_fix": true
+    },
+    {
+      "card_id": 5269,
+      "card_name": "Transaction size dynamic",
+      "needs_fix": true
+    },
+    {
+      "card_id": 5262,
+      "card_name": "Reason reject statistics",
+      "needs_fix": true
+    },
+    {
+      "card_id": 5265,
+      "card_name": "KYC dynamic",
+      "needs_fix": true
+    },
+    {
+      "card_id": 5255,
+      "card_name": "GMV detailing",
+      "needs_fix": true
+    },
+    {
+      "card_id": 5255,
+      "card_name": "GMV detailing",
+      "needs_fix": true
+    },
+    {
+      "card_id": 5261,
+      "card_name": "Turnover detailing",
+      "needs_fix": true
+    }
+  ],
+  "cards_needing_fix": [
+    {
+      "card_id": 5267,
+      "card_name": "Revenue Per User"
+    },
+    {
+      "card_id": 5256,
+      "card_name": "Transactions dynamic"
+    },
+    {
+      "card_id": 5259,
+      "card_name": "Antifraud"
+    },
+    {
+      "card_id": 5274,
+      "card_name": "AR dynamic"
+    },
+    {
+      "card_id": 5253,
+      "card_name": "Turnover"
+    },
+    {
+      "card_id": 5257,
+      "card_name": "MAU OOR"
+    },
+    {
+      "card_id": 5252,
+      "card_name": "DAU OOR"
+    },
+    {
+      "card_id": 5258,
+      "card_name": "Costs"
+    },
+    {
+      "card_id": 5273,
+      "card_name": "GMV"
+    },
+    {
+      "card_id": 5270,
+      "card_name": "Revenue"
+    },
+    {
+      "card_id": 5268,
+      "card_name": "Revenue Per Turnover"
+    },
+    {
+      "card_id": 5271,
+      "card_name": "Total Revenue"
+    },
+    {
+      "card_id": 5263,
+      "card_name": "Total GMV"
+    },
+    {
+      "card_id": 5264,
+      "card_name": "Failed reasons"
+    },
+    {
+      "card_id": 5266,
+      "card_name": "Total Transactions "
+    },
+    {
+      "card_id": 5272,
+      "card_name": "Total AR"
+    },
+    {
+      "card_id": 5269,
+      "card_name": "Transaction size dynamic"
+    },
+    {
+      "card_id": 5262,
+      "card_name": "Reason reject statistics"
+    },
+    {
+      "card_id": 5265,
+      "card_name": "KYC dynamic"
+    },
+    {
+      "card_id": 5255,
+      "card_name": "GMV detailing"
+    },
+    {
+      "card_id": 5255,
+      "card_name": "GMV detailing"
+    },
+    {
+      "card_id": 5261,
+      "card_name": "Turnover detailing"
+    }
+  ],
+  "updated_cards": [
+    {
+      "card_id": 5267,
+      "card_name": "Revenue Per User",
+      "changes": "Fixed {Card_Geo} to {{Card_Geo}}"
+    },
+    {
+      "card_id": 5256,
+      "card_name": "Transactions dynamic",
+      "changes": "Fixed {Card_Geo} to {{Card_Geo}}"
+    },
+    {
+      "card_id": 5259,
+      "card_name": "Antifraud",
+      "changes": "Fixed {Card_Geo} to {{Card_Geo}}"
+    },
+    {
+      "card_id": 5274,
+      "card_name": "AR dynamic",
+      "changes": "Fixed {Card_Geo} to {{Card_Geo}}"
+    },
+    {
+      "card_id": 5253,
+      "card_name": "Turnover",
+      "changes": "Fixed {Card_Geo} to {{Card_Geo}}"
+    },
+    {
+      "card_id": 5257,
+      "card_name": "MAU OOR",
+      "changes": "Fixed {Card_Geo} to {{Card_Geo}}"
+    },
+    {
+      "card_id": 5252,
+      "card_name": "DAU OOR",
+      "changes": "Fixed {Card_Geo} to {{Card_Geo}}"
+    },
+    {
+      "card_id": 5258,
+      "card_name": "Costs",
+      "changes": "Fixed {Card_Geo} to {{Card_Geo}}"
+    },
+    {
+      "card_id": 5273,
+      "card_name": "GMV",
+      "changes": "Fixed {Card_Geo} to {{Card_Geo}}"
+    },
+    {
+      "card_id": 5270,
+      "card_name": "Revenue",
+      "changes": "Fixed {Card_Geo} to {{Card_Geo}}"
+    },
+    {
+      "card_id": 5268,
+      "card_name": "Revenue Per Turnover",
+      "changes": "Fixed {Card_Geo} to {{Card_Geo}}"
+    },
+    {
+      "card_id": 5271,
+      "card_name": "Total Revenue",
+      "changes": "Fixed {Card_Geo} to {{Card_Geo}}"
+    },
+    {
+      "card_id": 5263,
+      "card_name": "Total GMV",
+      "changes": "Fixed {Card_Geo} to {{Card_Geo}}"
+    },
+    {
+      "card_id": 5264,
+      "card_name": "Failed reasons",
+      "changes": "Fixed {Card_Geo} to {{Card_Geo}}"
+    },
+    {
+      "card_id": 5266,
+      "card_name": "Total Transactions ",
+      "changes": "Fixed {Card_Geo} to {{Card_Geo}}"
+    },
+    {
+      "card_id": 5272,
+      "card_name": "Total AR",
+      "changes": "Fixed {Card_Geo} to {{Card_Geo}}"
+    },
+    {
+      "card_id": 5269,
+      "card_name": "Transaction size dynamic",
+      "changes": "Fixed {Card_Geo} to {{Card_Geo}}"
+    },
+    {
+      "card_id": 5262,
+      "card_name": "Reason reject statistics",
+      "changes": "Fixed {Card_Geo} to {{Card_Geo}}"
+    },
+    {
+      "card_id": 5265,
+      "card_name": "KYC dynamic",
+      "changes": "Fixed {Card_Geo} to {{Card_Geo}}"
+    },
+    {
+      "card_id": 5255,
+      "card_name": "GMV detailing",
+      "changes": "Fixed {Card_Geo} to {{Card_Geo}}"
+    },
+    {
+      "card_id": 5255,
+      "card_name": "GMV detailing",
+      "changes": "Fixed {Card_Geo} to {{Card_Geo}}"
+    },
+    {
+      "card_id": 5261,
+      "card_name": "Turnover detailing",
+      "changes": "Fixed {Card_Geo} to {{Card_Geo}}"
+    }
+  ],
+  "failed_cards": [],
+  "total_cards": 30
+}

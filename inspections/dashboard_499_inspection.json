@@ -1,0 +1,2826 @@
+{
+  "description": null,
+  "archived": false,
+  "view_count": 1,
+  "collection_position": 1,
+  "dashcards": [
+    {
+      "size_x": 24,
+      "dashboard_tab_id": null,
+      "series": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 1,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": 222,
+        "result_metadata": [
+          {
+            "description": "date and time of order creation",
+            "semantic_type": null,
+            "coercion_strategy": null,
+            "name": "CREATED_AT",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "expression",
+              "pivot-grouping"
+            ],
+            "effective_type": "type/Date",
+            "id": 3869,
+            "visibility_type": "normal",
+            "display_name": "pivot-grouping",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 3.0,
+                  "q1": 3.0,
+                  "q3": 3.0,
+                  "max": 3.0,
+                  "sd": null,
+                  "avg": 3.0
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "description": "merchant full title",
+            "semantic_type": null,
+            "coercion_strategy": null,
+            "name": "BUSINESS_NAME",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "aggregation",
+              0
+            ],
+            "effective_type": "type/Text",
+            "id": 3884,
+            "visibility_type": "normal",
+            "display_name": "Turnover EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 2883958185.33,
+                  "q1": 2883958185.33,
+                  "q3": 2883958185.33,
+                  "max": 2883958185.33,
+                  "sd": null,
+                  "avg": 2883958185.33
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          }
+        ],
+        "initially_published_at": null,
+        "can_write": true,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": 813,
+        "query_type": "query",
+        "name": "Month Payin Merchant Turnover EUR",
+        "last_used_at": "2025-07-25T13:48:39.866356Z",
+        "type": "question",
+        "query_average_duration": null,
+        "creator_id": 139,
+        "moderation_reviews": [],
+        "updated_at": "2025-07-25T13:48:36.623894Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "database": 2,
+          "type": "query",
+          "query": {
+            "source-table": 222,
+            "breakout": [
+              [
+                "field",
+                3869,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ],
+              [
+                "field",
+                3884,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "aggregation": [
+              [
+                "metric",
+                2995
+              ]
+            ],
+            "filter": [
+              "and",
+              [
+                ">",
+                [
+                  "field",
+                  3869,
+                  {
+                    "base-type": "type/DateTime"
+                  }
+                ],
+                "2021-01-01"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  3889,
+                  {
+                    "base-type": "type/Text"
+                  }
+                ],
+                "complete"
+              ]
+            ]
+          }
+        },
+        "id": 5321,
+        "parameter_mappings": [],
+        "display": "pivot",
+        "archived_directly": false,
+        "entity_id": "wVas7678OlIBA8R_iptuO",
+        "collection_preview": true,
+        "visualization_settings": {
+          "pivot_table.column_split": {
+            "rows": [
+              [
+                "field",
+                3884,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "columns": [
+              [
+                "field",
+                3869,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ]
+            ],
+            "values": [
+              [
+                "aggregation",
+                0
+              ]
+            ]
+          },
+          "pivot_table.column_widths": {
+            "leftHeaderWidths": [
+              100
+            ],
+            "totalLeftHeaderWidths": 100,
+            "valueHeaderWidths": {}
+          },
+          "column_settings": {
+            "[\"name\",\"Turnover EUR\"]": {
+              "number_style": "currency",
+              "decimals": 0
+            }
+          }
+        },
+        "metabase_version": "v0.52.9 (f9fbbf8)",
+        "parameters": [],
+        "created_at": "2025-07-25T13:48:36.623894Z",
+        "public_uuid": null
+      },
+      "updated_at": "2025-07-25T13:48:36.623894Z",
+      "col": 0,
+      "id": 4703,
+      "parameter_mappings": [
+        {
+          "parameter_id": "93d23b9f",
+          "card_id": 5321,
+          "target": [
+            "dimension",
+            [
+              "field",
+              3869,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "parameter_id": "17eeea22",
+          "card_id": 5321,
+          "target": [
+            "dimension",
+            [
+              "field",
+              3884,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "card_id": 5321,
+      "entity_id": "HEVUWIN1GYZIaa0Ea8QK4",
+      "visualization_settings": {},
+      "size_y": 9,
+      "dashboard_id": 499,
+      "created_at": "2025-07-25T13:48:36.623894Z",
+      "row": 0
+    },
+    {
+      "size_x": 24,
+      "dashboard_tab_id": null,
+      "series": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 1,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": 222,
+        "result_metadata": [
+          {
+            "description": "date and time of order creation",
+            "semantic_type": "type/CreationTimestamp",
+            "coercion_strategy": null,
+            "unit": "month",
+            "name": "CREATED_AT",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              3869,
+              {
+                "base-type": "type/DateTime",
+                "temporal-unit": "month"
+              }
+            ],
+            "effective_type": "type/Date",
+            "id": 3869,
+            "visibility_type": "normal",
+            "display_name": "CREATED_AT: Month",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 9997,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/DateTime": {
+                  "earliest": "2020-11-03T10:28:47.547Z",
+                  "latest": "2022-01-05T22:38:30.811Z"
+                }
+              }
+            },
+            "base_type": "type/Date"
+          },
+          {
+            "description": "merchant full title",
+            "semantic_type": null,
+            "coercion_strategy": null,
+            "name": "BUSINESS_NAME",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "expression",
+              "pivot-grouping"
+            ],
+            "effective_type": "type/Text",
+            "id": 3884,
+            "visibility_type": "normal",
+            "display_name": "pivot-grouping",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 2.0,
+                  "q1": 2.0,
+                  "q3": 2.0,
+                  "max": 2.0,
+                  "sd": 0.0,
+                  "avg": 2.0
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "display_name": "Revenue EUR",
+            "field_ref": [
+              "aggregation",
+              0
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "pivot-grouping",
+            "semantic_type": null,
+            "fingerprint": {
+              "global": {
+                "distinct-count": 55,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 308289.00902,
+                  "q1": 556556.0712349999,
+                  "q3": 2720735.508085,
+                  "max": 5734498.86081,
+                  "sd": 1555631.523683763,
+                  "avg": 1845285.7861940002
+                }
+              }
+            }
+          }
+        ],
+        "initially_published_at": null,
+        "can_write": true,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": 813,
+        "query_type": "query",
+        "name": "Month Payin  Merchant Revenue EUR",
+        "last_used_at": "2025-07-25T13:48:36.623894Z",
+        "type": "question",
+        "query_average_duration": null,
+        "creator_id": 139,
+        "moderation_reviews": [],
+        "updated_at": "2025-07-25T13:48:36.623894Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "database": 2,
+          "type": "query",
+          "query": {
+            "source-table": 222,
+            "breakout": [
+              [
+                "field",
+                3869,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ],
+              [
+                "field",
+                3884,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "aggregation": [
+              [
+                "metric",
+                3028
+              ]
+            ],
+            "filter": [
+              "and",
+              [
+                ">",
+                [
+                  "field",
+                  3869,
+                  {
+                    "base-type": "type/DateTime"
+                  }
+                ],
+                "2021-01-01"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  3889,
+                  {
+                    "base-type": "type/Text"
+                  }
+                ],
+                "complete"
+              ]
+            ]
+          }
+        },
+        "id": 5322,
+        "parameter_mappings": [],
+        "display": "pivot",
+        "archived_directly": false,
+        "entity_id": "fFsq45zvcDJMQYNIX5ro2",
+        "collection_preview": true,
+        "visualization_settings": {
+          "pivot_table.column_split": {
+            "rows": [
+              [
+                "field",
+                3884,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "columns": [
+              [
+                "field",
+                3869,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ]
+            ],
+            "values": [
+              [
+                "aggregation",
+                0
+              ]
+            ]
+          },
+          "pivot_table.column_widths": {
+            "leftHeaderWidths": [
+              100
+            ],
+            "totalLeftHeaderWidths": 100,
+            "valueHeaderWidths": {}
+          },
+          "column_settings": {
+            "[\"name\",\"Revenue EUR\"]": {
+              "number_style": "currency",
+              "decimals": 0
+            }
+          }
+        },
+        "metabase_version": "v0.52.9 (f9fbbf8)",
+        "parameters": [],
+        "created_at": "2025-07-25T13:48:36.623894Z",
+        "public_uuid": null
+      },
+      "updated_at": "2025-07-25T13:48:36.623894Z",
+      "col": 0,
+      "id": 4704,
+      "parameter_mappings": [
+        {
+          "parameter_id": "93d23b9f",
+          "card_id": 5322,
+          "target": [
+            "dimension",
+            [
+              "field",
+              3869,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "parameter_id": "17eeea22",
+          "card_id": 5322,
+          "target": [
+            "dimension",
+            [
+              "field",
+              3884,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "card_id": 5322,
+      "entity_id": "qrofX0IB38lExf-bTHZ7w",
+      "visualization_settings": {},
+      "size_y": 9,
+      "dashboard_id": 499,
+      "created_at": "2025-07-25T13:48:36.623894Z",
+      "row": 9
+    },
+    {
+      "size_x": 24,
+      "dashboard_tab_id": null,
+      "series": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 1,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": 222,
+        "result_metadata": [
+          {
+            "description": "date and time of order creation",
+            "semantic_type": null,
+            "coercion_strategy": null,
+            "name": "CREATED_AT",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "expression",
+              "pivot-grouping"
+            ],
+            "effective_type": "type/Date",
+            "id": 3869,
+            "visibility_type": "normal",
+            "display_name": "pivot-grouping",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 3.0,
+                  "q1": 3.0,
+                  "q3": 3.0,
+                  "max": 3.0,
+                  "sd": null,
+                  "avg": 3.0
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "description": "merchant full title",
+            "semantic_type": null,
+            "coercion_strategy": null,
+            "name": "BUSINESS_NAME",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "aggregation",
+              0
+            ],
+            "effective_type": "type/Text",
+            "id": 3884,
+            "visibility_type": "normal",
+            "display_name": "GMV EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": -49563285.6481,
+                  "q1": -49563285.6481,
+                  "q3": -49563285.6481,
+                  "max": -49563285.6481,
+                  "sd": null,
+                  "avg": -49563285.6481
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          }
+        ],
+        "initially_published_at": null,
+        "can_write": true,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": 813,
+        "query_type": "query",
+        "name": "Month Payin Merchants GMV EUR",
+        "last_used_at": "2025-07-25T13:48:39.892221Z",
+        "type": "question",
+        "query_average_duration": null,
+        "creator_id": 139,
+        "moderation_reviews": [],
+        "updated_at": "2025-07-25T13:48:36.623894Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "database": 2,
+          "type": "query",
+          "query": {
+            "source-table": 222,
+            "breakout": [
+              [
+                "field",
+                3869,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ],
+              [
+                "field",
+                3884,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "aggregation": [
+              [
+                "metric",
+                3026
+              ]
+            ],
+            "filter": [
+              "and",
+              [
+                ">",
+                [
+                  "field",
+                  3869,
+                  {
+                    "base-type": "type/DateTime"
+                  }
+                ],
+                "2021-01-01"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  3889,
+                  {
+                    "base-type": "type/Text"
+                  }
+                ],
+                "complete"
+              ]
+            ]
+          }
+        },
+        "id": 5323,
+        "parameter_mappings": [],
+        "display": "pivot",
+        "archived_directly": false,
+        "entity_id": "6J2X64FZMO3d3molp57Jg",
+        "collection_preview": true,
+        "visualization_settings": {
+          "pivot_table.column_split": {
+            "rows": [
+              [
+                "field",
+                3884,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "columns": [
+              [
+                "field",
+                3869,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ]
+            ],
+            "values": [
+              [
+                "aggregation",
+                0
+              ]
+            ]
+          },
+          "pivot_table.column_widths": {
+            "leftHeaderWidths": [
+              100
+            ],
+            "totalLeftHeaderWidths": 100,
+            "valueHeaderWidths": {}
+          },
+          "column_settings": {
+            "[\"name\",\"GMV EUR\"]": {
+              "number_style": "currency",
+              "decimals": 0
+            }
+          }
+        },
+        "metabase_version": "v0.52.9 (f9fbbf8)",
+        "parameters": [],
+        "created_at": "2025-07-25T13:48:36.623894Z",
+        "public_uuid": null
+      },
+      "updated_at": "2025-07-25T13:48:36.623894Z",
+      "col": 0,
+      "id": 4705,
+      "parameter_mappings": [
+        {
+          "parameter_id": "93d23b9f",
+          "card_id": 5323,
+          "target": [
+            "dimension",
+            [
+              "field",
+              3869,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "parameter_id": "17eeea22",
+          "card_id": 5323,
+          "target": [
+            "dimension",
+            [
+              "field",
+              3884,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "card_id": 5323,
+      "entity_id": "CLIT12zNCBGbaSLyhCVW4",
+      "visualization_settings": {},
+      "size_y": 9,
+      "dashboard_id": 499,
+      "created_at": "2025-07-25T13:48:36.623894Z",
+      "row": 18
+    },
+    {
+      "size_x": 24,
+      "dashboard_tab_id": null,
+      "series": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 1,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": 222,
+        "result_metadata": [
+          {
+            "description": "date and time of order creation",
+            "semantic_type": "type/CreationTimestamp",
+            "coercion_strategy": null,
+            "unit": "month",
+            "name": "CREATED_AT",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              3869,
+              {
+                "base-type": "type/DateTime",
+                "temporal-unit": "month"
+              }
+            ],
+            "effective_type": "type/Date",
+            "id": 3869,
+            "visibility_type": "normal",
+            "display_name": "CREATED_AT: Month",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 9997,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/DateTime": {
+                  "earliest": "2020-11-03T10:28:47.547Z",
+                  "latest": "2022-01-05T22:38:30.811Z"
+                }
+              }
+            },
+            "base_type": "type/Date"
+          },
+          {
+            "description": null,
+            "semantic_type": null,
+            "coercion_strategy": null,
+            "name": "FATPAY_COUNTRY",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "expression",
+              "pivot-grouping"
+            ],
+            "effective_type": "type/Text",
+            "id": 547204,
+            "visibility_type": "normal",
+            "display_name": "pivot-grouping",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 2.0,
+                  "q1": 2.0,
+                  "q3": 2.0,
+                  "max": 2.0,
+                  "sd": 0.0,
+                  "avg": 2.0
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "display_name": "Revenue EUR",
+            "field_ref": [
+              "aggregation",
+              0
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "pivot-grouping",
+            "semantic_type": null,
+            "fingerprint": {
+              "global": {
+                "distinct-count": 55,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 308289.00902,
+                  "q1": 556556.0712349999,
+                  "q3": 2720735.508085,
+                  "max": 5734498.86081,
+                  "sd": 1555631.523683763,
+                  "avg": 1845285.7861940002
+                }
+              }
+            }
+          }
+        ],
+        "initially_published_at": null,
+        "can_write": true,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": 813,
+        "query_type": "query",
+        "name": "Month Payin  country Revenue EUR",
+        "last_used_at": "2025-07-25T13:48:36.623894Z",
+        "type": "question",
+        "query_average_duration": null,
+        "creator_id": 139,
+        "moderation_reviews": [],
+        "updated_at": "2025-07-25T13:48:36.623894Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "database": 2,
+          "type": "query",
+          "query": {
+            "source-table": 222,
+            "breakout": [
+              [
+                "field",
+                3869,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ],
+              [
+                "field",
+                547204,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "aggregation": [
+              [
+                "metric",
+                3028
+              ]
+            ],
+            "filter": [
+              "and",
+              [
+                ">",
+                [
+                  "field",
+                  3869,
+                  {
+                    "base-type": "type/DateTime"
+                  }
+                ],
+                "2021-01-01"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  3889,
+                  {
+                    "base-type": "type/Text"
+                  }
+                ],
+                "complete"
+              ]
+            ]
+          }
+        },
+        "id": 5324,
+        "parameter_mappings": [],
+        "display": "pivot",
+        "archived_directly": false,
+        "entity_id": "-L9W_rKVHxkhYcC5WvtX-",
+        "collection_preview": true,
+        "visualization_settings": {
+          "pivot_table.column_split": {
+            "rows": [
+              [
+                "field",
+                547204,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "columns": [
+              [
+                "field",
+                3869,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ]
+            ],
+            "values": [
+              [
+                "aggregation",
+                0
+              ]
+            ]
+          },
+          "pivot_table.column_widths": {
+            "leftHeaderWidths": [
+              100
+            ],
+            "totalLeftHeaderWidths": 100,
+            "valueHeaderWidths": {}
+          },
+          "column_settings": {
+            "[\"name\",\"Revenue EUR\"]": {
+              "number_style": "currency",
+              "decimals": 0
+            }
+          }
+        },
+        "metabase_version": "v0.52.9 (f9fbbf8)",
+        "parameters": [],
+        "created_at": "2025-07-25T13:48:36.623894Z",
+        "public_uuid": null
+      },
+      "updated_at": "2025-07-25T13:48:36.623894Z",
+      "col": 0,
+      "id": 4706,
+      "parameter_mappings": [
+        {
+          "parameter_id": "93d23b9f",
+          "card_id": 5324,
+          "target": [
+            "dimension",
+            [
+              "field",
+              3869,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "parameter_id": "17eeea22",
+          "card_id": 5324,
+          "target": [
+            "dimension",
+            [
+              "field",
+              3884,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "card_id": 5324,
+      "entity_id": "Id8VG7vWpUNAkybzKu-Ll",
+      "visualization_settings": {},
+      "size_y": 12,
+      "dashboard_id": 499,
+      "created_at": "2025-07-25T13:48:36.623894Z",
+      "row": 36
+    },
+    {
+      "size_x": 24,
+      "dashboard_tab_id": null,
+      "series": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 1,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": 222,
+        "result_metadata": [
+          {
+            "description": "date and time of order creation",
+            "semantic_type": null,
+            "coercion_strategy": null,
+            "name": "CREATED_AT",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "expression",
+              "pivot-grouping"
+            ],
+            "effective_type": "type/Date",
+            "id": 3869,
+            "visibility_type": "normal",
+            "display_name": "pivot-grouping",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 3.0,
+                  "q1": 3.0,
+                  "q3": 3.0,
+                  "max": 3.0,
+                  "sd": null,
+                  "avg": 3.0
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "description": null,
+            "semantic_type": null,
+            "coercion_strategy": null,
+            "name": "FATPAY_COUNTRY",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "aggregation",
+              0
+            ],
+            "effective_type": "type/Text",
+            "id": 547204,
+            "visibility_type": "normal",
+            "display_name": "Turnover EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 2883958185.33,
+                  "q1": 2883958185.33,
+                  "q3": 2883958185.33,
+                  "max": 2883958185.33,
+                  "sd": null,
+                  "avg": 2883958185.33
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          }
+        ],
+        "initially_published_at": null,
+        "can_write": true,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": 813,
+        "query_type": "query",
+        "name": "Month Payin country Turnover EUR",
+        "last_used_at": "2025-07-25T13:48:36.623894Z",
+        "type": "question",
+        "query_average_duration": null,
+        "creator_id": 139,
+        "moderation_reviews": [],
+        "updated_at": "2025-07-25T13:48:36.623894Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "database": 2,
+          "type": "query",
+          "query": {
+            "source-table": 222,
+            "breakout": [
+              [
+                "field",
+                3869,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ],
+              [
+                "field",
+                547204,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "aggregation": [
+              [
+                "metric",
+                2995
+              ]
+            ],
+            "filter": [
+              "and",
+              [
+                ">",
+                [
+                  "field",
+                  3869,
+                  {
+                    "base-type": "type/DateTime"
+                  }
+                ],
+                "2021-01-01"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  3889,
+                  {
+                    "base-type": "type/Text"
+                  }
+                ],
+                "complete"
+              ]
+            ]
+          }
+        },
+        "id": 5325,
+        "parameter_mappings": [],
+        "display": "pivot",
+        "archived_directly": false,
+        "entity_id": "9U59Y_CLvD8FaUlevV8xS",
+        "collection_preview": true,
+        "visualization_settings": {
+          "pivot_table.column_split": {
+            "rows": [
+              [
+                "field",
+                547204,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "columns": [
+              [
+                "field",
+                3869,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ]
+            ],
+            "values": [
+              [
+                "aggregation",
+                0
+              ]
+            ]
+          },
+          "pivot_table.column_widths": {
+            "leftHeaderWidths": [
+              100
+            ],
+            "totalLeftHeaderWidths": 100,
+            "valueHeaderWidths": {}
+          },
+          "column_settings": {
+            "[\"name\",\"Turnover EUR\"]": {
+              "number_style": "currency",
+              "decimals": 0
+            }
+          }
+        },
+        "metabase_version": "v0.52.9 (f9fbbf8)",
+        "parameters": [],
+        "created_at": "2025-07-25T13:48:36.623894Z",
+        "public_uuid": null
+      },
+      "updated_at": "2025-07-25T13:48:36.623894Z",
+      "col": 0,
+      "id": 4707,
+      "parameter_mappings": [
+        {
+          "parameter_id": "93d23b9f",
+          "card_id": 5325,
+          "target": [
+            "dimension",
+            [
+              "field",
+              3869,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "parameter_id": "17eeea22",
+          "card_id": 5325,
+          "target": [
+            "dimension",
+            [
+              "field",
+              3884,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "card_id": 5325,
+      "entity_id": "vZMo5PloDzXi7OARRaWGR",
+      "visualization_settings": {},
+      "size_y": 9,
+      "dashboard_id": 499,
+      "created_at": "2025-07-25T13:48:36.623894Z",
+      "row": 27
+    },
+    {
+      "size_x": 24,
+      "dashboard_tab_id": null,
+      "series": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 1,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": 222,
+        "result_metadata": [
+          {
+            "description": "date and time of order creation",
+            "semantic_type": "type/CreationTimestamp",
+            "coercion_strategy": null,
+            "unit": "month",
+            "name": "CREATED_AT",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              3869,
+              {
+                "base-type": "type/DateTime",
+                "temporal-unit": "month"
+              }
+            ],
+            "effective_type": "type/Date",
+            "id": 3869,
+            "visibility_type": "normal",
+            "display_name": "CREATED_AT: Month",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 9997,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/DateTime": {
+                  "earliest": "2020-11-03T10:28:47.547Z",
+                  "latest": "2022-01-05T22:38:30.811Z"
+                }
+              }
+            },
+            "base_type": "type/Date"
+          },
+          {
+            "description": null,
+            "semantic_type": null,
+            "coercion_strategy": null,
+            "name": "FATPAY_COUNTRY",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "expression",
+              "pivot-grouping"
+            ],
+            "effective_type": "type/Text",
+            "id": 547204,
+            "visibility_type": "normal",
+            "display_name": "pivot-grouping",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 2.0,
+                  "q1": 2.0,
+                  "q3": 2.0,
+                  "max": 2.0,
+                  "sd": 0.0,
+                  "avg": 2.0
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "display_name": "GMV EUR",
+            "field_ref": [
+              "aggregation",
+              0
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "pivot-grouping",
+            "semantic_type": null,
+            "fingerprint": {
+              "global": {
+                "distinct-count": 55,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": -12369147.14888,
+                  "q1": -138742.47842,
+                  "q3": 1165362.9590425,
+                  "max": 2041160.32298,
+                  "sd": 3399422.18866797,
+                  "avg": -901150.6481472728
+                }
+              }
+            }
+          }
+        ],
+        "initially_published_at": null,
+        "can_write": true,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": 813,
+        "query_type": "query",
+        "name": "Month Payin country GMV EUR",
+        "last_used_at": "2025-07-25T13:48:36.623894Z",
+        "type": "question",
+        "query_average_duration": null,
+        "creator_id": 139,
+        "moderation_reviews": [],
+        "updated_at": "2025-07-25T13:48:36.623894Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "database": 2,
+          "type": "query",
+          "query": {
+            "source-table": 222,
+            "breakout": [
+              [
+                "field",
+                3869,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ],
+              [
+                "field",
+                547204,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "aggregation": [
+              [
+                "metric",
+                3026
+              ]
+            ],
+            "filter": [
+              "and",
+              [
+                ">",
+                [
+                  "field",
+                  3869,
+                  {
+                    "base-type": "type/DateTime"
+                  }
+                ],
+                "2021-01-01"
+              ],
+              [
+                "=",
+                [
+                  "field",
+                  3889,
+                  {
+                    "base-type": "type/Text"
+                  }
+                ],
+                "complete"
+              ]
+            ]
+          }
+        },
+        "id": 5326,
+        "parameter_mappings": [],
+        "display": "pivot",
+        "archived_directly": false,
+        "entity_id": "-N5O-EYISNJa1JMl0yhYE",
+        "collection_preview": true,
+        "visualization_settings": {
+          "pivot_table.column_split": {
+            "rows": [
+              [
+                "field",
+                547204,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "columns": [
+              [
+                "field",
+                3869,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ]
+            ],
+            "values": [
+              [
+                "aggregation",
+                0
+              ]
+            ]
+          },
+          "pivot_table.column_widths": {
+            "leftHeaderWidths": [
+              100
+            ],
+            "totalLeftHeaderWidths": 100,
+            "valueHeaderWidths": {}
+          },
+          "column_settings": {
+            "[\"name\",\"GMV EUR\"]": {
+              "number_style": "currency",
+              "decimals": 0
+            }
+          }
+        },
+        "metabase_version": "v0.52.9 (f9fbbf8)",
+        "parameters": [],
+        "created_at": "2025-07-25T13:48:36.623894Z",
+        "public_uuid": null
+      },
+      "updated_at": "2025-07-25T13:48:36.623894Z",
+      "col": 0,
+      "id": 4708,
+      "parameter_mappings": [
+        {
+          "parameter_id": "93d23b9f",
+          "card_id": 5326,
+          "target": [
+            "dimension",
+            [
+              "field",
+              3869,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "parameter_id": "17eeea22",
+          "card_id": 5326,
+          "target": [
+            "dimension",
+            [
+              "field",
+              3884,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "card_id": 5326,
+      "entity_id": "LDEP8CQpEcizfxVvMZzQU",
+      "visualization_settings": {},
+      "size_y": 11,
+      "dashboard_id": 499,
+      "created_at": "2025-07-25T13:48:36.623894Z",
+      "row": 48
+    },
+    {
+      "size_x": 24,
+      "dashboard_tab_id": null,
+      "series": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 1,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": 222,
+        "result_metadata": [
+          {
+            "description": "merchant full title",
+            "semantic_type": "type/Category",
+            "coercion_strategy": null,
+            "name": "BUSINESS_NAME",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              3884,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            "effective_type": "type/Text",
+            "id": 3884,
+            "visibility_type": "normal",
+            "display_name": "BUSINESS_NAME",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 7,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Text": {
+                  "percent-json": 0.0,
+                  "percent-url": 0.0,
+                  "percent-email": 0.0,
+                  "percent-state": 0.0,
+                  "average-length": 12.5787
+                }
+              }
+            },
+            "base_type": "type/Text"
+          },
+          {
+            "display_name": "Payin Merchant first transaction - BUSINESS_NAME \u2192 min: Day",
+            "field_ref": [
+              "field",
+              "min",
+              {
+                "base-type": "type/Date",
+                "join-alias": "Payin Merchant first transaction - BUSINESS_NAME",
+                "temporal-unit": "day"
+              }
+            ],
+            "base_type": "type/Date",
+            "effective_type": "type/Date",
+            "name": "min",
+            "unit": "day",
+            "semantic_type": null,
+            "fingerprint": {
+              "global": {
+                "distinct-count": 71,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/DateTime": {
+                  "earliest": "2020-10-30",
+                  "latest": "2025-07-23"
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Sum of Transactions EUR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              0
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Sum of Transactions EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 75,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.1,
+                  "q1": 12444.029999999999,
+                  "q3": 21020018.8575,
+                  "max": 904626845.33,
+                  "sd": 129454070.86304182,
+                  "avg": 38694412.2856
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Revenue EUR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              1
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Revenue EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 57,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 0.1903957969148725,
+                  "q3": 968603.5750875,
+                  "max": 17446233.22294,
+                  "sd": 3476304.8035233505,
+                  "avg": 1361052.4023706666
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Revenue / Turnover",
+            "field_ref": [
+              "aggregation",
+              2
+            ],
+            "base_type": "type/Float",
+            "effective_type": "type/Float",
+            "name": "Revenue / Turnover",
+            "semantic_type": null,
+            "fingerprint": {
+              "global": {
+                "distinct-count": 56,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 0.009695751321874438,
+                  "q3": 0.06199088561614432,
+                  "max": 0.3824238921001927,
+                  "sd": 0.048563830257384845,
+                  "avg": 0.038161808077647366
+                }
+              }
+            }
+          },
+          {
+            "display_name": "GMV EUR",
+            "field_ref": [
+              "aggregation",
+              3
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "GMV EUR",
+            "semantic_type": null,
+            "fingerprint": {
+              "global": {
+                "distinct-count": 75,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": -67948006.11578,
+                  "q1": -1.1565154619335143,
+                  "q3": 211453.957155,
+                  "max": 6424175.90118,
+                  "sd": 8013470.491404546,
+                  "avg": -657234.547574
+                }
+              }
+            }
+          },
+          {
+            "display_name": "GMV / Turnover",
+            "field_ref": [
+              "aggregation",
+              4
+            ],
+            "base_type": "type/Float",
+            "effective_type": "type/Float",
+            "name": "GMV / Turnover",
+            "semantic_type": null,
+            "fingerprint": {
+              "global": {
+                "distinct-count": 70,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": -3.8219999999999996,
+                  "q1": -0.016921513355531194,
+                  "q3": 0.029153694872066017,
+                  "max": 0.24984778420038534,
+                  "sd": 0.4964081267635039,
+                  "avg": -0.06693204566249782
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Acquiring Commission EUR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              5
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Acquiring Commission EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 75,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.02904,
+                  "q1": 210.2653175,
+                  "q3": 520724.6774675,
+                  "max": 85394239.33872,
+                  "sd": 10085151.07408413,
+                  "avg": 2018286.9499446666
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Number of Transactions",
+            "semantic_type": "type/Quantity",
+            "field_ref": [
+              "aggregation",
+              6
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Number of Transactions",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 66,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 1.0,
+                  "q1": 108.25,
+                  "q3": 248539.75,
+                  "max": 3605668.0,
+                  "sd": 675551.7133994468,
+                  "avg": 314429.30666666664
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Number of Accepted Transactions",
+            "semantic_type": "type/Quantity",
+            "field_ref": [
+              "aggregation",
+              7
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Number of Accepted Transactions",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 66,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 1.0,
+                  "q1": 108.25,
+                  "q3": 248539.75,
+                  "max": 3605668.0,
+                  "sd": 675551.7133994468,
+                  "avg": 314429.30666666664
+                }
+              }
+            }
+          }
+        ],
+        "initially_published_at": null,
+        "can_write": true,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": 813,
+        "query_type": "query",
+        "name": "Payin all metrics by partner",
+        "last_used_at": "2025-07-25T13:48:36.623894Z",
+        "type": "question",
+        "query_average_duration": null,
+        "creator_id": 139,
+        "moderation_reviews": [],
+        "updated_at": "2025-07-25T13:48:36.623894Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "database": 2,
+          "type": "query",
+          "query": {
+            "source-table": 222,
+            "breakout": [
+              [
+                "field",
+                3884,
+                {
+                  "base-type": "type/Text"
+                }
+              ],
+              [
+                "field",
+                "min",
+                {
+                  "base-type": "type/Date",
+                  "join-alias": "Payin Merchant first transaction - BUSINESS_NAME",
+                  "temporal-unit": "day"
+                }
+              ]
+            ],
+            "aggregation": [
+              [
+                "metric",
+                3025
+              ],
+              [
+                "metric",
+                3028
+              ],
+              [
+                "metric",
+                3029
+              ],
+              [
+                "metric",
+                3026
+              ],
+              [
+                "metric",
+                3027
+              ],
+              [
+                "metric",
+                3033
+              ],
+              [
+                "metric",
+                3001
+              ],
+              [
+                "metric",
+                3004
+              ]
+            ],
+            "order-by": [
+              [
+                "desc",
+                [
+                  "aggregation",
+                  0
+                ]
+              ]
+            ],
+            "joins": [
+              {
+                "fields": "all",
+                "strategy": "left-join",
+                "alias": "Payin Merchant first transaction - BUSINESS_NAME",
+                "condition": [
+                  "=",
+                  [
+                    "field",
+                    3884,
+                    {
+                      "base-type": "type/Text"
+                    }
+                  ],
+                  [
+                    "field",
+                    3884,
+                    {
+                      "base-type": "type/Text",
+                      "join-alias": "Payin Merchant first transaction - BUSINESS_NAME"
+                    }
+                  ]
+                ],
+                "source-table": "card__1917"
+              }
+            ],
+            "filter": [
+              "=",
+              [
+                "field",
+                3889,
+                {
+                  "base-type": "type/Text"
+                }
+              ],
+              "complete"
+            ]
+          }
+        },
+        "id": 5327,
+        "parameter_mappings": [],
+        "display": "table",
+        "archived_directly": false,
+        "entity_id": "fp45HQxOV-vHOhAGpDBAy",
+        "collection_preview": true,
+        "visualization_settings": {
+          "table.cell_column": "Sum of Transactions EUR",
+          "column_settings": {
+            "[\"name\",\"Sum of Transactions EUR\"]": {
+              "number_style": "currency",
+              "decimals": 0
+            },
+            "[\"name\",\"Revenue EUR\"]": {
+              "number_style": "currency",
+              "decimals": 0
+            },
+            "[\"name\",\"Revenue / Turnover\"]": {
+              "number_style": "percent"
+            },
+            "[\"name\",\"GMV EUR\"]": {
+              "number_style": "currency",
+              "decimals": 0
+            },
+            "[\"name\",\"GMV / Turnover\"]": {
+              "decimals": 2,
+              "number_style": "percent"
+            },
+            "[\"name\",\"Acquiring Commission EUR\"]": {
+              "number_style": "currency",
+              "decimals": 0
+            },
+            "[\"name\",\"min\"]": {
+              "column_title": "Payin Merchant first transaction"
+            }
+          }
+        },
+        "metabase_version": "v0.52.9 (f9fbbf8)",
+        "parameters": [],
+        "created_at": "2025-07-25T13:48:36.623894Z",
+        "public_uuid": null
+      },
+      "updated_at": "2025-07-25T13:48:36.623894Z",
+      "col": 0,
+      "id": 4709,
+      "parameter_mappings": [
+        {
+          "parameter_id": "93d23b9f",
+          "card_id": 5327,
+          "target": [
+            "dimension",
+            [
+              "field",
+              3869,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "parameter_id": "17eeea22",
+          "card_id": 5327,
+          "target": [
+            "dimension",
+            [
+              "field",
+              3884,
+              null
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "card_id": 5327,
+      "entity_id": "mHsn0Rau86Uet8XGU03wi",
+      "visualization_settings": {},
+      "size_y": 9,
+      "dashboard_id": 499,
+      "created_at": "2025-07-25T13:48:36.623894Z",
+      "row": 59
+    },
+    {
+      "size_x": 24,
+      "dashboard_tab_id": null,
+      "series": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 1,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": 222,
+        "result_metadata": [
+          {
+            "description": "merchant full title",
+            "semantic_type": "type/Category",
+            "coercion_strategy": null,
+            "name": "BUSINESS_NAME",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              3884,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            "effective_type": "type/Text",
+            "id": 3884,
+            "visibility_type": "normal",
+            "display_name": "BUSINESS_NAME",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 7,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Text": {
+                  "percent-json": 0.0,
+                  "percent-url": 0.0,
+                  "percent-email": 0.0,
+                  "percent-state": 0.0,
+                  "average-length": 12.5787
+                }
+              }
+            },
+            "base_type": "type/Text"
+          },
+          {
+            "display_name": "Payin Merchant first transaction - BUSINESS_NAME \u2192 min: Day",
+            "field_ref": [
+              "field",
+              "min",
+              {
+                "base-type": "type/Date",
+                "join-alias": "Payin Merchant first transaction - BUSINESS_NAME",
+                "temporal-unit": "day"
+              }
+            ],
+            "base_type": "type/Date",
+            "effective_type": "type/Date",
+            "name": "min",
+            "unit": "day",
+            "semantic_type": null,
+            "fingerprint": {
+              "global": {
+                "distinct-count": 71,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/DateTime": {
+                  "earliest": "2020-10-30",
+                  "latest": "2025-07-23"
+                }
+              }
+            }
+          },
+          {
+            "description": "date and time of order creation",
+            "semantic_type": "type/CreationTimestamp",
+            "coercion_strategy": null,
+            "unit": "month",
+            "name": "CREATED_AT",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              3869,
+              {
+                "base-type": "type/DateTime",
+                "temporal-unit": "month"
+              }
+            ],
+            "effective_type": "type/Date",
+            "id": 3869,
+            "visibility_type": "normal",
+            "display_name": "CREATED_AT: Month",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 9997,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/DateTime": {
+                  "earliest": "2020-11-03T10:28:47.547Z",
+                  "latest": "2022-01-05T22:38:30.811Z"
+                }
+              }
+            },
+            "base_type": "type/Date"
+          },
+          {
+            "display_name": "Sum of Transactions EUR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              0
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Sum of Transactions EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 995,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.1,
+                  "q1": 80291.04301124786,
+                  "q3": 2513679.5259241634,
+                  "max": 82709752.38,
+                  "sd": 6750554.172924142,
+                  "avg": 2847969.5009028465
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Revenue EUR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              1
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Revenue EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 973,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 1322.5641845575208,
+                  "q3": 113811.88398940409,
+                  "max": 2398582.81902,
+                  "sd": 210624.3770675379,
+                  "avg": 100175.59389381747
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Revenue / Turnover",
+            "field_ref": [
+              "aggregation",
+              2
+            ],
+            "base_type": "type/Float",
+            "effective_type": "type/Float",
+            "name": "Revenue / Turnover",
+            "semantic_type": null,
+            "fingerprint": {
+              "global": {
+                "distinct-count": 875,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 0.025618729223566422,
+                  "q3": 0.06264053859908728,
+                  "max": 0.5620102040816326,
+                  "sd": 0.039635824389348095,
+                  "avg": 0.045290940141328
+                }
+              }
+            }
+          },
+          {
+            "display_name": "GMV EUR",
+            "field_ref": [
+              "aggregation",
+              3
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "GMV EUR",
+            "semantic_type": null,
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1019,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": -10649666.01556,
+                  "q1": -198.60848492043442,
+                  "q3": 39771.520757400445,
+                  "max": 522725.69467,
+                  "sd": 696845.7515593552,
+                  "avg": -48373.49466933268
+                }
+              }
+            }
+          },
+          {
+            "display_name": "GMV / Turnover",
+            "field_ref": [
+              "aggregation",
+              4
+            ],
+            "base_type": "type/Float",
+            "effective_type": "type/Float",
+            "name": "GMV / Turnover",
+            "semantic_type": null,
+            "fingerprint": {
+              "global": {
+                "distinct-count": 969,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": -28.87307692307692,
+                  "q1": 0.006073102184424945,
+                  "q3": 0.02963646063003602,
+                  "max": 0.26410204081632654,
+                  "sd": 0.9196846677307662,
+                  "avg": -0.024527904444684202
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Acquiring Commission EUR",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              5
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Acquiring Commission EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1014,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.02,
+                  "q1": 2733.307638905748,
+                  "q3": 59558.189290172726,
+                  "max": 12624852.02864,
+                  "sd": 768080.5621186778,
+                  "avg": 148549.08856315014
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Number of Transactions",
+            "semantic_type": "type/Quantity",
+            "field_ref": [
+              "aggregation",
+              6
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Number of Transactions",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 766,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 1.0,
+                  "q1": 447.72647374660704,
+                  "q3": 27027.522708659257,
+                  "max": 340930.0,
+                  "sd": 41922.55463660916,
+                  "avg": 23142.490677134447
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Number of Accepted Transactions",
+            "semantic_type": "type/Quantity",
+            "field_ref": [
+              "aggregation",
+              7
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Number of Accepted Transactions",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 766,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 1.0,
+                  "q1": 447.72647374660704,
+                  "q3": 27027.522708659257,
+                  "max": 340930.0,
+                  "sd": 41922.55463660916,
+                  "avg": 23142.490677134447
+                }
+              }
+            }
+          }
+        ],
+        "initially_published_at": null,
+        "can_write": true,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": 813,
+        "query_type": "query",
+        "name": "Payin all metrics by partner by month",
+        "last_used_at": "2025-07-25T13:48:36.623894Z",
+        "type": "question",
+        "query_average_duration": 19474,
+        "creator_id": 139,
+        "moderation_reviews": [],
+        "updated_at": "2025-07-25T13:48:36.623894Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "database": 2,
+          "type": "query",
+          "query": {
+            "source-table": 222,
+            "breakout": [
+              [
+                "field",
+                3884,
+                {
+                  "base-type": "type/Text"
+                }
+              ],
+              [
+                "field",
+                "min",
+                {
+                  "base-type": "type/Date",
+                  "join-alias": "Payin Merchant first transaction - BUSINESS_NAME",
+                  "temporal-unit": "day"
+                }
+              ],
+              [
+                "field",
+                3869,
+                {
+                  "base-type": "type/DateTime",
+                  "temporal-unit": "month"
+                }
+              ]
+            ],
+            "aggregation": [
+              [
+                "metric",
+                3025
+              ],
+              [
+                "metric",
+                3028
+              ],
+              [
+                "metric",
+                3029
+              ],
+              [
+                "metric",
+                3026
+              ],
+              [
+                "metric",
+                3027
+              ],
+              [
+                "metric",
+                3033
+              ],
+              [
+                "metric",
+                3001
+              ],
+              [
+                "metric",
+                3004
+              ]
+            ],
+            "order-by": [
+              [
+                "desc",
+                [
+                  "aggregation",
+                  0
+                ]
+              ]
+            ],
+            "joins": [
+              {
+                "fields": "all",
+                "strategy": "left-join",
+                "alias": "Payin Merchant first transaction - BUSINESS_NAME",
+                "condition": [
+                  "=",
+                  [
+                    "field",
+                    3884,
+                    {
+                      "base-type": "type/Text"
+                    }
+                  ],
+                  [
+                    "field",
+                    3884,
+                    {
+                      "base-type": "type/Text",
+                      "join-alias": "Payin Merchant first transaction - BUSINESS_NAME"
+                    }
+                  ]
+                ],
+                "source-table": "card__1917"
+              }
+            ],
+            "filter": [
+              "=",
+              [
+                "field",
+                3889,
+                {
+                  "base-type": "type/Text"
+                }
+              ],
+              "complete"
+            ]
+          }
+        },
+        "id": 5328,
+        "parameter_mappings": [],
+        "display": "table",
+        "archived_directly": false,
+        "entity_id": "Ch9oVfi6116c0r8z7Wbuc",
+        "collection_preview": true,
+        "visualization_settings": {
+          "table.cell_column": "Sum of Transactions EUR",
+          "column_settings": {
+            "[\"name\",\"Sum of Transactions EUR\"]": {
+              "number_style": "currency",
+              "decimals": 0
+            },
+            "[\"name\",\"Revenue EUR\"]": {
+              "number_style": "currency",
+              "decimals": 0
+            },
+            "[\"name\",\"Revenue / Turnover\"]": {
+              "number_style": "percent"
+            },
+            "[\"name\",\"GMV EUR\"]": {
+              "number_style": "currency",
+              "decimals": 0
+            },
+            "[\"name\",\"GMV / Turnover\"]": {
+              "decimals": 2,
+              "number_style": "percent"
+            },
+            "[\"name\",\"Acquiring Commission EUR\"]": {
+              "number_style": "currency",
+              "decimals": 0
+            },
+            "[\"name\",\"min\"]": {
+              "column_title": "Payin Merchant first transaction"
+            }
+          }
+        },
+        "metabase_version": "v0.52.9 (f9fbbf8)",
+        "parameters": [],
+        "created_at": "2025-07-25T13:48:36.623894Z",
+        "public_uuid": null
+      },
+      "updated_at": "2025-07-25T13:48:36.623894Z",
+      "col": 0,
+      "id": 4710,
+      "parameter_mappings": [
+        {
+          "parameter_id": "93d23b9f",
+          "card_id": 5328,
+          "target": [
+            "dimension",
+            [
+              "field",
+              3869,
+              {
+                "base-type": "type/DateTime"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "parameter_id": "17eeea22",
+          "card_id": 5328,
+          "target": [
+            "dimension",
+            [
+              "field",
+              3884,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "card_id": 5328,
+      "entity_id": "l_dB6HTJJkxTo4PuML6KL",
+      "visualization_settings": {},
+      "size_y": 11,
+      "dashboard_id": 499,
+      "created_at": "2025-07-25T13:48:36.623894Z",
+      "row": 68
+    }
+  ],
+  "param_values": {
+    "3884": {
+      "field_id": 3884,
+      "human_readable_values": [],
+      "values": [
+        "ADV Project Ltd",
+        "Aifory LLC",
+        "Alchemytech",
+        "Amartis LTD ",
+        "Ataix",
+        "Avaeta LTD",
+        "BTSE",
+        "BY",
+        "BYBIT TECHNOLOGY LIMITED",
+        "Bankto",
+        "BeaverDealer",
+        "Bingx",
+        "Binomo",
+        "Bitmart",
+        "Bitnomics",
+        "Blockfort",
+        "Bro Fintech LTD",
+        "ByBit KZ",
+        "Carletta N.V.",
+        "Carlitta N.V.",
+        "Carpathian Chain Sp. z.o.o",
+        "Credits",
+        "Currency",
+        "Darius Tech inc.",
+        "E-gates",
+        "Eclipcoin",
+        "Ecom Center LTD",
+        "Emirex",
+        "Emirex LR",
+        "Empayre",
+        "Europe/ROW  Domus Payment Solutions LTD",
+        "Exflow",
+        "Exidna Enterprises LTD",
+        "Fastex",
+        "FatpayXYZ",
+        "Finanic OU",
+        "Finaster Transfer LTD",
+        "Finchpay",
+        "GRHD LTD",
+        "Galaktika N.V.",
+        "Globopay",
+        "Golden Way Payments LTD",
+        "IgamingLabs",
+        "Innovate Wave Solutions Ltd",
+        "KURTLEY QURESHI CONSULTANTS LIMITED",
+        "Kirill Ignatov",
+        "Kurochkin for Test",
+        "Kvitum24",
+        "LAtoken",
+        "Market",
+        "Market Fintech Ltd",
+        "Market2",
+        "Midway International N.V.",
+        "Midway International N.V. 2",
+        "Mobilum tech",
+        "Nexo",
+        "Payeer",
+        "Payinter LTD",
+        "Paynoom",
+        "Paytech Pro LTD",
+        "Paytech Pro LTD 2",
+        "Phemex",
+        "Pionex",
+        "PrimeFin Solutions inc.",
+        "Qiwi",
+        "Qmall",
+        "Radon B.V. 3",
+        "Rocken - Payean Finance",
+        "Smartpayments",
+        "Swiplelux",
+        "Switchere",
+        "Venson Ltd",
+        "Venson Ltd 2",
+        "Vexel",
+        "Whitebit",
+        "Widepay",
+        "btc-stock",
+        "realwallet",
+        null
+      ]
+    }
+  },
+  "initially_published_at": null,
+  "can_write": true,
+  "tabs": [],
+  "enable_embedding": false,
+  "collection_id": 813,
+  "show_in_getting_started": false,
+  "name": "Payin Merchants - Duplicate",
+  "width": "full",
+  "caveats": null,
+  "collection_authority_level": null,
+  "creator_id": 139,
+  "can_restore": false,
+  "moderation_reviews": [],
+  "updated_at": "2025-07-25T13:48:50.717436Z",
+  "made_public_by_id": null,
+  "embedding_params": null,
+  "cache_ttl": null,
+  "last_used_param_values": {},
+  "id": 499,
+  "last_viewed_at": "2025-07-25T13:48:39.404302Z",
+  "position": null,
+  "archived_directly": false,
+  "entity_id": "v2SE_vNPp4K2FuvleGH48",
+  "param_fields": {
+    "3869": {
+      "semantic_type": "type/CreationTimestamp",
+      "table_id": 222,
+      "name": "CREATED_AT",
+      "has_field_values": "none",
+      "fk_target_field_id": null,
+      "dimensions": [],
+      "id": 3869,
+      "target": null,
+      "display_name": "CREATED_AT",
+      "name_field": null,
+      "base_type": "type/DateTime"
+    },
+    "3884": {
+      "semantic_type": "type/Category",
+      "table_id": 222,
+      "name": "BUSINESS_NAME",
+      "has_field_values": "list",
+      "fk_target_field_id": null,
+      "dimensions": [],
+      "id": 3884,
+      "target": null,
+      "display_name": "BUSINESS_NAME",
+      "name_field": null,
+      "base_type": "type/Text"
+    }
+  },
+  "last-edit-info": {
+    "id": 139,
+    "email": "e.kolodyazhnaya@mercuryo.io",
+    "first_name": "Ekaterina",
+    "last_name": "Kolodyazhnaya",
+    "timestamp": "2025-07-25T13:48:36.848148Z"
+  },
+  "collection": {
+    "authority_level": null,
+    "description": null,
+    "archived": false,
+    "slug": "payin_merchant_sr",
+    "archive_operation_id": null,
+    "name": "Payin Merchant SR",
+    "personal_owner_id": null,
+    "type": null,
+    "is_sample": false,
+    "id": 813,
+    "archived_directly": null,
+    "entity_id": "BLzKM_M20i4jBOGVd0tVc",
+    "location": "/18/344/",
+    "namespace": null,
+    "is_personal": false,
+    "created_at": "2025-07-24T10:33:04.735692Z"
+  },
+  "parameters": [
+    {
+      "name": "Tranaction date",
+      "slug": "tranaction_date",
+      "id": "93d23b9f",
+      "type": "date/all-options",
+      "sectionId": "date"
+    },
+    {
+      "name": "Partner name",
+      "slug": "partner_name",
+      "id": "17eeea22",
+      "type": "string/=",
+      "sectionId": "string"
+    }
+  ],
+  "auto_apply_filters": true,
+  "created_at": "2025-07-25T13:48:36.623894Z",
+  "public_uuid": null,
+  "points_of_interest": null,
+  "can_delete": false
+}

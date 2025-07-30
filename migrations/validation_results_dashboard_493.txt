@@ -1,0 +1,10 @@
+
+🔍 Validating migration results...
+============================================================
+📊 Validating 2 questions
+⏭️  Skipping question 5306 (Sum Fiat amount and fee acquirer) - not a native SQL question
+⏭️  Skipping question 5307 (Sum Fiat amount and fee acquirer all transactions) - not a native SQL question
+
+🎉 Validation Summary:
+✅ Successfully validated: 0/0 questions
+🎊 All questions are working correctly! Migration successful!

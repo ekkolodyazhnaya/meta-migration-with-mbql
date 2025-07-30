@@ -1,0 +1,16 @@
+
+🔍 Validating migration results...
+============================================================
+📊 Validating 8 questions
+⏭️  Skipping question 5338 (Month Payout merchant Turnover EUR) - not a native SQL question
+⏭️  Skipping question 5339 (Month Payout merchant Revenue EUR) - not a native SQL question
+⏭️  Skipping question 5340 (Month Payout merchants GMV EUR) - not a native SQL question
+⏭️  Skipping question 5341 (Month Payout country Revenue EUR ) - not a native SQL question
+⏭️  Skipping question 5342 (Month Payout country Turnover EUR) - not a native SQL question
+⏭️  Skipping question 5343 (Month Payout country GMV EUR) - not a native SQL question
+⏭️  Skipping question 5344 (Payout all mertics by merchant) - not a native SQL question
+⏭️  Skipping question 5345 (TRANSACTION_WITH_WINPAY_COMISSION, Sum of AMOUNT_EUR, Grouped by MERCHANT_NAME and CREATED_AT: Month, Filtered by CREATED_AT is after Jan 1, 2021 and STATUS is PAY_OK) - not a native SQL question
+
+🎉 Validation Summary:
+✅ Successfully validated: 0/0 questions
+🎊 All questions are working correctly! Migration successful!

@@ -1,0 +1,872 @@
+{
+  "dashboard_id": 500,
+  "dashboard_name": "OOR merchants - SR",
+  "replaced_cards": [
+    {
+      "card_id": 5335,
+      "card_name": "Month OOR partners GMV EUR",
+      "old_metric_id": 3034,
+      "old_metric_name": "GMV EUR",
+      "new_metric_id": 5214,
+      "new_metric_name": "GMV EUR Fatpay",
+      "confidence": 80
+    },
+    {
+      "card_id": 5336,
+      "card_name": "Month OOR country Revenue EUR",
+      "old_metric_id": 3047,
+      "old_metric_name": "Revenue EUR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 80
+    },
+    {
+      "card_id": 5332,
+      "card_name": "Month OOR country Turnover EUR ",
+      "old_metric_id": 3010,
+      "old_metric_name": "Turnover EUR",
+      "new_metric_id": 4806,
+      "new_metric_name": "Turnover EUR (OOR)",
+      "confidence": 100
+    },
+    {
+      "card_id": 5333,
+      "card_name": "Month OOR country GMV EUR",
+      "old_metric_id": 3034,
+      "old_metric_name": "GMV EUR",
+      "new_metric_id": 5214,
+      "new_metric_name": "GMV EUR Fatpay",
+      "confidence": 80
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3010,
+      "old_metric_name": "Turnover EUR",
+      "new_metric_id": 4806,
+      "new_metric_name": "Turnover EUR (OOR)",
+      "confidence": 100
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3047,
+      "old_metric_name": "Revenue EUR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 80
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3034,
+      "old_metric_name": "GMV EUR",
+      "new_metric_id": 5214,
+      "new_metric_name": "GMV EUR Fatpay",
+      "confidence": 80
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3055,
+      "old_metric_name": "Revenue  /  Turnover rate",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3073,
+      "old_metric_name": "% GMV",
+      "new_metric_id": 5214,
+      "new_metric_name": "GMV EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3042,
+      "old_metric_name": "Commission Revenue EUR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3032,
+      "old_metric_name": "Mark up Revenue EUR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3045,
+      "old_metric_name": "FX Mark up Revenue EUR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3044,
+      "old_metric_name": "Acquiring Commission EUR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3102,
+      "old_metric_name": "Acquiring FX cost EUR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3038,
+      "old_metric_name": "Network Fee EUR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3103,
+      "old_metric_name": "Exchange fee EUR OOR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3104,
+      "old_metric_name": "Exchange FX cost EUR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3107,
+      "old_metric_name": "Exchange FX Amount EUR OOR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3100,
+      "old_metric_name": "Riskified Fee EUR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3030,
+      "old_metric_name": "Total transactions cost EUR OOR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3108,
+      "old_metric_name": "Winpay fee EUR OOR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 2998,
+      "old_metric_name": "Number of all Transactions",
+      "new_metric_id": 4966,
+      "new_metric_name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "confidence": 60
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3006,
+      "old_metric_name": "Number of Accepted Transactions",
+      "new_metric_id": 4966,
+      "new_metric_name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "confidence": 60
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3035,
+      "old_metric_name": "Fee Network Revenue EUR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3010,
+      "old_metric_name": "Turnover EUR",
+      "new_metric_id": 4806,
+      "new_metric_name": "Turnover EUR (OOR)",
+      "confidence": 100
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3047,
+      "old_metric_name": "Revenue EUR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 80
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3034,
+      "old_metric_name": "GMV EUR",
+      "new_metric_id": 5214,
+      "new_metric_name": "GMV EUR Fatpay",
+      "confidence": 80
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3055,
+      "old_metric_name": "Revenue  /  Turnover rate",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3073,
+      "old_metric_name": "% GMV",
+      "new_metric_id": 5214,
+      "new_metric_name": "GMV EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3042,
+      "old_metric_name": "Commission Revenue EUR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3032,
+      "old_metric_name": "Mark up Revenue EUR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3045,
+      "old_metric_name": "FX Mark up Revenue EUR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3044,
+      "old_metric_name": "Acquiring Commission EUR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3102,
+      "old_metric_name": "Acquiring FX cost EUR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3038,
+      "old_metric_name": "Network Fee EUR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3103,
+      "old_metric_name": "Exchange fee EUR OOR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3104,
+      "old_metric_name": "Exchange FX cost EUR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3107,
+      "old_metric_name": "Exchange FX Amount EUR OOR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3100,
+      "old_metric_name": "Riskified Fee EUR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3030,
+      "old_metric_name": "Total transactions cost EUR OOR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3108,
+      "old_metric_name": "Winpay fee EUR OOR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 2998,
+      "old_metric_name": "Number of all Transactions",
+      "new_metric_id": 4966,
+      "new_metric_name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "confidence": 60
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3006,
+      "old_metric_name": "Number of Accepted Transactions",
+      "new_metric_id": 4966,
+      "new_metric_name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "confidence": 60
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3035,
+      "old_metric_name": "Fee Network Revenue EUR",
+      "new_metric_id": 5217,
+      "new_metric_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    }
+  ],
+  "failed_cards": [
+    {
+      "card_id": 5330,
+      "card_name": "Month OOR partners Turnover EUR",
+      "old_metric_id": 4806,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5329,
+      "card_name": "All metrics by OOR partner name",
+      "old_metric_id": 3105,
+      "reason": "No StarRocks metric mapping found"
+    },
+    {
+      "card_id": 5337,
+      "card_name": "All metrics by OOR partner name by month",
+      "old_metric_id": 3105,
+      "reason": "No StarRocks metric mapping found"
+    }
+  ],
+  "skipped_cards": [
+    {
+      "card_id": 5331,
+      "card_name": "Month OOR partners Revenue EUR",
+      "reason": "No metrics found"
+    },
+    {
+      "card_id": 5334,
+      "card_name": "Month OOR partners Top fee EUR",
+      "reason": "No metrics found"
+    }
+  ],
+  "total_cards": 9,
+  "metric_mappings": {
+    "3076": {
+      "exasol_name": "Count created Tx antifraud",
+      "starrocks_name": "Count users",
+      "confidence": 60
+    },
+    "3075": {
+      "exasol_name": "Network Fee EUR / Turnover EUR",
+      "starrocks_name": "Turnover EUR (OOR)",
+      "confidence": 80
+    },
+    "3077": {
+      "exasol_name": "Users start transactions",
+      "starrocks_name": "Count users",
+      "confidence": 60
+    },
+    "3051": {
+      "exasol_name": "Rate",
+      "starrocks_name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "confidence": 80
+    },
+    "3045": {
+      "exasol_name": "FX Mark up Revenue EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3066": {
+      "exasol_name": "Revenue TopUp EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3064": {
+      "exasol_name": "Turnover EUR",
+      "starrocks_name": "Turnover EUR (OOR)",
+      "confidence": 100
+    },
+    "3007": {
+      "exasol_name": "Amount of Success Transactions EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3071": {
+      "exasol_name": "GMV EUR",
+      "starrocks_name": "GMV EUR Fatpay",
+      "confidence": 80
+    },
+    "3078": {
+      "exasol_name": "Count users complete transactions",
+      "starrocks_name": "Count users",
+      "confidence": 80
+    },
+    "3106": {
+      "exasol_name": "Fee Riskified EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3069": {
+      "exasol_name": "GMV/Revenue",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3085": {
+      "exasol_name": "Completed transactions",
+      "starrocks_name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "confidence": 60
+    },
+    "3099": {
+      "exasol_name": "Average network fee per transaction",
+      "starrocks_name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "confidence": 60
+    },
+    "3108": {
+      "exasol_name": "Winpay fee EUR OOR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3101": {
+      "exasol_name": "Acceptance rate without Antifraud",
+      "starrocks_name": "Acceptance rate",
+      "confidence": 80
+    },
+    "3044": {
+      "exasol_name": "Acquiring Commission EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3072": {
+      "exasol_name": "Revenue Fee EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3068": {
+      "exasol_name": "GMV/Turnover",
+      "starrocks_name": "Turnover EUR Fatpay",
+      "confidence": 60
+    },
+    "3087": {
+      "exasol_name": "Riskified fee / Revenue EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3070": {
+      "exasol_name": "Revenue EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 80
+    },
+    "3093": {
+      "exasol_name": "Acceptance rate",
+      "starrocks_name": "Acceptance rate",
+      "confidence": 100
+    },
+    "3096": {
+      "exasol_name": "Created Sum Amount EUR Webapp",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3092": {
+      "exasol_name": "Conversion rate from antifraud to confirmed transaction",
+      "starrocks_name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "confidence": 60
+    },
+    "3055": {
+      "exasol_name": "Revenue  /  Turnover rate",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3013": {
+      "exasol_name": "Crypto Amount",
+      "starrocks_name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "confidence": 60
+    },
+    "3021": {
+      "exasol_name": "Number of Successful Bindings",
+      "starrocks_name": "Count of all Transactions",
+      "confidence": 60
+    },
+    "3023": {
+      "exasol_name": "Card Binding Success Rate",
+      "starrocks_name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "confidence": 60
+    },
+    "2991": {
+      "exasol_name": "Success rate",
+      "starrocks_name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "confidence": 60
+    },
+    "3032": {
+      "exasol_name": "Mark up Revenue EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3084": {
+      "exasol_name": "Created transaction Webapp",
+      "starrocks_name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "confidence": 60
+    },
+    "3047": {
+      "exasol_name": "Revenue EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 80
+    },
+    "3107": {
+      "exasol_name": "Exchange FX Amount EUR OOR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3043": {
+      "exasol_name": "Amount of Partner Fee EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3098": {
+      "exasol_name": "Fee exchanger EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3065": {
+      "exasol_name": "Revenue Exchange EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3103": {
+      "exasol_name": "Exchange fee EUR OOR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3097": {
+      "exasol_name": "Network fee EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3062": {
+      "exasol_name": "Acquiring Commission  / Turnover",
+      "starrocks_name": "Turnover EUR Fatpay",
+      "confidence": 60
+    },
+    "3005": {
+      "exasol_name": "Acceptance Rate",
+      "starrocks_name": "Acceptance rate",
+      "confidence": 100
+    },
+    "3067": {
+      "exasol_name": "Fee exchanger EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3004": {
+      "exasol_name": "Number of Accepted Transactions",
+      "starrocks_name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "confidence": 60
+    },
+    "3091": {
+      "exasol_name": "Conversion rate our antifraud",
+      "starrocks_name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "confidence": 60
+    },
+    "3104": {
+      "exasol_name": "Exchange FX cost EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3027": {
+      "exasol_name": "GMV / Turnover",
+      "starrocks_name": "Turnover EUR Fatpay",
+      "confidence": 60
+    },
+    "3026": {
+      "exasol_name": "GMV EUR",
+      "starrocks_name": "GMV EUR Fatpay",
+      "confidence": 80
+    },
+    "3089": {
+      "exasol_name": "Conversion rate antifraud",
+      "starrocks_name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "confidence": 60
+    },
+    "3079": {
+      "exasol_name": "Complete registrations",
+      "starrocks_name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "confidence": 60
+    },
+    "3038": {
+      "exasol_name": "Network Fee EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3102": {
+      "exasol_name": "Acquiring FX cost EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3029": {
+      "exasol_name": "Revenue / Turnover",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3073": {
+      "exasol_name": "% GMV",
+      "starrocks_name": "GMV EUR Fatpay",
+      "confidence": 60
+    },
+    "3094": {
+      "exasol_name": "Conversion rate from antifraud to confirmed transaction by Amount EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3095": {
+      "exasol_name": "Acceptance rate by Amount EUR",
+      "starrocks_name": "Acceptance rate",
+      "confidence": 80
+    },
+    "3090": {
+      "exasol_name": "Conversion rate riskified",
+      "starrocks_name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "confidence": 60
+    },
+    "3042": {
+      "exasol_name": "Commission Revenue EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3074": {
+      "exasol_name": "Network Fee EUR / Revenue EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3063": {
+      "exasol_name": "Acceptance Rate",
+      "starrocks_name": "Acceptance rate",
+      "confidence": 100
+    },
+    "3088": {
+      "exasol_name": "Riskified fee / Turnover EUR",
+      "starrocks_name": "Turnover EUR (OOR)",
+      "confidence": 80
+    },
+    "2995": {
+      "exasol_name": "Turnover EUR fatpay metric",
+      "starrocks_name": "Turnover EUR Fatpay",
+      "confidence": 80
+    },
+    "2998": {
+      "exasol_name": "Number of all Transactions",
+      "starrocks_name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "confidence": 60
+    },
+    "2997": {
+      "exasol_name": "Acceptance Rate",
+      "starrocks_name": "Acceptance rate",
+      "confidence": 100
+    },
+    "3001": {
+      "exasol_name": "Number of Transactions",
+      "starrocks_name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "confidence": 60
+    },
+    "3003": {
+      "exasol_name": "Failure Rate",
+      "starrocks_name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "confidence": 60
+    },
+    "3006": {
+      "exasol_name": "Number of Accepted Transactions",
+      "starrocks_name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "confidence": 60
+    },
+    "3010": {
+      "exasol_name": "Turnover EUR",
+      "starrocks_name": "Turnover EUR (OOR)",
+      "confidence": 100
+    },
+    "3009": {
+      "exasol_name": "Fiat Amount EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3008": {
+      "exasol_name": "Number of Failed Transactions",
+      "starrocks_name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "confidence": 60
+    },
+    "3012": {
+      "exasol_name": "Number of Failed Transactions",
+      "starrocks_name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "confidence": 60
+    },
+    "3100": {
+      "exasol_name": "Riskified Fee EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3018": {
+      "exasol_name": "Authorization Rate",
+      "starrocks_name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "confidence": 60
+    },
+    "3019": {
+      "exasol_name": "Number of Authorized Transactions",
+      "starrocks_name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "confidence": 60
+    },
+    "3020": {
+      "exasol_name": "Number of Card Bindings",
+      "starrocks_name": "Count of all Transactions",
+      "confidence": 60
+    },
+    "3058": {
+      "exasol_name": "Acquiring Commission / Turnover",
+      "starrocks_name": "Turnover EUR Fatpay",
+      "confidence": 60
+    },
+    "3022": {
+      "exasol_name": "Number of Failed Bindings",
+      "starrocks_name": "Count of all Transactions",
+      "confidence": 60
+    },
+    "3048": {
+      "exasol_name": "Fiat amount FX EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3024": {
+      "exasol_name": "Potential Turnover EUR",
+      "starrocks_name": "Turnover EUR (OOR)",
+      "confidence": 80
+    },
+    "3025": {
+      "exasol_name": "Sum of Transactions EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3028": {
+      "exasol_name": "Revenue EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 80
+    },
+    "3030": {
+      "exasol_name": "Total transactions cost EUR OOR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3031": {
+      "exasol_name": "Potential Turnover EUR",
+      "starrocks_name": "Turnover EUR (OOR)",
+      "confidence": 80
+    },
+    "3053": {
+      "exasol_name": "Calculations with transactions",
+      "starrocks_name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "confidence": 60
+    },
+    "3033": {
+      "exasol_name": "Acquiring Commission EUR fatpay metric",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3034": {
+      "exasol_name": "GMV EUR",
+      "starrocks_name": "GMV EUR Fatpay",
+      "confidence": 80
+    },
+    "3035": {
+      "exasol_name": "Fee Network Revenue EUR",
+      "starrocks_name": "Revenue EUR Fatpay",
+      "confidence": 60
+    },
+    "3036": {
+      "exasol_name": "Off-Ramp Turnover",
+      "starrocks_name": "Turnover EUR Fatpay",
+      "confidence": 60
+    },
+    "3037": {
+      "exasol_name": "On-Ramp Turnover",
+      "starrocks_name": "Turnover EUR Fatpay",
+      "confidence": 60
+    }
+  }
+}

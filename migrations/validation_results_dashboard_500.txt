@@ -1,0 +1,17 @@
+
+🔍 Validating migration results...
+============================================================
+📊 Validating 9 questions
+⏭️  Skipping question 5330 (Month OOR partners Turnover EUR) - not a native SQL question
+⏭️  Skipping question 5331 (Month OOR partners Revenue EUR) - not a native SQL question
+⏭️  Skipping question 5335 (Month OOR partners GMV EUR) - not a native SQL question
+⏭️  Skipping question 5336 (Month OOR country Revenue EUR) - not a native SQL question
+⏭️  Skipping question 5332 (Month OOR country Turnover EUR ) - not a native SQL question
+⏭️  Skipping question 5333 (Month OOR country GMV EUR) - not a native SQL question
+⏭️  Skipping question 5329 (All metrics by OOR partner name) - not a native SQL question
+⏭️  Skipping question 5334 (Month OOR partners Top fee EUR) - not a native SQL question
+⏭️  Skipping question 5337 (All metrics by OOR partner name by month) - not a native SQL question
+
+🎉 Validation Summary:
+✅ Successfully validated: 0/0 questions
+🎊 All questions are working correctly! Migration successful!

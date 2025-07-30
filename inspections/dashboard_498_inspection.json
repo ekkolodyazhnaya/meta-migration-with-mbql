@@ -1,0 +1,1800 @@
+{
+  "description": null,
+  "archived": false,
+  "view_count": 1,
+  "collection_position": 1,
+  "dashcards": [
+    {
+      "size_x": 24,
+      "dashboard_tab_id": null,
+      "series": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 1,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": 45,
+        "result_metadata": [
+          {
+            "description": null,
+            "semantic_type": null,
+            "coercion_strategy": null,
+            "name": "STATUS",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "expression",
+              "pivot-grouping"
+            ],
+            "effective_type": "type/Text",
+            "id": 20887,
+            "visibility_type": "normal",
+            "display_name": "pivot-grouping",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 1.0,
+                  "q1": 1.0,
+                  "q3": 1.0,
+                  "max": 1.0,
+                  "sd": null,
+                  "avg": 1.0
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "display_name": "Sum of FIAT_AMOUNT",
+            "field_ref": [
+              "aggregation",
+              0
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "pivot-grouping",
+            "semantic_type": "type/Quantity",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 1363952921.14,
+                  "q1": 1363952921.14,
+                  "q3": 1363952921.14,
+                  "max": 1363952921.14,
+                  "sd": null,
+                  "avg": 1363952921.14
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Sum of FEE_ACQUIRER_AMOUNT",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              1
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "sum",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 13262444.46,
+                  "q1": 13262444.46,
+                  "q3": 13262444.46,
+                  "max": 13262444.46,
+                  "sd": null,
+                  "avg": 13262444.46
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Sum of ACQUIERER_FX_COST_EUR",
+            "semantic_type": "type/Cost",
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              2
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "sum_2",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": -305.63489047034494,
+                  "q1": -305.63489047034494,
+                  "q3": -305.63489047034494,
+                  "max": -305.63489047034494,
+                  "sd": null,
+                  "avg": -305.63489047034494
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Fiat amount 8bworld",
+            "semantic_type": null,
+            "settings": null,
+            "field_ref": [
+              "aggregation",
+              3
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "sum_3",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 1363952921.14,
+                  "q1": 1363952921.14,
+                  "q3": 1363952921.14,
+                  "max": 1363952921.14,
+                  "sd": null,
+                  "avg": 1363952921.14
+                }
+              }
+            }
+          },
+          {
+            "display_name": "Fee acquirer 8bworld",
+            "field_ref": [
+              "aggregation",
+              4
+            ],
+            "base_type": "type/Decimal",
+            "effective_type": "type/Decimal",
+            "name": "Fiat amount 8bworld",
+            "semantic_type": null,
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 13262453.4,
+                  "q1": 13262453.4,
+                  "q3": 13262453.4,
+                  "max": 13262453.4,
+                  "sd": null,
+                  "avg": 13262453.4
+                }
+              }
+            }
+          }
+        ],
+        "initially_published_at": null,
+        "can_write": true,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": 812,
+        "query_type": "query",
+        "name": "Sum Fiat amount and fee acquirer",
+        "last_used_at": "2025-07-25T13:44:12.434157Z",
+        "type": "question",
+        "query_average_duration": null,
+        "creator_id": 139,
+        "moderation_reviews": [],
+        "updated_at": "2025-07-25T13:43:54.147062Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "database": 2,
+          "type": "query",
+          "query": {
+            "aggregation": [
+              [
+                "sum",
+                [
+                  "field",
+                  20893,
+                  {
+                    "base-type": "type/Decimal"
+                  }
+                ]
+              ],
+              [
+                "sum",
+                [
+                  "field",
+                  533563,
+                  {
+                    "base-type": "type/Decimal"
+                  }
+                ]
+              ],
+              [
+                "sum",
+                [
+                  "field",
+                  532692,
+                  {
+                    "base-type": "type/Decimal"
+                  }
+                ]
+              ],
+              [
+                "aggregation-options",
+                [
+                  "sum",
+                  [
+                    "+",
+                    [
+                      "field",
+                      570716,
+                      {
+                        "base-type": "type/Decimal",
+                        "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+                      }
+                    ],
+                    [
+                      "field",
+                      570709,
+                      {
+                        "base-type": "type/Decimal",
+                        "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+                      }
+                    ],
+                    [
+                      "field",
+                      570731,
+                      {
+                        "base-type": "type/Decimal",
+                        "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+                      }
+                    ]
+                  ]
+                ],
+                {
+                  "name": "Fiat amount 8bworld",
+                  "display-name": "Fiat amount 8bworld"
+                }
+              ],
+              [
+                "aggregation-options",
+                [
+                  "sum",
+                  [
+                    "+",
+                    [
+                      "field",
+                      570709,
+                      {
+                        "base-type": "type/Decimal",
+                        "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+                      }
+                    ],
+                    [
+                      "field",
+                      570731,
+                      {
+                        "base-type": "type/Decimal",
+                        "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+                      }
+                    ]
+                  ]
+                ],
+                {
+                  "name": "Fee acquirer 8bworld",
+                  "display-name": "Fee acquirer 8bworld"
+                }
+              ]
+            ],
+            "breakout": [
+              [
+                "field",
+                20887,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "joins": [
+              {
+                "alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID",
+                "fields": "all",
+                "strategy": "inner-join",
+                "condition": [
+                  "=",
+                  [
+                    "field",
+                    20829,
+                    {
+                      "base-type": "type/Text"
+                    }
+                  ],
+                  [
+                    "field",
+                    570735,
+                    {
+                      "base-type": "type/Text",
+                      "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+                    }
+                  ]
+                ],
+                "source-table": 39315
+              }
+            ],
+            "source-table": 45,
+            "filter": [
+              "contains",
+              [
+                "field",
+                20868,
+                {
+                  "base-type": "type/Text"
+                }
+              ],
+              "world",
+              {
+                "case-sensitive": false
+              }
+            ]
+          }
+        },
+        "id": 5319,
+        "parameter_mappings": [],
+        "display": "pivot",
+        "archived_directly": false,
+        "entity_id": "FMVZY4-pHUj_985YeJrZd",
+        "collection_preview": true,
+        "visualization_settings": {
+          "pivot_table.column_split": {
+            "columns": [],
+            "rows": [
+              [
+                "field",
+                20887,
+                {
+                  "base-type": "type/Text"
+                }
+              ]
+            ],
+            "values": [
+              [
+                "aggregation",
+                0
+              ],
+              [
+                "aggregation",
+                1
+              ],
+              [
+                "aggregation",
+                2
+              ],
+              [
+                "aggregation",
+                3
+              ],
+              [
+                "aggregation",
+                4
+              ]
+            ]
+          },
+          "pivot_table.column_widths": {
+            "leftHeaderWidths": [
+              80
+            ],
+            "totalLeftHeaderWidths": 80,
+            "valueHeaderWidths": {
+              "0": 148,
+              "1": 198,
+              "2": 190,
+              "3": 134,
+              "4": 159
+            }
+          },
+          "table.cell_column": "sum",
+          "table.pivot_column": "FIAT_CURRENCY",
+          "column_settings": {
+            "[\"name\",\"sum_2\"]": {
+              "column_title": "Fee Acquirer amount webapp",
+              "decimals": 0
+            },
+            "[\"name\",\"sum_3\"]": {
+              "column_title": "Acquirer FX cost EUR webapp",
+              "decimals": 0
+            },
+            "[\"name\",\"sum\"]": {
+              "column_title": "Fiat Amount Webapp",
+              "decimals": 0
+            },
+            "[\"name\",\"Fee acquirer 8bworld\"]": {
+              "decimals": 0
+            }
+          }
+        },
+        "metabase_version": "v0.52.9 (f9fbbf8)",
+        "parameters": [],
+        "created_at": "2025-07-25T13:43:54.147062Z",
+        "public_uuid": null
+      },
+      "updated_at": "2025-07-25T13:43:54.147062Z",
+      "col": 0,
+      "id": 4701,
+      "parameter_mappings": [
+        {
+          "parameter_id": "87c4377a",
+          "card_id": 5319,
+          "target": [
+            "dimension",
+            [
+              "field",
+              570727,
+              {
+                "base-type": "type/DateTime",
+                "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "card_id": 5319,
+      "entity_id": "TRoR40YE1aZtGwjUzG71R",
+      "visualization_settings": {},
+      "size_y": 4,
+      "dashboard_id": 498,
+      "created_at": "2025-07-25T13:43:54.147062Z",
+      "row": 0
+    },
+    {
+      "size_x": 24,
+      "dashboard_tab_id": null,
+      "series": [],
+      "action_id": null,
+      "collection_authority_level": null,
+      "card": {
+        "cache_invalidated_at": null,
+        "description": null,
+        "archived": false,
+        "view_count": 2,
+        "collection_position": null,
+        "source_card_id": null,
+        "table_id": 45,
+        "result_metadata": [
+          {
+            "description": null,
+            "semantic_type": "type/FK",
+            "coercion_strategy": null,
+            "name": "USER_ID",
+            "settings": null,
+            "fk_target_field_id": 4089,
+            "field_ref": [
+              "field",
+              20876,
+              {
+                "base-type": "type/Decimal"
+              }
+            ],
+            "effective_type": "type/Decimal",
+            "id": 20876,
+            "visibility_type": "normal",
+            "display_name": "USER_ID",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 2165,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 2.0,
+                  "q1": 1011.136923285824,
+                  "q3": 13877.53786328601,
+                  "max": 27826.0,
+                  "sd": 7463.845927848652,
+                  "avg": 7456.1754
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "description": null,
+            "semantic_type": "type/PK",
+            "coercion_strategy": null,
+            "name": "ID",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              20825,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            "effective_type": "type/Text",
+            "id": 20825,
+            "visibility_type": "normal",
+            "display_name": "ID",
+            "fingerprint": null,
+            "base_type": "type/Text"
+          },
+          {
+            "description": null,
+            "semantic_type": "type/Category",
+            "coercion_strategy": null,
+            "name": "STATUS",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              20887,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            "effective_type": "type/Text",
+            "id": 20887,
+            "visibility_type": "normal",
+            "display_name": "STATUS",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 14,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Text": {
+                  "percent-json": 0.0,
+                  "percent-url": 0.0,
+                  "percent-email": 0.0,
+                  "percent-state": 0.0,
+                  "average-length": 12.6758
+                }
+              }
+            },
+            "base_type": "type/Text"
+          },
+          {
+            "description": null,
+            "semantic_type": "type/CreationTimestamp",
+            "coercion_strategy": null,
+            "name": "CREATED_AT",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              20835,
+              {
+                "base-type": "type/DateTime"
+              }
+            ],
+            "effective_type": "type/DateTime",
+            "id": 20835,
+            "visibility_type": "normal",
+            "display_name": "CREATED_AT",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 9958,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/DateTime": {
+                  "earliest": "2018-06-18T16:22:58Z",
+                  "latest": "2019-09-26T13:15:06Z"
+                }
+              }
+            },
+            "base_type": "type/DateTime"
+          },
+          {
+            "description": null,
+            "semantic_type": "type/Category",
+            "coercion_strategy": null,
+            "name": "FIAT_CURRENCY",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              20892,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            "effective_type": "type/Text",
+            "id": 20892,
+            "visibility_type": "normal",
+            "display_name": "FIAT_CURRENCY",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 4,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Text": {
+                  "percent-json": 0.0,
+                  "percent-url": 0.0,
+                  "percent-email": 0.0,
+                  "percent-state": 0.0,
+                  "average-length": 3.0
+                }
+              }
+            },
+            "base_type": "type/Text"
+          },
+          {
+            "description": null,
+            "semantic_type": "type/Quantity",
+            "coercion_strategy": null,
+            "name": "FIAT_AMOUNT",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              20893,
+              {
+                "base-type": "type/Decimal"
+              }
+            ],
+            "effective_type": "type/Decimal",
+            "id": 20893,
+            "visibility_type": "normal",
+            "display_name": "FIAT_AMOUNT",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 3099,
+                "nil%": 0.1769
+              },
+              "type": {
+                "type/Text": {
+                  "percent-json": 0.0,
+                  "percent-url": 0.0,
+                  "percent-email": 0.0,
+                  "percent-state": 0.0,
+                  "average-length": 3.8024
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "description": null,
+            "semantic_type": null,
+            "coercion_strategy": null,
+            "name": "FEE_ACQUIRER_EUR",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              24890,
+              {
+                "base-type": "type/Decimal"
+              }
+            ],
+            "effective_type": "type/Decimal",
+            "id": 24890,
+            "visibility_type": "normal",
+            "display_name": "FEE_ACQUIRER_EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 0.0,
+                  "q3": 0.0,
+                  "max": 0.0,
+                  "sd": 0.0,
+                  "avg": 0.0
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "description": null,
+            "semantic_type": null,
+            "coercion_strategy": null,
+            "name": "FEE_ACQUIRER_AMOUNT",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              533563,
+              {
+                "base-type": "type/Decimal"
+              }
+            ],
+            "effective_type": "type/Decimal",
+            "id": 533563,
+            "visibility_type": "normal",
+            "display_name": "FEE_ACQUIRER_AMOUNT",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1093,
+                "nil%": 0.8367
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 0.7884696198552629,
+                  "q3": 4.219433532447477,
+                  "max": 44288.9346,
+                  "sd": 1340.0893332846429,
+                  "avg": 64.69245223515003
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "description": null,
+            "semantic_type": "type/Category",
+            "coercion_strategy": null,
+            "name": "FEE_ACQUIRER_CURRENCY",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              533562,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            "effective_type": "type/Text",
+            "id": 533562,
+            "visibility_type": "normal",
+            "display_name": "FEE_ACQUIRER_CURRENCY",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 14,
+                "nil%": 0.8367
+              },
+              "type": {
+                "type/Text": {
+                  "percent-json": 0.0,
+                  "percent-url": 0.0,
+                  "percent-email": 0.0,
+                  "percent-state": 0.0,
+                  "average-length": 0.4899
+                }
+              }
+            },
+            "base_type": "type/Text"
+          },
+          {
+            "description": null,
+            "semantic_type": "type/Category",
+            "coercion_strategy": null,
+            "name": "FEE_ACQUIRER_IS_EXACT",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              489212,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            "effective_type": "type/Text",
+            "id": 489212,
+            "visibility_type": "normal",
+            "display_name": "FEE_ACQUIRER_IS_EXACT",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Text": {
+                  "percent-json": 0.0,
+                  "percent-url": 0.0,
+                  "percent-email": 0.0,
+                  "percent-state": 0.0,
+                  "average-length": 7.0
+                }
+              }
+            },
+            "base_type": "type/Text"
+          },
+          {
+            "description": null,
+            "semantic_type": "type/Category",
+            "coercion_strategy": null,
+            "name": "SETTLEMENT_CURRENCY",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              532694,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            "effective_type": "type/Text",
+            "id": 532694,
+            "visibility_type": "normal",
+            "display_name": "SETTLEMENT_CURRENCY",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 3,
+                "nil%": 0.924
+              },
+              "type": {
+                "type/Text": {
+                  "percent-json": 0.0,
+                  "percent-url": 0.0,
+                  "percent-email": 0.0,
+                  "percent-state": 0.0,
+                  "average-length": 0.228
+                }
+              }
+            },
+            "base_type": "type/Text"
+          },
+          {
+            "description": null,
+            "semantic_type": null,
+            "coercion_strategy": null,
+            "name": "SETTLEMENT_AMOUNT",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              532800,
+              {
+                "base-type": "type/Decimal"
+              }
+            ],
+            "effective_type": "type/Decimal",
+            "id": 532800,
+            "visibility_type": "normal",
+            "display_name": "SETTLEMENT_AMOUNT",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 917,
+                "nil%": 0.8179
+              },
+              "type": {
+                "type/Number": {
+                  "min": 11.89,
+                  "q1": 48.120766031293755,
+                  "q3": 198.2942339414006,
+                  "max": 3985.94,
+                  "sd": 333.7931550117823,
+                  "avg": 200.60906644700714
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "description": null,
+            "semantic_type": null,
+            "coercion_strategy": null,
+            "name": "TURNOVER_EUR",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              25606,
+              {
+                "base-type": "type/Decimal"
+              }
+            ],
+            "effective_type": "type/Decimal",
+            "id": 25606,
+            "visibility_type": "normal",
+            "display_name": "TURNOVER_EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 2589,
+                "nil%": 0.6496
+              },
+              "type": {
+                "type/Number": {
+                  "min": 6.239584428168381,
+                  "q1": 23.28029858206333,
+                  "q3": 189.58456187040773,
+                  "max": 2000.0,
+                  "sd": 370.5260905722391,
+                  "avg": 211.03184613645055
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "description": null,
+            "semantic_type": "type/Cost",
+            "coercion_strategy": null,
+            "name": "ACQUIERER_FX_COST_EUR",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              532692,
+              {
+                "base-type": "type/Decimal"
+              }
+            ],
+            "effective_type": "type/Decimal",
+            "id": 532692,
+            "visibility_type": "normal",
+            "display_name": "ACQUIERER_FX_COST_EUR",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 826,
+                "nil%": 0.8094
+              },
+              "type": {
+                "type/Number": {
+                  "min": -24.403431105656228,
+                  "q1": -0.22889474806940863,
+                  "q3": 0.26359756065005596,
+                  "max": 216.47700000000034,
+                  "sd": 6.123165196416938,
+                  "avg": 0.39747481023913805
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "description": null,
+            "semantic_type": "type/Quantity",
+            "coercion_strategy": null,
+            "name": "AMOUNT_TO_SETTLEMENT_WP",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              570716,
+              {
+                "base-type": "type/Decimal",
+                "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+              }
+            ],
+            "effective_type": "type/Decimal",
+            "id": 570716,
+            "visibility_type": "normal",
+            "display_name": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID \u2192 AMOUNT_TO_SETTLEMENT_WP",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 391,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": -5000000.0,
+                  "q1": 223687.0604616328,
+                  "q3": 872308.1812685844,
+                  "max": 49821000.0,
+                  "sd": 3825926.42347741,
+                  "avg": 1309316.4809544282
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "description": null,
+            "semantic_type": "type/Quantity",
+            "coercion_strategy": null,
+            "name": "AMOUNT_WP",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              570732,
+              {
+                "base-type": "type/Decimal",
+                "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+              }
+            ],
+            "effective_type": "type/Decimal",
+            "id": 570732,
+            "visibility_type": "normal",
+            "display_name": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID \u2192 AMOUNT_WP",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 307,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": -5000000.0,
+                  "q1": 227485.37542243442,
+                  "q3": 885012.0153547259,
+                  "max": 50000000.0,
+                  "sd": 3841781.0631083995,
+                  "avg": 1320446.8013757523
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "description": null,
+            "semantic_type": "type/PK",
+            "coercion_strategy": null,
+            "name": "ID_2",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              570735,
+              {
+                "base-type": "type/Text",
+                "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+              }
+            ],
+            "effective_type": "type/Text",
+            "id": 570735,
+            "visibility_type": "normal",
+            "display_name": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID \u2192 ID",
+            "fingerprint": null,
+            "base_type": "type/Text"
+          },
+          {
+            "description": null,
+            "semantic_type": null,
+            "coercion_strategy": null,
+            "name": "LOCAL_DATE",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              570727,
+              {
+                "base-type": "type/DateTime",
+                "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+              }
+            ],
+            "effective_type": "type/DateTime",
+            "id": 570727,
+            "visibility_type": "normal",
+            "display_name": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID \u2192 LOCAL_DATE",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 1159,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/DateTime": {
+                  "earliest": "2024-07-12T21:48:00Z",
+                  "latest": "2024-09-25T22:18:53.127Z"
+                }
+              }
+            },
+            "base_type": "type/DateTime"
+          },
+          {
+            "description": null,
+            "semantic_type": "type/Share",
+            "coercion_strategy": null,
+            "name": "MERCHANT_FEE_WP_RATE",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              570728,
+              {
+                "base-type": "type/Decimal",
+                "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+              }
+            ],
+            "effective_type": "type/Decimal",
+            "id": 570728,
+            "visibility_type": "normal",
+            "display_name": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID \u2192 MERCHANT_FEE_WP_RATE",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 4,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 0.005201762686942981,
+                  "q3": 0.01570453156647246,
+                  "max": 0.029,
+                  "sd": 0.007447359650881397,
+                  "avg": 0.010142304385210663
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "description": null,
+            "semantic_type": "type/Quantity",
+            "coercion_strategy": null,
+            "name": "MERCHANT_FEE_FIX_WP",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              570731,
+              {
+                "base-type": "type/Decimal",
+                "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+              }
+            ],
+            "effective_type": "type/Decimal",
+            "id": 570731,
+            "visibility_type": "normal",
+            "display_name": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID \u2192 MERCHANT_FEE_FIX_WP",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 2,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 0.0,
+                  "q3": 2959.165872196702,
+                  "max": 4000.0,
+                  "sd": 1854.2375681974966,
+                  "avg": 1248.4952708512467
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "description": null,
+            "semantic_type": "type/Share",
+            "coercion_strategy": null,
+            "name": "MERCHANT_FEE_FIX_WP_RATE",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              570711,
+              {
+                "base-type": "type/Decimal",
+                "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+              }
+            ],
+            "effective_type": "type/Decimal",
+            "id": 570711,
+            "visibility_type": "normal",
+            "display_name": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID \u2192 MERCHANT_FEE_FIX_WP_RATE",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 2,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 0.0,
+                  "q3": 2959.165872196702,
+                  "max": 4000.0,
+                  "sd": 1854.2375681974966,
+                  "avg": 1248.4952708512467
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "description": null,
+            "semantic_type": "type/Quantity",
+            "coercion_strategy": null,
+            "name": "MERCHANT_FEE_WP_MIN",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              570709,
+              {
+                "base-type": "type/Decimal",
+                "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+              }
+            ],
+            "effective_type": "type/Decimal",
+            "id": 570709,
+            "visibility_type": "normal",
+            "display_name": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID \u2192 MERCHANT_FEE_WP_MIN",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 377,
+                "nil%": 0.0
+              },
+              "type": {
+                "type/Number": {
+                  "min": 0.0,
+                  "q1": 1925.187390912875,
+                  "q3": 9206.405137611619,
+                  "max": 261000.0,
+                  "sd": 20129.99156291208,
+                  "avg": 9881.825150472916
+                }
+              }
+            },
+            "base_type": "type/Decimal"
+          },
+          {
+            "description": null,
+            "semantic_type": "type/Category",
+            "coercion_strategy": null,
+            "name": "MERCHANT_FIX_CURRENCY",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              570717,
+              {
+                "base-type": "type/Text",
+                "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+              }
+            ],
+            "effective_type": "type/Text",
+            "id": 570717,
+            "visibility_type": "normal",
+            "display_name": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID \u2192 MERCHANT_FIX_CURRENCY",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 2,
+                "nil%": 0.001392757660167131
+              },
+              "type": {
+                "type/Text": {
+                  "percent-json": 0.0,
+                  "percent-url": 0.0,
+                  "percent-email": 0.0,
+                  "percent-state": 0.0,
+                  "average-length": 2.9958217270194987
+                }
+              }
+            },
+            "base_type": "type/Text"
+          },
+          {
+            "description": null,
+            "semantic_type": "type/Category",
+            "coercion_strategy": null,
+            "name": "MERCHANT_NAME",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              570710,
+              {
+                "base-type": "type/Text",
+                "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+              }
+            ],
+            "effective_type": "type/Text",
+            "id": 570710,
+            "visibility_type": "normal",
+            "display_name": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID \u2192 MERCHANT_NAME",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 2,
+                "nil%": 0.001392757660167131
+              },
+              "type": {
+                "type/Text": {
+                  "percent-json": 0.0,
+                  "percent-url": 0.0,
+                  "percent-email": 0.0,
+                  "percent-state": 0.0,
+                  "average-length": 18.973537604456826
+                }
+              }
+            },
+            "base_type": "type/Text"
+          },
+          {
+            "description": null,
+            "semantic_type": "type/Category",
+            "coercion_strategy": null,
+            "name": "TRANSACTION_CURRENCY",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              570724,
+              {
+                "base-type": "type/Text",
+                "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+              }
+            ],
+            "effective_type": "type/Text",
+            "id": 570724,
+            "visibility_type": "normal",
+            "display_name": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID \u2192 TRANSACTION_CURRENCY",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 2,
+                "nil%": 0.001392757660167131
+              },
+              "type": {
+                "type/Text": {
+                  "percent-json": 0.0,
+                  "percent-url": 0.0,
+                  "percent-email": 0.0,
+                  "percent-state": 0.0,
+                  "average-length": 2.9958217270194987
+                }
+              }
+            },
+            "base_type": "type/Text"
+          },
+          {
+            "description": null,
+            "semantic_type": "type/Category",
+            "coercion_strategy": null,
+            "name": "TRANSACTION_TYPE",
+            "settings": null,
+            "fk_target_field_id": null,
+            "field_ref": [
+              "field",
+              570734,
+              {
+                "base-type": "type/Text",
+                "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+              }
+            ],
+            "effective_type": "type/Text",
+            "id": 570734,
+            "visibility_type": "normal",
+            "display_name": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID \u2192 TRANSACTION_TYPE",
+            "fingerprint": {
+              "global": {
+                "distinct-count": 2,
+                "nil%": 0.001392757660167131
+              },
+              "type": {
+                "type/Text": {
+                  "percent-json": 0.0,
+                  "percent-url": 0.0,
+                  "percent-email": 0.0,
+                  "percent-state": 0.0,
+                  "average-length": 2.9958217270194987
+                }
+              }
+            },
+            "base_type": "type/Text"
+          }
+        ],
+        "initially_published_at": null,
+        "can_write": true,
+        "database_id": 2,
+        "enable_embedding": false,
+        "collection_id": 812,
+        "query_type": "query",
+        "name": "Sum Fiat amount and fee acquirer all transactions",
+        "last_used_at": "2025-07-25T13:44:11.315425Z",
+        "type": "question",
+        "query_average_duration": 4826,
+        "creator_id": 139,
+        "moderation_reviews": [],
+        "updated_at": "2025-07-25T13:43:54.147062Z",
+        "made_public_by_id": null,
+        "embedding_params": null,
+        "cache_ttl": null,
+        "dataset_query": {
+          "database": 2,
+          "type": "query",
+          "query": {
+            "fields": [
+              [
+                "field",
+                20876,
+                {
+                  "base-type": "type/Decimal"
+                }
+              ],
+              [
+                "field",
+                20825,
+                {
+                  "base-type": "type/Text"
+                }
+              ],
+              [
+                "field",
+                20887,
+                {
+                  "base-type": "type/Text"
+                }
+              ],
+              [
+                "field",
+                20835,
+                {
+                  "base-type": "type/DateTime"
+                }
+              ],
+              [
+                "field",
+                20892,
+                {
+                  "base-type": "type/Text"
+                }
+              ],
+              [
+                "field",
+                20893,
+                {
+                  "base-type": "type/Decimal"
+                }
+              ],
+              [
+                "field",
+                24890,
+                {
+                  "base-type": "type/Decimal"
+                }
+              ],
+              [
+                "field",
+                533563,
+                {
+                  "base-type": "type/Decimal"
+                }
+              ],
+              [
+                "field",
+                533562,
+                {
+                  "base-type": "type/Text"
+                }
+              ],
+              [
+                "field",
+                489212,
+                {
+                  "base-type": "type/Text"
+                }
+              ],
+              [
+                "field",
+                532694,
+                {
+                  "base-type": "type/Text"
+                }
+              ],
+              [
+                "field",
+                532800,
+                {
+                  "base-type": "type/Decimal"
+                }
+              ],
+              [
+                "field",
+                25606,
+                {
+                  "base-type": "type/Decimal"
+                }
+              ],
+              [
+                "field",
+                532692,
+                {
+                  "base-type": "type/Decimal"
+                }
+              ]
+            ],
+            "joins": [
+              {
+                "alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID",
+                "fields": [
+                  [
+                    "field",
+                    570716,
+                    {
+                      "base-type": "type/Decimal",
+                      "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+                    }
+                  ],
+                  [
+                    "field",
+                    570732,
+                    {
+                      "base-type": "type/Decimal",
+                      "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+                    }
+                  ],
+                  [
+                    "field",
+                    570725,
+                    {
+                      "base-type": "type/Text",
+                      "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+                    }
+                  ],
+                  [
+                    "field",
+                    570735,
+                    {
+                      "base-type": "type/Text",
+                      "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+                    }
+                  ],
+                  [
+                    "field",
+                    570727,
+                    {
+                      "base-type": "type/DateTime",
+                      "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+                    }
+                  ],
+                  [
+                    "field",
+                    570728,
+                    {
+                      "base-type": "type/Decimal",
+                      "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+                    }
+                  ],
+                  [
+                    "field",
+                    570731,
+                    {
+                      "base-type": "type/Decimal",
+                      "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+                    }
+                  ],
+                  [
+                    "field",
+                    570711,
+                    {
+                      "base-type": "type/Decimal",
+                      "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+                    }
+                  ],
+                  [
+                    "field",
+                    570709,
+                    {
+                      "base-type": "type/Decimal",
+                      "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+                    }
+                  ],
+                  [
+                    "field",
+                    570717,
+                    {
+                      "base-type": "type/Text",
+                      "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+                    }
+                  ],
+                  [
+                    "field",
+                    570710,
+                    {
+                      "base-type": "type/Text",
+                      "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+                    }
+                  ],
+                  [
+                    "field",
+                    570724,
+                    {
+                      "base-type": "type/Text",
+                      "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+                    }
+                  ],
+                  [
+                    "field",
+                    570734,
+                    {
+                      "base-type": "type/Text",
+                      "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+                    }
+                  ]
+                ],
+                "strategy": "inner-join",
+                "condition": [
+                  "=",
+                  [
+                    "field",
+                    20829,
+                    {
+                      "base-type": "type/Text"
+                    }
+                  ],
+                  [
+                    "field",
+                    570735,
+                    {
+                      "base-type": "type/Text",
+                      "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+                    }
+                  ]
+                ],
+                "source-table": 39315
+              }
+            ],
+            "source-table": 45,
+            "filter": [
+              "contains",
+              [
+                "field",
+                20868,
+                {
+                  "base-type": "type/Text"
+                }
+              ],
+              "world",
+              {
+                "case-sensitive": false
+              }
+            ]
+          }
+        },
+        "id": 5320,
+        "parameter_mappings": [],
+        "display": "table",
+        "archived_directly": false,
+        "entity_id": "Y2eDdat04hym59NG5RUS3",
+        "collection_preview": true,
+        "visualization_settings": {
+          "table.cell_column": "sum",
+          "table.pivot_column": "FIAT_CURRENCY",
+          "column_settings": {
+            "[\"name\",\"sum_2\"]": {
+              "column_title": "Fee Acquirer amount",
+              "decimals": 0
+            },
+            "[\"name\",\"sum_3\"]": {
+              "column_title": "Acquirer FX cost EUR",
+              "decimals": 0
+            },
+            "[\"name\",\"sum\"]": {
+              "column_title": "Fiat Amount",
+              "decimals": 0
+            }
+          }
+        },
+        "metabase_version": "v0.52.9 (f9fbbf8)",
+        "parameters": [],
+        "created_at": "2025-07-25T13:43:54.147062Z",
+        "public_uuid": null
+      },
+      "updated_at": "2025-07-25T13:43:54.147062Z",
+      "col": 0,
+      "id": 4702,
+      "parameter_mappings": [
+        {
+          "parameter_id": "87c4377a",
+          "card_id": 5320,
+          "target": [
+            "dimension",
+            [
+              "field",
+              570727,
+              {
+                "base-type": "type/DateTime",
+                "join-alias": "EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD - VENDOR_ID"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "card_id": 5320,
+      "entity_id": "B_x5flBROwtT-PBD4edQc",
+      "visualization_settings": {},
+      "size_y": 11,
+      "dashboard_id": 498,
+      "created_at": "2025-07-25T13:43:54.147062Z",
+      "row": 4
+    }
+  ],
+  "param_values": null,
+  "initially_published_at": null,
+  "can_write": true,
+  "tabs": [],
+  "enable_embedding": false,
+  "collection_id": 812,
+  "show_in_getting_started": false,
+  "name": "8bworld invoices - 1",
+  "width": "fixed",
+  "caveats": null,
+  "collection_authority_level": null,
+  "creator_id": 139,
+  "can_restore": false,
+  "moderation_reviews": [],
+  "updated_at": "2025-07-25T13:44:30.601748Z",
+  "made_public_by_id": null,
+  "embedding_params": null,
+  "cache_ttl": null,
+  "last_used_param_values": {
+    "87c4377a": "past1months"
+  },
+  "id": 498,
+  "last_viewed_at": "2025-07-25T13:44:11.237606Z",
+  "position": null,
+  "archived_directly": false,
+  "entity_id": "tlhD425X5lWaMrH9gEOeV",
+  "param_fields": {
+    "570727": {
+      "semantic_type": null,
+      "table_id": 39315,
+      "name": "LOCAL_DATE",
+      "has_field_values": "list",
+      "fk_target_field_id": null,
+      "dimensions": [],
+      "id": 570727,
+      "target": null,
+      "display_name": "LOCAL_DATE",
+      "name_field": null,
+      "base_type": "type/DateTime"
+    }
+  },
+  "last-edit-info": {
+    "id": 139,
+    "email": "e.kolodyazhnaya@mercuryo.io",
+    "first_name": "Ekaterina",
+    "last_name": "Kolodyazhnaya",
+    "timestamp": "2025-07-25T13:43:54.264814Z"
+  },
+  "collection": {
+    "authority_level": null,
+    "description": null,
+    "archived": false,
+    "slug": "8bworld_invoices_sr",
+    "archive_operation_id": null,
+    "name": "8bworld invoices SR",
+    "personal_owner_id": null,
+    "type": null,
+    "is_sample": false,
+    "id": 812,
+    "archived_directly": null,
+    "entity_id": "yGpzmAm2R6EEz6ojbSlsZ",
+    "location": "/34/41/500/",
+    "namespace": null,
+    "is_personal": false,
+    "created_at": "2025-07-23T12:39:02.07085Z"
+  },
+  "parameters": [
+    {
+      "name": "Transaction date",
+      "slug": "transaction_date",
+      "id": "87c4377a",
+      "type": "date/all-options",
+      "sectionId": "date",
+      "default": "past1months"
+    }
+  ],
+  "auto_apply_filters": true,
+  "created_at": "2025-07-25T13:43:54.147062Z",
+  "public_uuid": null,
+  "points_of_interest": null,
+  "can_delete": false
+}

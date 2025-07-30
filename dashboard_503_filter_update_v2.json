@@ -1,0 +1,132 @@
+{
+  "dashboard_id": 503,
+  "dashboard_name": "USA  Data Project ",
+  "cards_updated": [
+    {
+      "card_id": 5474,
+      "card_name": "Costs",
+      "changes": "Updated with filters"
+    },
+    {
+      "card_id": 5489,
+      "card_name": "GMV",
+      "changes": "Updated with filters"
+    },
+    {
+      "card_id": 5471,
+      "card_name": "GMV detailing",
+      "changes": "Updated with filters"
+    },
+    {
+      "card_id": 5477,
+      "card_name": "Turnover detailing",
+      "changes": "Updated with filters"
+    },
+    {
+      "card_id": 5469,
+      "card_name": "Turnover",
+      "changes": "Updated with filters"
+    },
+    {
+      "card_id": 5473,
+      "card_name": "MAU OOR",
+      "changes": "Updated with filters"
+    },
+    {
+      "card_id": 5468,
+      "card_name": "DAU OOR",
+      "changes": "Updated with filters"
+    },
+    {
+      "card_id": 5486,
+      "card_name": "Revenue",
+      "changes": "Updated with filters"
+    },
+    {
+      "card_id": 5483,
+      "card_name": "Revenue Per User",
+      "changes": "Updated with filters"
+    },
+    {
+      "card_id": 5484,
+      "card_name": "Revenue Per Turnover",
+      "changes": "Updated with filters"
+    },
+    {
+      "card_id": 5487,
+      "card_name": "Total Revenue",
+      "changes": "Updated with filters"
+    },
+    {
+      "card_id": 5479,
+      "card_name": "Total GMV",
+      "changes": "Updated with filters"
+    },
+    {
+      "card_id": 5470,
+      "card_name": "Total Turnover",
+      "changes": "Updated with filters"
+    },
+    {
+      "card_id": 5476,
+      "card_name": "Total Costs",
+      "changes": "Updated with filters"
+    },
+    {
+      "card_id": 5482,
+      "card_name": "Total Transactions ",
+      "changes": "Updated with filters"
+    },
+    {
+      "card_id": 5488,
+      "card_name": "Total AR",
+      "changes": "Updated with filters"
+    }
+  ],
+  "cards_skipped": [
+    {
+      "card_id": 5471,
+      "card_name": "GMV detailing",
+      "reason": "No updates needed"
+    }
+  ],
+  "cards_failed": [],
+  "cards_no_mart_transactions": [
+    {
+      "card_id": 5472,
+      "card_name": "Transactions dynamic",
+      "reason": "Does not use MART__TRANSACTIONS table"
+    },
+    {
+      "card_id": 5490,
+      "card_name": "AR dynamic",
+      "reason": "Does not use MART__TRANSACTIONS table"
+    },
+    {
+      "card_id": 5480,
+      "card_name": "Failed reasons",
+      "reason": "Does not use MART__TRANSACTIONS table"
+    },
+    {
+      "card_id": 5485,
+      "card_name": "Transaction size dynamic",
+      "reason": "Does not use MART__TRANSACTIONS table"
+    },
+    {
+      "card_id": 5475,
+      "card_name": "Antifraud",
+      "reason": "Does not use MART__TRANSACTIONS table"
+    },
+    {
+      "card_id": 5478,
+      "card_name": "Reason reject statistics",
+      "reason": "Does not use MART__TRANSACTIONS table"
+    },
+    {
+      "card_id": 5481,
+      "card_name": "KYC dynamic",
+      "reason": "Does not use MART__TRANSACTIONS table"
+    }
+  ],
+  "total_cards": 30
+}

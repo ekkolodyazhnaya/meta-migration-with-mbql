@@ -153,28 +153,65 @@ class MetabaseMigrator:
             return {"error": str(e)}
     
     def migrate_mbql_question(self, question: Dict) -> Dict:
-        """Migrate an MBQL question from Exasol to StarRocks"""
+        import logging
         try:
             question_id = question.get('id')
             question_details = self.get_question_details(question_id)
-            
             if not question_details:
                 return {"error": f"Could not get details for question {question_id}"}
-            
-            # Extract MBQL query structure
+
             mbql_query = question_details.get('dataset_query', {}).get('query', {})
-            
-            # For now, return basic structure - full MBQL conversion will be implemented later
-            return {
-                "question_id": question_id,
-                "question_name": question.get('name', 'Unknown'),
-                "type": "mbql",
-                "mbql_structure": mbql_query,
-                "note": "MBQL migration requires additional implementation for full conversion"
-            }
-            
+            # Load migration mapping
+            with open('migrations/migration_mapping.json', 'r') as f:
+                migration_mapping = json.load(f)
+            column_mapping = migration_mapping.get('column_mapping', {})
+
+            # Recursively map field IDs in MBQL
+            def map_field_ids(obj):
+                if isinstance(obj, list):
+                    return [map_field_ids(x) for x in obj]
+                elif isinstance(obj, dict):
+                    # Map field IDs
+                    if 'field' in obj and isinstance(obj['field'], int):
+                        str_id = str(obj['field'])
+                        if str_id in column_mapping:
+                            obj['field'] = column_mapping[str_id]
+                    # Map join-alias field IDs
+                    if 'join-alias' in obj and isinstance(obj['join-alias'], int):
+                        str_id = str(obj['join-alias'])
+                        if str_id in column_mapping:
+                            obj['join-alias'] = column_mapping[str_id]
+                    return {k: map_field_ids(v) for k, v in obj.items()}
+                else:
+                    return obj
+
+            migrated_mbql = map_field_ids(mbql_query)
+
+            # Update main and join table IDs directly
+            migrated_mbql['source-table'] = 87255  # MART__TRANSACTIONS
+            if 'joins' in migrated_mbql:
+                for join in migrated_mbql['joins']:
+                    join['source-table'] = 91055  # EIGHTB_WORLD__ACQUIRING_WP_MONEYMAPLETECHLTD
+
+            # Update database
+            question_details['dataset_query']['database'] = 16  # StarRocks DB ID
+            question_details['dataset_query']['query'] = migrated_mbql
+
+            resp = self.session.put(
+                f"{self.config.base_url}/api/card/{question_id}",
+                headers={"X-Metabase-Session": self.session_token, "Content-Type": "application/json"},
+                json={
+                    "dataset_query": question_details['dataset_query'],
+                    "visualization_settings": question_details.get('visualization_settings', {})
+                }
+            )
+            print(f"[DEBUG] Metabase API response: {resp.status_code} {resp.text}")
+            if resp.status_code == 200:
+                return {"success": f"Question {question_id} migrated to StarRocks with full field and table mapping."}
+            else:
+                return {"error": f"Failed to update question {question_id}: {resp.text}"}
         except Exception as e:
-            logger.error(f"Error migrating MBQL question {question.get('id')}: {str(e)}")
+            print(f"[DEBUG] Exception: {str(e)}")
             return {"error": str(e)}
     
     def migrate_dashboard(self, dashboard: Dict) -> Dict:

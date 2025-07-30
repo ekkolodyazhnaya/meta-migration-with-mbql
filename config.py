@@ -17,8 +17,8 @@ class DatabaseMapping:
 # Metabase connection configuration
 METABASE_CONFIG = {
     "base_url": "https://metabase.mrcr.io",
-    "username": "",
-    "password": ""
+    "username": "e.kolodyazhnaya@mercuryo.io",
+    "password": "***REMOVED***"
 }
 
 # Database mappings from Exasol to StarRocks

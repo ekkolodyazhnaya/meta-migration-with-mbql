@@ -1,0 +1,1320 @@
+{
+  "starrocks_metrics": [
+    {
+      "id": 4881,
+      "name": "Acceptance rate",
+      "description": null,
+      "collection": 767,
+      "display": "scalar"
+    },
+    {
+      "id": 4877,
+      "name": "Acceptance rate users",
+      "description": null,
+      "collection": 767,
+      "display": "scalar"
+    },
+    {
+      "id": 4965,
+      "name": "Conversion rate from calculation to completed fast track transaction",
+      "description": null,
+      "collection": 767,
+      "display": "scalar"
+    },
+    {
+      "id": 4966,
+      "name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "description": null,
+      "collection": 767,
+      "display": "scalar"
+    },
+    {
+      "id": 4963,
+      "name": "Conversion rate from calculation to completed transaction",
+      "description": null,
+      "collection": 767,
+      "display": "scalar"
+    },
+    {
+      "id": 4961,
+      "name": "Conversion rate from show fast track to initialized",
+      "description": null,
+      "collection": 767,
+      "display": "scalar"
+    },
+    {
+      "id": 4962,
+      "name": "Convertion from calculation to started transaction",
+      "description": null,
+      "collection": 767,
+      "display": "scalar"
+    },
+    {
+      "id": 4960,
+      "name": "Count calculation fast track shown",
+      "description": null,
+      "collection": 767,
+      "display": "scalar"
+    },
+    {
+      "id": 4959,
+      "name": "Count calculations",
+      "description": null,
+      "collection": 767,
+      "display": "scalar"
+    },
+    {
+      "id": 4940,
+      "name": "Count of all Transactions",
+      "description": null,
+      "collection": 767,
+      "display": "scalar"
+    },
+    {
+      "id": 5185,
+      "name": "Count users",
+      "description": null,
+      "collection": 767,
+      "display": "scalar"
+    },
+    {
+      "id": 5214,
+      "name": "GMV EUR Fatpay",
+      "description": null,
+      "collection": 767,
+      "display": "scalar"
+    },
+    {
+      "id": 5217,
+      "name": "Revenue EUR Fatpay",
+      "description": null,
+      "collection": 767,
+      "display": "scalar"
+    },
+    {
+      "id": 5216,
+      "name": "Turnover EUR Fatpay",
+      "description": null,
+      "collection": 767,
+      "display": "scalar"
+    },
+    {
+      "id": 4806,
+      "name": "Turnover EUR (OOR)",
+      "description": null,
+      "collection": 767,
+      "display": "scalar"
+    }
+  ],
+  "all_metrics": [
+    {
+      "id": 5216,
+      "name": "Turnover EUR Fatpay",
+      "description": null,
+      "collection": 767,
+      "collection_name": "Starrocks Metabase Metrics",
+      "display": "scalar"
+    },
+    {
+      "id": 5217,
+      "name": "Revenue EUR Fatpay",
+      "description": null,
+      "collection": 767,
+      "collection_name": "Starrocks Metabase Metrics",
+      "display": "scalar"
+    },
+    {
+      "id": 5214,
+      "name": "GMV EUR Fatpay",
+      "description": null,
+      "collection": 767,
+      "collection_name": "Starrocks Metabase Metrics",
+      "display": "scalar"
+    },
+    {
+      "id": 5185,
+      "name": "Count users",
+      "description": null,
+      "collection": 767,
+      "collection_name": "Starrocks Metabase Metrics",
+      "display": "scalar"
+    },
+    {
+      "id": 4966,
+      "name": "Conversion rate from  calculation to completed NOT fast track transaction",
+      "description": null,
+      "collection": 767,
+      "collection_name": "Starrocks Metabase Metrics",
+      "display": "scalar"
+    },
+    {
+      "id": 4961,
+      "name": "Conversion rate from show fast track to initialized",
+      "description": null,
+      "collection": 767,
+      "collection_name": "Starrocks Metabase Metrics",
+      "display": "scalar"
+    },
+    {
+      "id": 4963,
+      "name": "Conversion rate from calculation to completed transaction",
+      "description": null,
+      "collection": 767,
+      "collection_name": "Starrocks Metabase Metrics",
+      "display": "scalar"
+    },
+    {
+      "id": 4960,
+      "name": "Count calculation fast track shown",
+      "description": null,
+      "collection": 767,
+      "collection_name": "Starrocks Metabase Metrics",
+      "display": "scalar"
+    },
+    {
+      "id": 4962,
+      "name": "Convertion from calculation to started transaction",
+      "description": null,
+      "collection": 767,
+      "collection_name": "Starrocks Metabase Metrics",
+      "display": "scalar"
+    },
+    {
+      "id": 4959,
+      "name": "Count calculations",
+      "description": null,
+      "collection": 767,
+      "collection_name": "Starrocks Metabase Metrics",
+      "display": "scalar"
+    },
+    {
+      "id": 4965,
+      "name": "Conversion rate from calculation to completed fast track transaction",
+      "description": null,
+      "collection": 767,
+      "collection_name": "Starrocks Metabase Metrics",
+      "display": "scalar"
+    },
+    {
+      "id": 4940,
+      "name": "Count of all Transactions",
+      "description": null,
+      "collection": 767,
+      "collection_name": "Starrocks Metabase Metrics",
+      "display": "scalar"
+    },
+    {
+      "id": 4877,
+      "name": "Acceptance rate users",
+      "description": null,
+      "collection": 767,
+      "collection_name": "Starrocks Metabase Metrics",
+      "display": "scalar"
+    },
+    {
+      "id": 4881,
+      "name": "Acceptance rate",
+      "description": null,
+      "collection": 767,
+      "collection_name": "Starrocks Metabase Metrics",
+      "display": "scalar"
+    },
+    {
+      "id": 4806,
+      "name": "Turnover EUR (OOR)",
+      "description": null,
+      "collection": 767,
+      "collection_name": "Starrocks Metabase Metrics",
+      "display": "scalar"
+    },
+    {
+      "id": 3076,
+      "name": "Count created Tx antifraud",
+      "description": "Created in tx_log in antifraud tx_id (Migrated from metric 92.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3086,
+      "name": "Share need verification tx_id",
+      "description": "Share need verification tx_id (Migrated from metric 102.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3057,
+      "name": "Saldo Node BTC",
+      "description": "Saldo Node BTC (Migrated from metric 64.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3075,
+      "name": "Network Fee EUR / Turnover EUR",
+      "description": "Network Fee EUR / Turnover EUR (Migrated from metric 73.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3077,
+      "name": "Users start transactions",
+      "description": "Users who start transaction during 3 days since registration (Migrated from metric 90.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3052,
+      "name": "Difference deposit",
+      "description": "Difference deposit (Migrated from metric 65.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3040,
+      "name": "Webapp SumBalance",
+      "description": "Webapp SumBalance (Migrated from metric 61.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3051,
+      "name": "Rate",
+      "description": "Rate (Migrated from metric 68.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3045,
+      "name": "FX Mark up Revenue EUR",
+      "description": "Sum of FEE_FX_EUR successful transactions (Migrated from metric 58.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3066,
+      "name": "Revenue TopUp EUR",
+      "description": "Revenue from comission in admin (Migrated from metric 79.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3059,
+      "name": "AOV",
+      "description": "Average order value (Migrated from metric 87.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3064,
+      "name": "Turnover EUR",
+      "description": "Sum of accepted transactions turnover in EUR (Migrated from metric 76.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3007,
+      "name": "Amount of Success Transactions EUR",
+      "description": "Sum of accepted transactions amounts in EUR (Migrated from metric 27.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3071,
+      "name": "GMV EUR",
+      "description": "top up revenue + exchange revenue+transaction fee - exchange fee - network fee (Migrated from metric 77.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3078,
+      "name": "Count users complete transactions",
+      "description": "Count users who complete transactions during 3 days since registration (Migrated from metric 91.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3046,
+      "name": "Difference between webapp and node",
+      "description": "Difference between webapp and node (Migrated from metric 63.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3106,
+      "name": "Fee Riskified EUR",
+      "description": "Fee Riskified EUR (Migrated from metric 120.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3069,
+      "name": "GMV/Revenue",
+      "description": "ration GMV to Revenue (Migrated from metric 83.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3085,
+      "name": "Completed transactions",
+      "description": "Completed transactions on Webapp side (Migrated from metric 98.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3099,
+      "name": "Average network fee per transaction",
+      "description": "Average network fee per transaction (Migrated from metric 110.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3060,
+      "name": "New sign ups",
+      "description": "Count new sign ups in widget/wallet (Migrated from metric 88.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3049,
+      "name": "Difference withdraw",
+      "description": "Difference withdraw (Migrated from metric 66.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3108,
+      "name": "Winpay fee EUR OOR",
+      "description": "Winpay fee EUR OOR (Migrated from metric 122.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3101,
+      "name": "Acceptance rate without Antifraud",
+      "description": "Acceptance rate without Antifraud (Migrated from metric 114.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3044,
+      "name": "Acquiring Commission EUR",
+      "description": "Amount of acquirer fee confirmed transactions in EUR (Migrated from metric 56.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3072,
+      "name": "Revenue Fee EUR",
+      "description": "Sum of Revenue EUR in transaction (deposit_fee or withdraw_fee) (Migrated from metric 84.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3068,
+      "name": "GMV/Turnover",
+      "description": "ratio of GMV to turnover (Migrated from metric 81.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3087,
+      "name": "Riskified fee / Revenue EUR",
+      "description": "Riskified fee / Revenue EUR (Migrated from metric 112.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3070,
+      "name": "Revenue EUR",
+      "description": "Sum of Revenue EUR (comission for top up + exchange revenue + transaction fee) (Migrated from metric 82.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3093,
+      "name": "Acceptance rate",
+      "description": "Acceptance rate for Webapp transactions (Migrated from metric 100.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3096,
+      "name": "Created Sum Amount EUR Webapp",
+      "description": "Created Sum Amount EUR Webapp (Migrated from metric 107.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3092,
+      "name": "Conversion rate from antifraud to confirmed transaction",
+      "description": "Conversion rate from antifraud to confirmed transaction (Migrated from metric 104.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3008,
+      "name": "Number of Failed Transactions",
+      "description": "Number of failed transactions with status error (Migrated from metric 25.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3055,
+      "name": "Revenue  /  Turnover rate",
+      "description": "Revenue  /  Turnover rate (Migrated from metric 71.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3083,
+      "name": "Approved final antifraud",
+      "description": "Approved final antifraud (our antifraud + riskified status) (Migrated from metric 96.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3021,
+      "name": "Number of Successful Bindings",
+      "description": "Bybit: Number of successful card bindings with status complete (Migrated from metric 38.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 2991,
+      "name": "Success rate",
+      "description": "Transaction success rate (Migrated from metric 14.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3024,
+      "name": "Potential Turnover EUR",
+      "description": "Sum of accepted, authorized and failed transactions amounts in EUR. Only unique transactions, excluding repeats and card binding (Migrated from metric 42.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3105,
+      "name": "Fee Zerohash & Mobilum fee",
+      "description": "Fee Zerohash & Mobilum Fee (Migrated from metric 119.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3032,
+      "name": "Mark up Revenue EUR",
+      "description": "Sum of accepted transactions fee_ratio_rate in EUR (Migrated from metric 55.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3102,
+      "name": "Acquiring FX cost EUR",
+      "description": "Acquiring FX cost EUR (Migrated from metric 115.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3084,
+      "name": "Created transaction Webapp",
+      "description": "Created transaction Webapp (Migrated from metric 97.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3047,
+      "name": "Revenue EUR",
+      "description": "Sum of Revenue accepted transactions in EUR\nREVENUE_EUR = FEE_MERCURIO_FIAT_EUR + FEE_RATIO_RATES_FIAT_EUR (Migrated from metric 51.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3107,
+      "name": "Exchange FX Amount EUR OOR",
+      "description": "Exchange FX Amount EUR OOR (Migrated from metric 118.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3082,
+      "name": "Approved Riskified",
+      "description": "Transaction which were approved by riskified (Migrated from metric 95.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3043,
+      "name": "Amount of Partner Fee EUR",
+      "description": "Amount of partner fee confirmed transactions in EUR (Migrated from metric 35.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3098,
+      "name": "Fee exchanger EUR",
+      "description": "Fee exchanger EUR (Migrated from metric 109.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3065,
+      "name": "Revenue Exchange EUR",
+      "description": "Revenue from Exchange  (Migrated from metric 78.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3103,
+      "name": "Exchange fee EUR OOR",
+      "description": "Exchange fee EUR OOR (Migrated from metric 116.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3097,
+      "name": "Network fee EUR",
+      "description": "Network fee EUR (Migrated from metric 108.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3062,
+      "name": "Acquiring Commission  / Turnover",
+      "description": "Acquiring Commission  / Turnover (Migrated from metric 74.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3005,
+      "name": "Acceptance Rate",
+      "description": "Share of accepted transactions (determined by status complete) out of all transactions (Migrated from metric 22.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3004,
+      "name": "Number of Accepted Transactions",
+      "description": "Number of accepted transactions with status complete (Migrated from metric 17.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3067,
+      "name": "Fee exchanger EUR",
+      "description": "Fee from exchange side (Migrated from metric 80.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3073,
+      "name": "% GMV",
+      "description": "% GMV (Migrated from metric 85.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3080,
+      "name": "Need verification",
+      "description": "Case when antifraud ask verification for user to confirm transaction (Migrated from metric 93.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3104,
+      "name": "Exchange FX cost EUR",
+      "description": "Exchange FX cost EUR (Migrated from metric 117.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3027,
+      "name": "GMV / Turnover",
+      "description": "GMV to Turnover ratio, starting from 2022 (Migrated from metric 49.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3026,
+      "name": "GMV EUR",
+      "description": "Sum of GMV of transactions in EUR, starting from 2022 [GMV = Revenue - Acquiring Commission] (Migrated from metric 47.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3089,
+      "name": "Conversion rate antifraud",
+      "description": "Conversion rate from antifraud created tx to final approved in antifraud (Migrated from metric 99.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3079,
+      "name": "Complete registrations",
+      "description": "The count of complete registrations (user confirmed email or phone) (Migrated from metric 89.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3038,
+      "name": "Network Fee EUR",
+      "description": "Amount of blockchain fee confirmed transactions in EUR (Migrated from metric 57.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3029,
+      "name": "Revenue / Turnover",
+      "description": "Revenue to Turnover ratio, starting from 2022 (Migrated from metric 48.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3091,
+      "name": "Conversion rate our antifraud",
+      "description": "Conversion rate our antifraud (Migrated from metric 103.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3094,
+      "name": "Conversion rate from antifraud to confirmed transaction by Amount EUR",
+      "description": "Conversion rate from antifraud to confirmed transaction by Amount EUR (Migrated from metric 105.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3095,
+      "name": "Acceptance rate by Amount EUR",
+      "description": "Acceptance rate for Webapp transactions by Amount EUR (Migrated from metric 106.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3081,
+      "name": "Checked by riskified",
+      "description": "We send transaction to riskified for checking (Migrated from metric 94.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3090,
+      "name": "Conversion rate riskified",
+      "description": "Conversion rate from created by riskified to approved by riskified (Migrated from metric 101.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3042,
+      "name": "Commission Revenue EUR",
+      "description": "Sum of accepted transactions fee Mercuryo in EUR (Migrated from metric 34.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3039,
+      "name": "Mercuryo Fee Part",
+      "description": "Share of FEE_MERCURIO_EUR out of accepted TURNOVER_EUR (Migrated from metric 41.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3074,
+      "name": "Network Fee EUR / Revenue EUR",
+      "description": "Network Fee EUR / Revenue EUR (Migrated from metric 86.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3063,
+      "name": "Acceptance Rate",
+      "description": "Share of accepted transactions (determined by status complete) out of all transactions (Migrated from metric 75.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3088,
+      "name": "Riskified fee / Turnover EUR",
+      "description": "Riskified fee / Turnover EUR (Migrated from metric 113.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 2995,
+      "name": "Turnover EUR fatpay metric",
+      "description": "Sum of accepted transactions amounts in EUR (Migrated from metric 20.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 2998,
+      "name": "Number of all Transactions",
+      "description": "Count (Migrated from metric 23.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 2997,
+      "name": "Acceptance Rate",
+      "description": "Share of accepted transactions (determined by status complete) out of all transactions\n (Migrated from metric 19.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3001,
+      "name": "Number of Transactions",
+      "description": "Number of all transactions (Migrated from metric 21.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3003,
+      "name": "Failure Rate",
+      "description": "Share of failed transactions (determined by status error) out of all transactions (Migrated from metric 15.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3006,
+      "name": "Number of Accepted Transactions",
+      "description": "Number of accepted transactions with status complete or paid (Migrated from metric 24.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3009,
+      "name": "Fiat Amount EUR",
+      "description": "Fiat amount (Migrated from metric 28.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3010,
+      "name": "Turnover EUR",
+      "description": "Sum of accepted transactions turnover in EUR (Migrated from metric 26.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3100,
+      "name": "Riskified Fee EUR",
+      "description": "Riskified Fee EUR (Migrated from metric 111.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3012,
+      "name": "Number of Failed Transactions",
+      "description": "Number of failed transactions with status error (Migrated from metric 18.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3013,
+      "name": "Crypto Amount",
+      "description": "Crypto amount (Migrated from metric 29.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3018,
+      "name": "Authorization Rate",
+      "description": "Share of authorized transactions (determined by operation authorize) out of all transactions (Migrated from metric 16.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3019,
+      "name": "Number of Authorized Transactions",
+      "description": "Number of authorized transactions with operation authorize (Migrated from metric 36.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3020,
+      "name": "Number of Card Bindings",
+      "description": "Bybit: Number of all card bindings (Migrated from metric 37.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3058,
+      "name": "Acquiring Commission / Turnover",
+      "description": "Acquiring Commission / Turnover fatpay metric (Migrated from metric 70.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3022,
+      "name": "Number of Failed Bindings",
+      "description": "Bybit: Number of failed card bindings with status error (Migrated from metric 39.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3023,
+      "name": "Card Binding Success Rate",
+      "description": "Bybit: Share of successful card bindings (determined by status complete) out of all card bindings (Migrated from metric 40.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3025,
+      "name": "Sum of Transactions EUR",
+      "description": "Sum of accepted, authorized and failed transactions amounts in EUR. All transactions, including repeats and card binding (Migrated from metric 43.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3048,
+      "name": "Fiat amount FX EUR",
+      "description": "sum of (fiat amount FX EUR or fiat amount EUR) all transactions  (Migrated from metric 59.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3028,
+      "name": "Revenue EUR",
+      "description": "Sum of Mercuryo fee of accepted transactions in EUR, starting from 2022 (Migrated from metric 45.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3030,
+      "name": "Total transactions cost EUR OOR",
+      "description": "Total transactions cost EUR OOR (Migrated from metric 121.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3031,
+      "name": "Potential Turnover EUR",
+      "description": "Sum of accepted, authorized and failed transactions amounts in EUR. Only unique transactions, excluding repeats and card binding (Migrated from metric 44.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3053,
+      "name": "Calculations with transactions",
+      "description": "Calculations with transactions (Migrated from metric 67.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3033,
+      "name": "Acquiring Commission EUR fatpay metric",
+      "description": "Sum of Acquirer\u2019s fees of transactions in EUR, starting from 2022. Fact fees are used if present, otherwise fee is calculated approximately. (Migrated from metric 46.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3034,
+      "name": "GMV EUR",
+      "description": "Sum of accepted transactions GMV in EUR\n\nGMV = Revenue-All cost. Have cost even for not completed transactions (Migrated from metric 50.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3035,
+      "name": "Fee Network Revenue EUR",
+      "description": "Fee Network Revenue EUR OOR (Migrated from metric 123.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3036,
+      "name": "Off-Ramp Turnover",
+      "description": "Turnover of sell confirmed transactions in EUR\n (Migrated from metric 53.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3037,
+      "name": "On-Ramp Turnover",
+      "description": "Turnover of buy confirmed transactions in EUR (Migrated from metric 52.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    },
+    {
+      "id": 3050,
+      "name": "Node  SumBalance",
+      "description": "Node  SumBalance (Migrated from metric 62.)",
+      "collection": 596,
+      "collection_name": "Migrated Metrics v1",
+      "display": "scalar"
+    }
+  ],
+  "suggested_mappings": [
+    {
+      "starrocks_metric": {
+        "id": 4881,
+        "name": "Acceptance rate",
+        "description": null,
+        "collection": 767,
+        "display": "scalar"
+      },
+      "browse_metric": {
+        "id": 3093,
+        "name": "Acceptance rate",
+        "description": "Acceptance rate for Webapp transactions (Migrated from metric 100.)",
+        "collection": 596,
+        "collection_name": "Migrated Metrics v1",
+        "display": "scalar"
+      },
+      "confidence_score": 100
+    },
+    {
+      "starrocks_metric": {
+        "id": 4877,
+        "name": "Acceptance rate users",
+        "description": null,
+        "collection": 767,
+        "display": "scalar"
+      },
+      "browse_metric": {
+        "id": 3051,
+        "name": "Rate",
+        "description": "Rate (Migrated from metric 68.)",
+        "collection": 596,
+        "collection_name": "Migrated Metrics v1",
+        "display": "scalar"
+      },
+      "confidence_score": 80
+    },
+    {
+      "starrocks_metric": {
+        "id": 4965,
+        "name": "Conversion rate from calculation to completed fast track transaction",
+        "description": null,
+        "collection": 767,
+        "display": "scalar"
+      },
+      "browse_metric": {
+        "id": 3051,
+        "name": "Rate",
+        "description": "Rate (Migrated from metric 68.)",
+        "collection": 596,
+        "collection_name": "Migrated Metrics v1",
+        "display": "scalar"
+      },
+      "confidence_score": 80
+    },
+    {
+      "starrocks_metric": {
+        "id": 4966,
+        "name": "Conversion rate from  calculation to completed NOT fast track transaction",
+        "description": null,
+        "collection": 767,
+        "display": "scalar"
+      },
+      "browse_metric": {
+        "id": 3051,
+        "name": "Rate",
+        "description": "Rate (Migrated from metric 68.)",
+        "collection": 596,
+        "collection_name": "Migrated Metrics v1",
+        "display": "scalar"
+      },
+      "confidence_score": 80
+    },
+    {
+      "starrocks_metric": {
+        "id": 4963,
+        "name": "Conversion rate from calculation to completed transaction",
+        "description": null,
+        "collection": 767,
+        "display": "scalar"
+      },
+      "browse_metric": {
+        "id": 3051,
+        "name": "Rate",
+        "description": "Rate (Migrated from metric 68.)",
+        "collection": 596,
+        "collection_name": "Migrated Metrics v1",
+        "display": "scalar"
+      },
+      "confidence_score": 80
+    },
+    {
+      "starrocks_metric": {
+        "id": 4961,
+        "name": "Conversion rate from show fast track to initialized",
+        "description": null,
+        "collection": 767,
+        "display": "scalar"
+      },
+      "browse_metric": {
+        "id": 3051,
+        "name": "Rate",
+        "description": "Rate (Migrated from metric 68.)",
+        "collection": 596,
+        "collection_name": "Migrated Metrics v1",
+        "display": "scalar"
+      },
+      "confidence_score": 80
+    },
+    {
+      "starrocks_metric": {
+        "id": 4962,
+        "name": "Convertion from calculation to started transaction",
+        "description": null,
+        "collection": 767,
+        "display": "scalar"
+      },
+      "browse_metric": {
+        "id": 3077,
+        "name": "Users start transactions",
+        "description": "Users who start transaction during 3 days since registration (Migrated from metric 90.)",
+        "collection": 596,
+        "collection_name": "Migrated Metrics v1",
+        "display": "scalar"
+      },
+      "confidence_score": 60
+    },
+    {
+      "starrocks_metric": {
+        "id": 4960,
+        "name": "Count calculation fast track shown",
+        "description": null,
+        "collection": 767,
+        "display": "scalar"
+      },
+      "browse_metric": {
+        "id": 3076,
+        "name": "Count created Tx antifraud",
+        "description": "Created in tx_log in antifraud tx_id (Migrated from metric 92.)",
+        "collection": 596,
+        "collection_name": "Migrated Metrics v1",
+        "display": "scalar"
+      },
+      "confidence_score": 60
+    },
+    {
+      "starrocks_metric": {
+        "id": 4959,
+        "name": "Count calculations",
+        "description": null,
+        "collection": 767,
+        "display": "scalar"
+      },
+      "browse_metric": {
+        "id": 3076,
+        "name": "Count created Tx antifraud",
+        "description": "Created in tx_log in antifraud tx_id (Migrated from metric 92.)",
+        "collection": 596,
+        "collection_name": "Migrated Metrics v1",
+        "display": "scalar"
+      },
+      "confidence_score": 60
+    },
+    {
+      "starrocks_metric": {
+        "id": 4940,
+        "name": "Count of all Transactions",
+        "description": null,
+        "collection": 767,
+        "display": "scalar"
+      },
+      "browse_metric": {
+        "id": 3076,
+        "name": "Count created Tx antifraud",
+        "description": "Created in tx_log in antifraud tx_id (Migrated from metric 92.)",
+        "collection": 596,
+        "collection_name": "Migrated Metrics v1",
+        "display": "scalar"
+      },
+      "confidence_score": 60
+    },
+    {
+      "starrocks_metric": {
+        "id": 5185,
+        "name": "Count users",
+        "description": null,
+        "collection": 767,
+        "display": "scalar"
+      },
+      "browse_metric": {
+        "id": 3078,
+        "name": "Count users complete transactions",
+        "description": "Count users who complete transactions during 3 days since registration (Migrated from metric 91.)",
+        "collection": 596,
+        "collection_name": "Migrated Metrics v1",
+        "display": "scalar"
+      },
+      "confidence_score": 80
+    },
+    {
+      "starrocks_metric": {
+        "id": 5214,
+        "name": "GMV EUR Fatpay",
+        "description": null,
+        "collection": 767,
+        "display": "scalar"
+      },
+      "browse_metric": {
+        "id": 3071,
+        "name": "GMV EUR",
+        "description": "top up revenue + exchange revenue+transaction fee - exchange fee - network fee (Migrated from metric 77.)",
+        "collection": 596,
+        "collection_name": "Migrated Metrics v1",
+        "display": "scalar"
+      },
+      "confidence_score": 80
+    },
+    {
+      "starrocks_metric": {
+        "id": 5217,
+        "name": "Revenue EUR Fatpay",
+        "description": null,
+        "collection": 767,
+        "display": "scalar"
+      },
+      "browse_metric": {
+        "id": 3070,
+        "name": "Revenue EUR",
+        "description": "Sum of Revenue EUR (comission for top up + exchange revenue + transaction fee) (Migrated from metric 82.)",
+        "collection": 596,
+        "collection_name": "Migrated Metrics v1",
+        "display": "scalar"
+      },
+      "confidence_score": 80
+    },
+    {
+      "starrocks_metric": {
+        "id": 5216,
+        "name": "Turnover EUR Fatpay",
+        "description": null,
+        "collection": 767,
+        "display": "scalar"
+      },
+      "browse_metric": {
+        "id": 3064,
+        "name": "Turnover EUR",
+        "description": "Sum of accepted transactions turnover in EUR (Migrated from metric 76.)",
+        "collection": 596,
+        "collection_name": "Migrated Metrics v1",
+        "display": "scalar"
+      },
+      "confidence_score": 80
+    },
+    {
+      "starrocks_metric": {
+        "id": 4806,
+        "name": "Turnover EUR (OOR)",
+        "description": null,
+        "collection": 767,
+        "display": "scalar"
+      },
+      "browse_metric": {
+        "id": 3064,
+        "name": "Turnover EUR",
+        "description": "Sum of accepted transactions turnover in EUR (Migrated from metric 76.)",
+        "collection": 596,
+        "collection_name": "Migrated Metrics v1",
+        "display": "scalar"
+      },
+      "confidence_score": 80
+    }
+  ],
+  "unmapped_starrocks": []
+}

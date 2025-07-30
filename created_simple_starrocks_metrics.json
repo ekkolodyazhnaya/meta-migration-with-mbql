@@ -1,0 +1,24 @@
+{
+  "created_metrics": [
+    {
+      "original_name": "Count created Tx antifraud",
+      "new_name": "Count created Tx antifraud SR",
+      "new_id": 5354,
+      "original_id": 3076
+    },
+    {
+      "original_name": "Share need verification tx_id",
+      "new_name": "Share need verification tx_id SR",
+      "new_id": 5355,
+      "original_id": 3086
+    },
+    {
+      "original_name": "Saldo Node BTC",
+      "new_name": "Saldo Node BTC SR",
+      "new_id": 5356,
+      "original_id": 3057
+    }
+  ],
+  "total_browse_metrics": 102,
+  "sample_created": 3
+}

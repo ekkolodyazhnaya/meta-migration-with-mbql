@@ -80,6 +80,10 @@
     "421": {
       "description": "Dashboard 421",
       "additional_mappings": {}
+    },
+    "503": {
+      "description": "Dashboard 503",
+      "additional_mappings": {}
     }
   },
   "formatting_preservation": {

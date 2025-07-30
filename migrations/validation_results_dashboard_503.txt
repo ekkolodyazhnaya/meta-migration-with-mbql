@@ -1,0 +1,345 @@
+
+🔍 Validating migration results...
+============================================================
+📊 Validating 23 questions
+
+📝 Validating Question 1/23
+--------------------------------------------------
+  🔍 Validating Question 5474: Costs
+    📊 Database ID: 16
+    📝 Query Type: native
+    🔍 SQL Preview: Select  
+date_trunc('day',MART__TRANSACTIONS.CREATED_AT) as "Date",
+
+ROUND(SUM(ifnull(FEE_RISKIFIED_...
+    ✅ Query executed successfully!
+    📊 Rows returned: 210
+    📋 Columns: 13
+    📝 Column names: ['Date', 'Fee Riskified', 'Fee Blockchain', 'Fee Acquirer', 'Acquirer FX Cost', 'Fee Mobilium', 'Fee Winpay', 'Fee Quicko', 'ZH Fee', 'Exchange Fee', 'Exchange FX Cost', 'Exchange FX Amount', 'Fireblocks Fee']
+    📈 First row: ['2025-06-24T00:00:00Z', 1006, 379, 9529, 2290, 0, 0, 0, 0.0, 250, -4, 0, 31]
+    📈 Second row: ['2025-01-27T00:00:00Z', 1584, 785, 13075, -1090, 0, 0, 0, 0.0, 385, 21, 0, 93]
+
+📝 Validating Question 2/23
+--------------------------------------------------
+  🔍 Validating Question 5489: GMV
+    📊 Database ID: 16
+    📝 Query Type: native
+    🔍 SQL Preview: Select  
+date_trunc('day',MART__TRANSACTIONS.CREATED_AT) as "Date"
+
+, round(sum(MART__TRANSACTIONS.G...
+    ✅ Query executed successfully!
+    📊 Rows returned: 210
+    📋 Columns: 2
+    📝 Column names: ['Date', 'GMV']
+    📈 First row: ['2025-03-11T00:00:00Z', 2658]
+    📈 Second row: ['2025-02-24T00:00:00Z', 4196]
+
+📝 Validating Question 3/23
+--------------------------------------------------
+  🔍 Validating Question 5471: GMV detailing
+    📊 Database ID: 16
+    📝 Query Type: native
+    🔍 SQL Preview: WITH cte AS (
+    SELECT 
+        WIDGET_PARTNER_NAME, 
+        SUM(turnover_eur) AS total_turnover
+...
+    ✅ Query executed successfully!
+    📊 Rows returned: 1045
+    📋 Columns: 3
+    📝 Column names: ['Date', 'WIDGET_PARTNER_NAME', 'GMV']
+    📈 First row: ['2025-03-12T00:00:00Z', 'other', 550]
+    📈 Second row: ['2025-03-15T00:00:00Z', 'MercuryoWidget', 588]
+
+📝 Validating Question 4/23
+--------------------------------------------------
+  🔍 Validating Question 5477: Turnover detailing
+    📊 Database ID: 16
+    📝 Query Type: native
+    🔍 SQL Preview: WITH cte AS (
+    SELECT 
+        WIDGET_PARTNER_NAME, 
+        SUM(turnover_eur) AS total_turnover
+...
+    ✅ Query executed successfully!
+    📊 Rows returned: 1045
+    📋 Columns: 3
+    📝 Column names: ['Date', 'WIDGET_PARTNER_NAME', 'Turnover ($)']
+    📈 First row: ['2025-01-09T00:00:00Z', 'Metamask', 130958]
+    📈 Second row: ['2025-01-16T00:00:00Z', 'Bybit', 1423]
+
+📝 Validating Question 5/23
+--------------------------------------------------
+  🔍 Validating Question 5469: Turnover
+    📊 Database ID: 16
+    📝 Query Type: native
+    🔍 SQL Preview: Select  
+date_trunc('day',MART__TRANSACTIONS.CREATED_AT) as "Date"
+, round(sum(MART__TRANSACTIONS.TU...
+    ✅ Query executed successfully!
+    📊 Rows returned: 210
+    📋 Columns: 2
+    📝 Column names: ['Date', 'TURNOVER ($)']
+    📈 First row: ['2025-03-30T00:00:00Z', 270375]
+    📈 Second row: ['2025-05-31T00:00:00Z', 351299]
+
+📝 Validating Question 6/23
+--------------------------------------------------
+  🔍 Validating Question 5473: MAU OOR
+    📊 Database ID: 16
+    📝 Query Type: native
+    🔍 SQL Preview: WITH all_calc as (
+    select c.CREATED_AT
+         , PARTNER_NAME
+         , USR_COUNTRY_ENG
+  ...
+    ✅ Query executed successfully!
+    📊 Rows returned: 28
+    📋 Columns: 3
+    📝 Column names: ['CREATED_DT', 'TYPE', 'DAU']
+    📈 First row: ['2025-06-01T00:00:00Z', 'start transaction', 181002]
+    📈 Second row: ['2025-06-01T00:00:00Z', 'user authorized', 338688]
+
+📝 Validating Question 7/23
+--------------------------------------------------
+  🔍 Validating Question 5468: DAU OOR
+    📊 Database ID: 16
+    📝 Query Type: native
+    🔍 SQL Preview: WITH all_calc AS (
+    -- Только транзакции
+    SELECT 
+        MART__TRANSACTIONS.CREATED_AT,
+ ...
+    ❌ SQL Error: Getting analyzing error from line 16, column 43 to line 16, column 81. Detail message: No matching function with signature: add_days(datetime, tinyint(4)).
+
+📝 Validating Question 8/23
+--------------------------------------------------
+  🔍 Validating Question 5486: Revenue
+    📊 Database ID: 16
+    📝 Query Type: native
+    🔍 SQL Preview: Select  
+date_trunc('day',MART__TRANSACTIONS.CREATED_AT) as "Date"
+     , round(sum(FEE_MERCURIO_FIA...
+    ✅ Query executed successfully!
+    📊 Rows returned: 210
+    📋 Columns: 5
+    📝 Column names: ['Date', 'Commission Revenue', 'Network Revenue', 'FEE FX', 'Mark up Revenue']
+    📈 First row: ['2025-01-05T00:00:00Z', 15782, 834, 1, -4295]
+    📈 Second row: ['2025-02-05T00:00:00Z', 19346, 445, 5, -3071]
+
+📝 Validating Question 9/23
+--------------------------------------------------
+  🔍 Validating Question 5483: Revenue Per User
+    📊 Database ID: 16
+    📝 Query Type: native
+    🔍 SQL Preview: Select  
+date_trunc('day',MART__TRANSACTIONS.CREATED_AT) as "Date"
+, round(sum(MART__TRANSACTIONS.RE...
+    ✅ Query executed successfully!
+    📊 Rows returned: 210
+    📋 Columns: 2
+    📝 Column names: ['Date', 'Revenue Per User']
+    📈 First row: ['2025-04-02T00:00:00Z', 14.87]
+    📈 Second row: ['2025-04-08T00:00:00Z', 14.0]
+
+📝 Validating Question 10/23
+--------------------------------------------------
+  🔍 Validating Question 5484: Revenue Per Turnover
+    📊 Database ID: 16
+    📝 Query Type: native
+    🔍 SQL Preview: Select  
+date_trunc('day',MART__TRANSACTIONS.CREATED_AT) as "Date"
+, sum(MART__TRANSACTIONS.REVENUE_...
+    ✅ Query executed successfully!
+    📊 Rows returned: 210
+    📋 Columns: 2
+    📝 Column names: ['Date', 'Revenue Per Turnover']
+    📈 First row: ['2025-01-09T00:00:00Z', 0.04000117544229404]
+    📈 Second row: ['2025-02-23T00:00:00Z', 0.037618069361372505]
+
+📝 Validating Question 11/23
+--------------------------------------------------
+  🔍 Validating Question 5487: Total Revenue
+    📊 Database ID: 16
+    📝 Query Type: native
+    🔍 SQL Preview: Select  
+-- date_trunc('day',tr.CREATED_AT)
+--  tr.ID 
+-- ,rr.RATE                                  ...
+    ✅ Query executed successfully!
+    📊 Rows returned: 1
+    📋 Columns: 1
+    📝 Column names: ['Revenue']
+    📈 First row: [15333469]
+
+📝 Validating Question 12/23
+--------------------------------------------------
+  🔍 Validating Question 5479: Total GMV
+    📊 Database ID: 16
+    📝 Query Type: native
+    🔍 SQL Preview: Select  
+-- date_trunc('day',tr.CREATED_AT)
+--  tr.ID 
+-- ,rr.RATE                                  ...
+    ✅ Query executed successfully!
+    📊 Rows returned: 1
+    📋 Columns: 1
+    📝 Column names: ['GMV']
+    📈 First row: [2818021]
+
+📝 Validating Question 13/23
+--------------------------------------------------
+  🔍 Validating Question 5470: Total Turnover
+    📊 Database ID: 16
+    📝 Query Type: native
+    🔍 SQL Preview: Select  
+round(sum(MART__TRANSACTIONS.TURNOVER_EUR
+*cast(rr.RATE as DECIMAL(18,6))),0) AS TURNOVER
+f...
+    ✅ Query executed successfully!
+    📊 Rows returned: 1
+    📋 Columns: 1
+    📝 Column names: ['TURNOVER']
+    📈 First row: [302900603]
+
+📝 Validating Question 14/23
+--------------------------------------------------
+  🔍 Validating Question 5476: Total Costs
+    📊 Database ID: 16
+    📝 Query Type: native
+    🔍 SQL Preview: Select  
+-- date_trunc('day',tr.CREATED_AT)
+--  tr.ID 
+-- ,rr.RATE                                  ...
+    ✅ Query executed successfully!
+    📊 Rows returned: 1
+    📋 Columns: 1
+    📝 Column names: ['Costs']
+    📈 First row: [12515449]
+
+📝 Validating Question 15/23
+--------------------------------------------------
+  🔍 Validating Question 5472: Transactions dynamic
+    📊 Database ID: 16
+    📝 Query Type: native
+    🔍 SQL Preview: Select  date_trunc('Day',TRANSACTIONS.CREATED_AT) as "Day", 
+--   source_main, 
+  COUNT(*) as "Count...
+    ❌ SQL Error: Getting analyzing error. Detail message: Unknown database 'mart'.
+
+📝 Validating Question 16/23
+--------------------------------------------------
+  🔍 Validating Question 5490: AR dynamic
+    📊 Database ID: 16
+    📝 Query Type: native
+    🔍 SQL Preview: Select  date_trunc('Day',TRANSACTIONS.CREATED_AT) as "Day", 
+  SOURCE_MAIN, 
+   round(CAST(
+    SUM(...
+    ❌ SQL Error: Getting analyzing error. Detail message: Unknown database 'mart'.
+
+📝 Validating Question 17/23
+--------------------------------------------------
+  🔍 Validating Question 5480: Failed reasons
+    📊 Database ID: 16
+    📝 Query Type: native
+    🔍 SQL Preview: Select  date_trunc('Day',TRANSACTIONS.CREATED_AT) as "Day", 
+GROUP_FAILED_REASON, count(ID) 
+  from ...
+    ❌ SQL Error: Getting analyzing error. Detail message: Unknown database 'mart'.
+
+📝 Validating Question 18/23
+--------------------------------------------------
+  🔍 Validating Question 5482: Total Transactions 
+    📊 Database ID: 16
+    📝 Query Type: native
+    🔍 SQL Preview: Select  
+
+ count(MART__TRANSACTIONS.ID)   
+
+from MART__TRANSACTIONS
+where CARD_ISOCOUNTRY='United St...
+    ✅ Query executed successfully!
+    📊 Rows returned: 1
+    📋 Columns: 1
+    📝 Column names: ['count(MART__TRANSACTIONS.ID)']
+    📈 First row: [1484924]
+
+📝 Validating Question 19/23
+--------------------------------------------------
+  🔍 Validating Question 5488: Total AR
+    📊 Database ID: 16
+    📝 Query Type: native
+    🔍 SQL Preview: Select  
+   CAST(
+    SUM(
+      CASE
+        WHEN CONFIRMED THEN 1
+        ELSE 0
+      END
+    ) A...
+    ✅ Query executed successfully!
+    📊 Rows returned: 1
+    📋 Columns: 1
+    📝 Column names: ['AR']
+    📈 First row: [0.4766578188883642]
+
+📝 Validating Question 20/23
+--------------------------------------------------
+  🔍 Validating Question 5485: Transaction size dynamic
+    📊 Database ID: 16
+    📝 Query Type: native
+    🔍 SQL Preview: Select  date_trunc('Day',TRANSACTIONS.CREATED_AT) as "Day", 
+  SOURCE_MAIN, 
+ round(sum(TRANSACTIONS...
+    ❌ SQL Error: Getting analyzing error. Detail message: Unknown database 'mart'.
+
+📝 Validating Question 21/23
+--------------------------------------------------
+  🔍 Validating Question 5475: Antifraud
+    📊 Database ID: 16
+    📝 Query Type: native
+    🔍 SQL Preview: 
+SELECT
+    CAST(CREATED_AT as Date) AS "Date",
+    CASE
+        WHEN COUNT(CASE WHEN STATUS_RISKIFI...
+    ✅ Query executed successfully!
+    📊 Rows returned: 121
+    📋 Columns: 3
+    📝 Column names: ['Date', 'Riskified Conversion rate (%)', 'Antifraud (no riskified) Conversion rate (%)']
+    📈 First row: ['2025-07-23T00:00:00Z', 68.6, 24.5]
+    📈 Second row: ['2025-07-10T00:00:00Z', 74.2, 20.0]
+
+📝 Validating Question 22/23
+--------------------------------------------------
+  🔍 Validating Question 5478: Reason reject statistics
+    📊 Database ID: 16
+    📝 Query Type: native
+    🔍 SQL Preview: 
+    SELECT
+        -- date(CREATED_AT) AS dt,
+        CASE
+            WHEN REASON_REJECT LIKE 'ris...
+    ❌ SQL Error: Getting syntax error at line 22, column 30. Detail message: Unexpected input 'FALSE', the most similar input is {'NULL', 'NOT'}.
+
+📝 Validating Question 23/23
+--------------------------------------------------
+  🔍 Validating Question 5481: KYC dynamic
+    📊 Database ID: 16
+    📝 Query Type: native
+    🔍 SQL Preview: with cte as(  
+
+select Date(REG_DT)                                                      as DT
+     ...
+    ✅ Query executed successfully!
+    📊 Rows returned: 2000
+    📋 Columns: 3
+    📝 Column names: ['TYPE_KYC', 'DT', 'CNT_VALUE']
+    📈 First row: ['Approved Checks', '2023-06-13T00:00:00Z', 105]
+    📈 Second row: ['Approved Checks', '2023-12-24T00:00:00Z', 72]
+
+🎉 Validation Summary:
+✅ Successfully validated: 17/23 questions
+⚠️  Some questions have issues. Migration may need fixes.

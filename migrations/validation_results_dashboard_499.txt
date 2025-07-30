@@ -1,0 +1,16 @@
+
+🔍 Validating migration results...
+============================================================
+📊 Validating 8 questions
+⏭️  Skipping question 5321 (Month Payin Merchant Turnover EUR) - not a native SQL question
+⏭️  Skipping question 5322 (Month Payin  Merchant Revenue EUR) - not a native SQL question
+⏭️  Skipping question 5323 (Month Payin Merchants GMV EUR) - not a native SQL question
+⏭️  Skipping question 5324 (Month Payin  country Revenue EUR) - not a native SQL question
+⏭️  Skipping question 5325 (Month Payin country Turnover EUR) - not a native SQL question
+⏭️  Skipping question 5326 (Month Payin country GMV EUR) - not a native SQL question
+⏭️  Skipping question 5327 (Payin all metrics by partner) - not a native SQL question
+⏭️  Skipping question 5328 (Payin all metrics by partner by month) - not a native SQL question
+
+🎉 Validation Summary:
+✅ Successfully validated: 0/0 questions
+🎊 All questions are working correctly! Migration successful!

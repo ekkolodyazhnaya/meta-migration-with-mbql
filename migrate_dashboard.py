@@ -10,6 +10,8 @@ import time
 from datetime import datetime
 from metabase_migrator import MetabaseMigrator, MetabaseConfig
 from config import METABASE_CONFIG
+import config
+print(f"[DEBUG] config.py loaded from: {config.__file__}")
 
 # Configuration for specific dashboards
 DASHBOARD_CONFIG = {
@@ -146,6 +148,18 @@ DASHBOARD_CONFIG = {
         "granularity_default": "week"
     },
     415: {
+        "granularity_to_static_list": True,
+        "granularity_static_values": [
+            ["hour"],
+            ["day"], 
+            ["week"],
+            ["month"],
+            ["quarter"],
+            ["year"]
+        ],
+        "granularity_default": "week"
+    },
+    503: {
         "granularity_to_static_list": True,
         "granularity_static_values": [
             ["hour"],
@@ -950,6 +964,79 @@ def update_question(question_id, converted_sql, visualization_columns, migrator,
         print(f"  📄 Error response: {response.text}")
         return False
 
+def update_mbql_question(question_id, mbql_json, migrator, migration_mapping, dashboard_id, dashboard_data=None, column_config=None):
+    """Update a specific MBQL question in Metabase."""
+    print(f"  🔄 Updating MBQL Question {question_id}")
+    # Fetch current question
+    response = migrator.session.get(
+        f"{migrator.config.base_url}/api/card/{question_id}",
+        headers={"X-Metabase-Session": migrator.session_token}
+    )
+    if response.status_code != 200:
+        print(f"  ❌ Failed to fetch question: {response.status_code}")
+        return False
+    question = response.json()
+    print(f"  ✅ Found question: {question.get('name', 'Unknown')}")
+    # Print original MBQL JSON for inspection
+    print(f"  [DEBUG] Original MBQL JSON for question {question_id}:")
+    print(json.dumps(mbql_json, indent=2))
+    # Get current visualization settings to preserve formatting
+    current_viz_settings = question.get('visualization_settings', {})
+    print(f"  📊 Current visualization settings: {len(current_viz_settings)} keys")
+    # Get original visualization settings from dashboard if available
+    original_viz_settings = {}
+    if dashboard_data:
+        original_viz_settings = get_visualization_settings(dashboard_data, question_id)
+        print(f"  📊 Original visualization settings: {len(original_viz_settings)} keys")
+    # Map tables and field IDs in MBQL JSON
+    table_mapping = migration_mapping['table_mapping']
+    column_mapping = migration_mapping['column_mapping']
+    mapped_mbql = map_tables_in_mbql(json.loads(json.dumps(mbql_json)), table_mapping)
+    mapped_mbql = map_field_ids_in_mbql(mapped_mbql, column_mapping)
+    # Print mapped MBQL JSON for inspection
+    print(f"  [DEBUG] Mapped MBQL JSON for question {question_id}:")
+    print(json.dumps(mapped_mbql, indent=2))
+    # Set the target database
+    mapped_mbql['database'] = migration_mapping['database_mapping']['starrocks']
+    # Get column mapping from configuration
+    if column_config is None:
+        column_config = load_column_mapping_config()
+    column_name_mapping = get_column_mapping_for_dashboard(dashboard_id, column_config)
+    # Use original visualization settings if available, otherwise use current ones
+    viz_settings_to_map = original_viz_settings if original_viz_settings else current_viz_settings
+    mapped_viz_settings = map_column_names_in_visualization_settings(viz_settings_to_map, column_name_mapping)
+    # Enhance visualization settings with formatting preservation
+    formatting_config = column_config.get("formatting_preservation", {})
+    enhanced_viz_settings = enhance_visualization_settings_with_formatting(mapped_viz_settings, column_name_mapping, formatting_config)
+    # Apply display name mappings to preserve original column titles
+    display_name_mappings = column_config.get("display_name_mappings", {})
+    final_viz_settings = apply_display_name_mappings(enhanced_viz_settings, display_name_mappings)
+    # Update the question
+    update_data = {
+        "dataset_query": mapped_mbql,
+        "visualization_settings": final_viz_settings
+    }
+    print(f"  📤 Sending MBQL update request to Metabase...")
+    print(f"  📋 MBQL Update data preview: {str(update_data)[:200]}...")
+    response = migrator.session.put(
+        f"{migrator.config.base_url}/api/card/{question_id}",
+        headers={
+            "X-Metabase-Session": migrator.session_token,
+            "Content-Type": "application/json"
+        },
+        json=update_data
+    )
+    print(f"  📥 Response status: {response.status_code}")
+    print(f"  📥 Response headers: {dict(response.headers)}")
+    if response.status_code == 200:
+        print(f"  ✅ MBQL Question {question_id} updated successfully!")
+        print(f"  📄 Response content: {response.text[:500]}...")
+        return True
+    else:
+        print(f"  ❌ MBQL Update failed: {response.status_code}")
+        print(f"  📄 Error response: {response.text}")
+        return False
+
 def validate_question_response(question_id, question_name, migrator, log_file=None):
     """Validate if a migrated question returns a valid response"""
     log_and_print(f"  🔍 Validating Question {question_id}: {question_name}", log_file)
@@ -1195,10 +1282,182 @@ def apply_display_name_mappings(viz_settings, display_name_mappings):
     
     return enhanced_settings
 
+# Add Exasol to StarRocks table ID mapping (expand as needed)
+table_id_mapping = {
+    31801: 87212,
+    71055: 87239,
+    35483: 90833,
+    35484: 90838,
+    32333: 87253,
+    37762: 90421,
+    37460: 90425,
+    24797: 87236,
+    32652: 87241,
+    164: 87251,
+    41076: 90423,
+    41074: 90419,
+    98: 87210,
+    84359: 90422,
+    77213: 90655,
+    77208: 90654,
+    26542: 87228,
+    42763: 87257,
+    51: 87209,
+    35485: 90424,
+    36348: 87237,
+    39315: 91055,
+    1161: 87218,
+    163: 87249,
+    222: 87229,
+    1570: 87225,
+    33784: 87215,
+    36071: 90835,
+    38534: 87234,
+    31632: 91065,
+    31635: 87211,
+    37403: 88338,
+    32962: 88337,
+    35325: 88772,
+    1314: 90837,
+    87010: 87232,
+    853: 87258,
+    31187: 87250,
+    37671: 88339,
+    78230: 87201,
+    39928: 87222,
+    25041: 87245,
+    34803: 87252,
+    34790: 87216,
+    36046: 87247,
+    42183: 89022,
+    2841: 87204,
+    37604: 87203,
+    45: 87255,
+    31112: 87227,
+    38562: 90597,
+    31634: 87202,
+    701: 87238,
+    74490: 87223,
+    157: 87205,
+    233: 87244,
+    160: 91005,
+    35480: 90832,
+    32503: 90420,
+    35481: 90418,
+    62: 90834,
+    108: 87235,
+    210: 87206,
+    213: 87214,
+    26390: 87230,
+    36: 89193,
+    71209: 87240,
+    36832: 87243,
+    212: 87256,
+    29: 87383,
+    147: 89180,
+    96: 91060,
+    24295: 87213,
+    24283: 87217,
+    190: 87221,
+    232: 87207,
+    39805: 87242,
+    99: 87248,
+    204: 87219,
+    37236: 87226,
+    39403: 89181,
+    24284: 87224,
+    122: 87208,
+    64538: 87254,
+    9: 87220,
+    37377: 88340
+}
+
+def map_tables_in_mbql(mbql_json, table_mapping):
+    """Recursively map table names and table IDs in MBQL JSON using table_mapping and table_id_mapping."""
+    if isinstance(mbql_json, dict):
+        for k, v in list(mbql_json.items()):  # Use list() to avoid runtime dict size change
+            if k == 'table' and isinstance(v, str):
+                mapped = table_mapping.get(v, None)
+                if mapped:
+                    print(f"    🔄 MBQL table mapping: '{v}' -> '{mapped}'")
+                    mbql_json[k] = mapped
+                else:
+                    if '.' in v:
+                        _, table_only = v.split('.', 1)
+                        mapped = table_mapping.get(table_only, None)
+                        if mapped:
+                            print(f"    🔄 MBQL table mapping (schema removed): '{v}' -> '{mapped}'")
+                            mbql_json[k] = mapped
+                        else:
+                            print(f"    ⚠️  No mapping found for MBQL table: '{v}' (schema removed: '{table_only}')")
+                    else:
+                        print(f"    ⚠️  No mapping found for MBQL table: '{v}'")
+            elif k == 'source-table' and isinstance(v, int):
+                mapped_id = table_id_mapping.get(v, None)
+                if mapped_id:
+                    print(f"    🔄 MBQL table ID mapping: {v} -> {mapped_id}")
+                    mbql_json[k] = mapped_id
+                else:
+                    print(f"    ⚠️  No mapping found for MBQL table ID: {v}")
+            # Always recurse into all values
+            map_tables_in_mbql(v, table_mapping)
+    elif isinstance(mbql_json, list):
+        for item in mbql_json:
+            map_tables_in_mbql(item, table_mapping)
+    return mbql_json
+
+def map_field_ids_in_mbql(mbql_json, column_mapping, parent_key=None, top_level=False):
+    """Recursively map field IDs in MBQL JSON using column_mapping.
+    Only skip unmapped fields in top-level 'fields' and 'aggregation' arrays.
+    """
+    # Handle lists
+    if isinstance(mbql_json, list):
+        # MBQL field reference: ["field", <id>, ...]
+        if len(mbql_json) > 1 and mbql_json[0] == "field" and isinstance(mbql_json[1], int):
+            old_id = mbql_json[1]
+            new_id = column_mapping.get(str(old_id), None)
+            if new_id:
+                print(f"    🔄 MBQL field ID mapping: {old_id} -> {new_id}")
+                mbql_json[1] = new_id
+            else:
+                print(f"    ⚠️  No mapping found for MBQL field ID: {old_id}")
+                # Only skip if in top-level 'fields' or 'aggregation' array
+                if top_level and parent_key in ("fields", "aggregation"):
+                    print(f"    ⚠️  Skipping field {old_id} in top-level '{parent_key}' array")
+                    return None
+            # Recurse into the rest of the field reference
+            for item in mbql_json[2:]:
+                map_field_ids_in_mbql(item, column_mapping)
+            return mbql_json
+        # Otherwise, process the list and filter out None results if top-level
+        new_list = []
+        for item in mbql_json:
+            mapped_item = map_field_ids_in_mbql(item, column_mapping, parent_key, top_level)
+            if mapped_item is not None:
+                new_list.append(mapped_item)
+        return new_list
+    # Handle dicts
+    elif isinstance(mbql_json, dict):
+        # If this is the top-level query dict, set top_level=True for 'fields' and 'aggregation' keys
+        for k, v in list(mbql_json.items()):
+            if k in ("fields", "aggregation"):
+                mapped_v = map_field_ids_in_mbql(v, column_mapping, k, top_level=True)
+            else:
+                mapped_v = map_field_ids_in_mbql(v, column_mapping, k, top_level=False)
+            mbql_json[k] = mapped_v
+        return mbql_json
+    else:
+        return mbql_json
+
 def main():
     """Main function"""
     overall_start = time.time()
-    dashboard_id = 421
+    # Debug print for METABASE_CONFIG (mask password)
+    debug_config = METABASE_CONFIG.copy()
+    if 'password' in debug_config:
+        debug_config['password'] = '***MASKED***'
+    print(f"[DEBUG] METABASE_CONFIG: {debug_config}")
+    dashboard_id = 503  # Set to the dashboard the user wants to migrate
     
     print(f"🚀 Starting migration for Dashboard {dashboard_id}")
     print("=" * 60)
@@ -1272,45 +1531,51 @@ def main():
         dataset_query = question.get('dataset_query', {})
         query_type = dataset_query.get('type')
         
-        if query_type != 'native':
-            print(f"  ⏭️  Skipping question {question_id} ({question_name}) - not a native SQL question")
+        if query_type == 'native':
+            total_count += 1
+            # Get current SQL
+            native_query = dataset_query.get('native', {})
+            current_sql = native_query.get('query', '')
+            if not current_sql:
+                print(f"  ⚠️  No SQL found in question {question_id}")
+                continue
+            print(f"  📄 Current SQL preview: {current_sql[:100]}...")
+            # Get visualization columns for this question
+            viz_start = time.time()
+            visualization_columns = get_visualization_columns(dashboard_data, question_id)
+            if not visualization_columns:
+                print(f"  🔄 No visualization columns found in inspection, fetching from Metabase...")
+                visualization_columns = get_current_visualization_columns(question_id, migrator)
+            log_timing(viz_start, f"Get visualization columns for {question_id}")
+            print(f"  📊 Visualization columns: {list(visualization_columns)}")
+            # Update the question with the current SQL (it will be cleaned by clean_sql_for_starrocks)
+            update_start = time.time()
+            if update_question(question_id, current_sql, visualization_columns, migrator, migration_mapping, dashboard_id, dashboard_data, column_config):
+                success_count += 1
+                migrated_questions.append({
+                    "question_id": question_id,
+                    "question_name": question_name,
+                    "type": "native",
+                    "converted_sql": "migrated"
+                })
+            log_timing(update_start, f"Update question {question_id}")
+        elif query_type == 'query':
+            # MBQL question
+            print(f"  📝 Detected MBQL question {question_id} ({question_name})")
+            mbql_json = dataset_query
+            update_start = time.time()
+            if update_mbql_question(question_id, mbql_json, migrator, migration_mapping, dashboard_id, dashboard_data, column_config):
+                success_count += 1
+                migrated_questions.append({
+                    "question_id": question_id,
+                    "question_name": question_name,
+                    "type": "mbql",
+                    "converted_mbql": "migrated"
+                })
+            log_timing(update_start, f"Update MBQL question {question_id}")
+        else:
+            print(f"  ⏭️  Skipping question {question_id} ({question_name}) - unsupported question type: {query_type}")
             continue
-        
-        total_count += 1
-        
-        # Get current SQL
-        native_query = dataset_query.get('native', {})
-        current_sql = native_query.get('query', '')
-        
-        if not current_sql:
-            print(f"  ⚠️  No SQL found in question {question_id}")
-            continue
-        
-        print(f"  📄 Current SQL preview: {current_sql[:100]}...")
-        
-        # Get visualization columns for this question
-        viz_start = time.time()
-        visualization_columns = get_visualization_columns(dashboard_data, question_id)
-        
-        # If no columns found in inspection, get current ones from Metabase
-        if not visualization_columns:
-            print(f"  🔄 No visualization columns found in inspection, fetching from Metabase...")
-            visualization_columns = get_current_visualization_columns(question_id, migrator)
-        log_timing(viz_start, f"Get visualization columns for {question_id}")
-        
-        print(f"  📊 Visualization columns: {list(visualization_columns)}")
-        
-        # Update the question with the current SQL (it will be cleaned by clean_sql_for_starrocks)
-        update_start = time.time()
-        if update_question(question_id, current_sql, visualization_columns, migrator, migration_mapping, dashboard_id, dashboard_data, column_config):
-            success_count += 1
-            migrated_questions.append({
-                "question_id": question_id,
-                "question_name": question_name,
-                "type": "native",
-                "converted_sql": "migrated"
-            })
-        log_timing(update_start, f"Update question {question_id}")
     
     step_start = log_timing(step_start, f"Process {processed_count} questions")
     
