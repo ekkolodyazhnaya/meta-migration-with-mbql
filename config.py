@@ -17,7 +17,7 @@ class DatabaseMapping:
 # Metabase connection configuration
 METABASE_CONFIG = {
     "base_url": "https://metabase.mrcr.io",
-    "username": "e.kolodyazhnaya@mercuryo.io",
+    "username": "YOUR_USERNAME_HERE",
     "password": "***REMOVED***"
 }
 

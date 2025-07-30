@@ -13,7 +13,7 @@ def extract_field_ids(obj, ids):
 def main():
     m = MetabaseMigrator(MetabaseConfig(
         base_url='https://metabase.mrcr.io',
-        username='e.kolodyazhnaya@mercuryo.io',
+        username='YOUR_USERNAME_HERE',
         password='***REMOVED***'
     ))
     m.authenticate()

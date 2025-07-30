@@ -133,7 +133,7 @@ def map_field_ids_by_name_with_table(obj, m, exasol_to_sr, join_tables=None, cur
 def main():
     m = MetabaseMigrator(MetabaseConfig(
         base_url='https://metabase.mrcr.io',
-        username='e.kolodyazhnaya@mercuryo.io',
+        username='YOUR_USERNAME_HERE',
         password='***REMOVED***'
     ))
     m.authenticate()
